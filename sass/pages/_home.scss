@@ -4,13 +4,20 @@
   &-heading {
     font-size: 65px;
     font-family: $main-font;
-    margin-bottom: 50px;
+    color: $white;
   }
 
   &-p {
     font-size: 20px;
     font-family: $sub-font;
     line-height: 2;
+    color: $white;
+  }
+
+  &-heading-text {
+    font-family: $sub-font;
+    font-size: 20px;
+    color: $white;
   }
 }
 
@@ -18,7 +25,6 @@
   .section {
     &-heading {
       font-size: 40px;
-      margin-bottom: 40px;
     }
 
     &-p {
@@ -26,7 +32,7 @@
       line-height: 2;
     }
   }
-  
+
   .content-wrapper {
     margin: 0 15px;
   }
@@ -168,8 +174,11 @@
 // Start - About Section
 
 #about {
-  color: $white;
   height: $section-height;
+
+  .section-heading {
+    margin-bottom: 50px;
+  }
 
   .brand-text {
     font-family: $main-font;
@@ -186,6 +195,10 @@
 
 @include media-breakpoint-down(lg) {
   #about {
+    .section-heading {
+      margin-bottom: 40px;
+    }
+
     .about-image {
       width: 100% !important;
       max-height: 250px;

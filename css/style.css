@@ -10745,18 +10745,23 @@ textarea.form-control-lg {
 .section-heading {
   font-size: 65px;
   font-family: "DM Serif Display", serif;
-  margin-bottom: 50px;
+  color: #fff;
 }
 .section-p {
   font-size: 20px;
   font-family: "DM Sans", sans-serif;
   line-height: 2;
+  color: #fff;
+}
+.section-heading-text {
+  font-family: "DM Sans", sans-serif;
+  font-size: 20px;
+  color: #fff;
 }
 
 @media (max-width: 991.98px) {
   .section-heading {
     font-size: 40px;
-    margin-bottom: 40px;
   }
   .section-p {
     font-size: 16px;
@@ -10869,8 +10874,10 @@ textarea.form-control-lg {
   }
 }
 #about {
-  color: #fff;
   height: 700px;
+}
+#about .section-heading {
+  margin-bottom: 50px;
 }
 #about .brand-text {
   font-family: "DM Serif Display", serif;
@@ -10884,6 +10891,9 @@ textarea.form-control-lg {
 }
 
 @media (max-width: 991.98px) {
+  #about .section-heading {
+    margin-bottom: 40px;
+  }
   #about .about-image {
     width: 100% !important;
     max-height: 250px;
