@@ -1,3 +1,37 @@
+// Homepage Global Styles
+
+.section {
+  &-heading {
+    font-size: 65px;
+    font-family: $main-font;
+    margin-bottom: 50px;
+  }
+
+  &-p {
+    font-size: 20px;
+    font-family: $sub-font;
+    line-height: 2;
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .section {
+    &-heading {
+      font-size: 40px;
+      margin-bottom: 40px;
+    }
+
+    &-p {
+      font-size: 16px;
+      line-height: 2;
+    }
+  }
+  
+  .content-wrapper {
+    margin: 0 15px;
+  }
+}
+
 // Start - Hero Section
 
 #hero {
@@ -99,36 +133,35 @@
     height: 300px;
     width: auto !important;
 
+    &-wrapper {
+      width: 275px;
 
-  &-wrapper {
-    width: 275px;
+      .bean-1 {
+        height: 30px;
+        top: 25px;
+        right: 40px;
+      }
 
-    .bean-1 {
-      height: 30px;
-      top: 25px;
-      right: 40px;
-    }
+      .bean-2 {
+        height: 35px;
+        bottom: 15px;
+        left: 40px;
+      }
 
-    .bean-2 {
-      height: 35px;
-      bottom: 15px;
-      left: 40px;
-    }
+      .bean-3 {
+        height: 80px;
+        top: 80px;
+        left: 0;
+      }
 
-    .bean-3 {
-      height: 80px;
-      top: 80px;
-      left: 0;
-    }
-
-    .bean-4 {
-      height: 80px;
-      bottom: 35px;
-      right: 0px;
+      .bean-4 {
+        height: 80px;
+        bottom: 35px;
+        right: 0px;
+      }
     }
   }
 }
-  }
 
 // End - Hero Section
 
@@ -137,18 +170,6 @@
 #about {
   color: $white;
   height: $section-height;
-
-  h2 {
-    font-size: 65px;
-    font-family: $main-font;
-    margin-bottom: 50px;
-  }
-
-  p {
-    font-size: 20px;
-    font-family: $sub-font;
-    line-height: 2;
-  }
 
   .brand-text {
     font-family: $main-font;
@@ -172,16 +193,6 @@
       object-position: bottom;
     }
 
-    h2 {
-      font-size: 40px;
-      margin-bottom: 40px;
-    }
-
-    p {
-      font-size: 16px;
-      line-height: 2;
-    }
-
     .brand-text {
       font-size: 25px;
     }
@@ -193,15 +204,6 @@
 // Start - About Section
 
 #products {
-  
 }
 
 // End - About Section
-
-// Global Responsive Styles
-@include media-breakpoint-down(lg) {
-  // Add small a margin around canvas on mobile devices
-  .content-wrapper {
-    margin: 0 15px;
-  }
-}
