@@ -10746,7 +10746,6 @@ textarea.form-control-lg {
   margin-top: 85px;
   height: 700px;
 }
-
 #hero .container h1, #hero .container .h1 {
   font-family: "DM Serif Display", serif;
   font-size: 95px;
@@ -10846,11 +10845,8 @@ textarea.form-control-lg {
   }
 }
 #about {
-  height: 700px;
-}
-
-#about {
   color: #fff;
+  height: 700px;
 }
 #about h2, #about .h2 {
   font-size: 65px;

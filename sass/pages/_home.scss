@@ -1,34 +1,36 @@
 // Start - Hero Section
 
-#hero .row {
-  margin-top: 85px;
-  height: $section-height;
-}
-
-#hero .container {
-  h1 {
-    font-family: $main-font;
-    font-size: 95px;
-    text-transform: uppercase;
-    line-height: 1;
-    margin: 15px 0 30px 0;
+#hero {
+  .row {
+    margin-top: 85px;
+    height: $section-height;
   }
 
-  h2 {
-    font-family: $sub-font;
-    font-size: 32px;
-    font-weight: 500;
-    line-height: 1;
-  }
+  .container {
+    h1 {
+      font-family: $main-font;
+      font-size: 95px;
+      text-transform: uppercase;
+      line-height: 1;
+      margin: 15px 0 30px 0;
+    }
 
-  p {
-    font-family: $sub-font;
-    font-size: 20px;
-    line-height: 200%;
-  }
+    h2 {
+      font-family: $sub-font;
+      font-size: 32px;
+      font-weight: 500;
+      line-height: 1;
+    }
 
-  .main-button {
-    margin-top: 20px;
+    p {
+      font-family: $sub-font;
+      font-size: 20px;
+      line-height: 200%;
+    }
+
+    .main-button {
+      margin-top: 20px;
+    }
   }
 }
 
@@ -77,30 +79,28 @@
 @include media-breakpoint-down(lg) {
   #hero {
     height: auto;
-  }
 
+    .container {
+      h1 {
+        font-size: 55px;
+      }
 
+      h2 {
+        font-size: 20px;
+      }
 
-#hero .container {
-    h1 {
-      font-size: 55px;
-    }
-
-    h2 {
-      font-size: 20px;
-    }
-
-    p {
-      font-size: 16px;
+      p {
+        font-size: 16px;
+      }
     }
   }
 
   .hero-img {
     height: 300px;
     width: auto !important;
-  }
 
-  .hero-img-wrapper {
+
+  &-wrapper {
     width: 275px;
 
     .bean-1 {
@@ -128,17 +128,15 @@
     }
   }
 }
+  }
 
 // End - Hero Section
 
 // Start - About Section
 
 #about {
-  height: $section-height;
-}
-
-#about {
   color: $white;
+  height: $section-height;
 
   h2 {
     font-size: 65px;
@@ -192,10 +190,18 @@
 
 // End - About Section
 
+// Start - About Section
+
+#products {
+  
+}
+
+// End - About Section
+
 // Global Responsive Styles
 @include media-breakpoint-down(lg) {
-    // Add small a margin around canvas on mobile devices
-    .content-wrapper {
-      margin: 0 15px;
-    }
+  // Add small a margin around canvas on mobile devices
+  .content-wrapper {
+    margin: 0 15px;
+  }
 }
