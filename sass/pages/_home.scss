@@ -1,0 +1,85 @@
+// Start - Hero Section
+
+#hero .row {
+    margin-top: 85px;
+    height: $section-height;
+  }
+  
+  #hero .container {
+    h1 {
+      font-family: $main-font;
+      font-size: 95px;
+      text-transform: uppercase;
+      line-height: 1;
+      margin: 15px 0 30px 0;
+    }
+  
+    h2 {
+      font-family: $sub-font;
+      font-size: 32px;
+      font-weight: 500;
+      line-height: 1;
+    }
+  
+    p {
+      font-family: $sub-font;
+      font-size: 20px;
+      line-height: 200%;
+    }
+  
+    .main-button {
+      margin-top: 20px;
+    }
+  }
+  
+  .header-img-wrapper {
+    width: 500px;
+    position: relative;
+  
+    .header-img {
+      width: 330px;
+    }
+  
+    .bean-1 {
+      height: 50px;
+      position: absolute;
+      top: 50px;
+      right: 85px;
+      z-index: -1;
+      transform: rotate(15deg);
+    }
+  
+    .bean-2 {
+      height: 60px;
+      position: absolute;
+      bottom: 40px;
+      left: 85px;
+      transform: rotate(-10deg);
+    }
+  
+    .bean-3 {
+      position: absolute;
+      height: 120px;
+      top: 140px;
+      left: 30px;
+    }
+  
+    .bean-4 {
+      position: absolute;
+      height: 150px;
+      bottom: 70px;
+      right: 0px;
+    }
+  }
+  
+  // Hero section Responsive Styles
+  
+  @include media-breakpoint-down(lg) {
+    #hero .row {
+      height: auto;
+    }
+  }
+
+
+// End - Hero Section
+

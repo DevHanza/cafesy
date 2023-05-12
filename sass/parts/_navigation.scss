@@ -1,0 +1,106 @@
+body {
+  background-color: $primary-dark;
+}
+
+header {
+  padding: 20px 0;
+  transition: all $main-tp;
+
+  .nav-link {
+    position: relative;
+    color: $white;
+    padding: 0;
+    padding-bottom: 5px;
+    font-family: $sub-font;
+    font-weight: 500;
+  }
+
+  .navbar-nav .nav-item {
+    .nav-link.active {
+      color: $white;
+    }
+
+    .nav-link:hover {
+      color: $white;
+    }
+  }
+
+  .nav-link::after {
+    content: "";
+    opacity: 0;
+    transition: all $main-tp;
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  .nav-link:hover::after {
+    opacity: 1;
+  }
+
+  .nav-link.active::after {
+    opacity: 1;
+  }
+
+  .nav-logo {
+    height: 30px;
+  }
+
+  .navbar-toggler {
+    border-radius: 0;
+    padding: 0;
+  }
+
+  .nav-toggle-btn {
+    color: $white;
+    font-size: 30px;
+  }
+}
+
+// Shrink Effect lg
+
+.nav-container-shrink {
+  padding: 10px;
+  background: rgba($color: $white, $alpha: 0.1);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  transition: padding $main-tp;
+}
+
+// Navbar Responsive Styles
+
+@include media-breakpoint-down(lg) {
+  .nav-container {
+    .nav-toggle-btn {
+      color: $white;
+      font-size: 20px;
+    }
+  }
+
+  .nav-link {
+    text-align: center;
+  }
+
+  .navbar-collapse {
+    transition: all $main-tp;
+
+    &.show {
+      border: 1px solid $white;
+      margin: 20px 0;
+    }
+  }
+
+  // Shrink Effect sm
+
+  .nav-container-shrink-sm {
+    padding: 0;
+    background: rgba($color: $white, $alpha: 0.1);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    transition: padding $main-tp;
+  }
+}
+// @include media-breakpoint-down(sm) { }
