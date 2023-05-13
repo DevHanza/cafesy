@@ -10760,9 +10760,6 @@ textarea.form-control-lg {
 }
 
 @media (max-width: 991.98px) {
-  body {
-    padding: 20px;
-  }
   .section-heading {
     font-size: 40px;
   }
@@ -10803,6 +10800,7 @@ textarea.form-control-lg {
 .hero-img-wrapper {
   width: 500px;
   position: relative;
+  overflow: hidden;
 }
 .hero-img-wrapper .hero-img {
   width: 330px;
@@ -10911,25 +10909,26 @@ textarea.form-control-lg {
   }
 }
 #products .main-button {
-  margin-top: 50px;
+  margin: 50px 0;
 }
 #products .row.second-row .coffee-card {
   color: #1A120B;
   margin-top: 40px;
+  background-color: #fff;
 }
 #products .row.second-row .coffee-card-image {
   height: 250px;
   width: 100%;
   object-fit: cover;
-  margin-bottom: -20px;
   z-index: 1;
 }
 #products .row.second-row .coffee-card-text-wrapper {
   position: relative;
+  width: 85%;
   margin: 0 auto;
   padding: 30px 20px;
   background-color: #fff;
-  margin-top: -30px;
+  margin-top: -60px;
   z-index: 10;
 }
 #products .row.second-row .coffee-card-heading {
@@ -10994,6 +10993,7 @@ header .navbar-toggler {
   border-radius: 0;
   padding: 0;
   outline-color: transparent;
+  text-align: end;
 }
 header .nav-toggle-btn {
   color: #fff;
@@ -11043,6 +11043,12 @@ header .nav-toggle-btn {
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     transition: padding 0.4s;
+  }
+}
+@media (max-width: 991.98px) {
+  .navbar .container,
+  .row > * {
+    padding: 0 30px;
   }
 }
 

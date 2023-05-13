@@ -9,3 +9,11 @@
 @import "parts/_navigation";
 @import "parts/_footer";
 
+@include media-breakpoint-down(lg) {
+
+  .navbar .container,
+  .row > * {
+    padding: 0 30px;
+  }
+
+}
