@@ -10767,8 +10767,8 @@ textarea.form-control-lg {
     font-size: 16px;
     line-height: 2;
   }
-  .content-wrapper {
-    margin: 0 15px;
+  .section-heading-text {
+    font-size: 16px;
   }
 }
 #hero .row {
@@ -10873,7 +10873,7 @@ textarea.form-control-lg {
     right: 0px;
   }
 }
-#about {
+#about .row {
   height: 700px;
 }
 #about .section-heading {
@@ -10891,19 +10891,38 @@ textarea.form-control-lg {
 }
 
 @media (max-width: 991.98px) {
+  #about .row {
+    height: auto;
+  }
   #about .section-heading {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
   #about .about-image {
     width: 100% !important;
     max-height: 250px;
-    margin: 50px 0 40px 0;
+    margin: 50px 0 20px 0;
     object-position: bottom;
   }
   #about .brand-text {
     font-size: 25px;
   }
 }
+#products .row.second-row .coffee-card {
+  width: 350px;
+  color: #fff;
+}
+#products .row.second-row .coffee-card-image {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+#products .section-heading {
+  margin-top: 50px;
+}
+#products .section-heading-text {
+  margin-top: 5px;
+}
+
 body {
   background-color: #1A120B;
 }

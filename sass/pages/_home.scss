@@ -1,5 +1,7 @@
 // Homepage Global Styles
-
+* {
+  // border: 1px solid $white;
+}
 .section {
   &-heading {
     font-size: 65px;
@@ -31,10 +33,14 @@
       font-size: 16px;
       line-height: 2;
     }
+
+    &-heading-text {
+      font-size: 16px;
+    }
   }
 
   .content-wrapper {
-    margin: 0 15px;
+    // margin: 0 15px;
   }
 }
 
@@ -174,7 +180,9 @@
 // Start - About Section
 
 #about {
-  height: $section-height;
+  .row {
+    height: $section-height;
+  }
 
   .section-heading {
     margin-bottom: 50px;
@@ -195,14 +203,18 @@
 
 @include media-breakpoint-down(lg) {
   #about {
+    .row {
+      height: auto;
+    }
+
     .section-heading {
-      margin-bottom: 40px;
+      margin-bottom: 20px;
     }
 
     .about-image {
       width: 100% !important;
       max-height: 250px;
-      margin: 50px 0 40px 0;
+      margin: 50px 0 20px 0;
       object-position: bottom;
     }
 
@@ -214,9 +226,54 @@
 
 // End - About Section
 
-// Start - About Section
+// Start - Products Section
 
 #products {
+  .row {
+    &.first-row {
+      // height: ;
+    }
+
+    &.second-row {
+
+      .coffee-card {
+        width: 350px;
+        color: $white;
+
+        &-1 {
+
+        }
+
+        &-image {
+          height: 300px;
+          width: 100%;
+          object-fit: cover;
+        }
+
+        &-text-wrapper {
+
+        }
+
+        &-heading {
+
+        }
+
+        &-p {
+
+        }
+      }
+
+    }
+  }
+
+  .section {
+    &-heading {
+      margin-top: 50px;
+    }
+    &-heading-text {
+      margin-top: 5px;
+    }
+  }
 }
 
-// End - About Section
+// End - Products Section
