@@ -2,6 +2,8 @@
 * {
   // border: 1px solid $white;
 }
+
+
 .section {
   &-heading {
     font-size: 65px;
@@ -24,6 +26,11 @@
 }
 
 @include media-breakpoint-down(lg) {
+
+  body {
+    padding: 20px;
+  }
+
   .section {
     &-heading {
       font-size: 40px;
@@ -212,10 +219,10 @@
     }
 
     .about-image {
-      width: 100% !important;
       max-height: 250px;
       margin: 50px 0 20px 0;
       object-position: bottom;
+      width: 100%;
     }
 
     .brand-text {
@@ -229,40 +236,57 @@
 // Start - Products Section
 
 #products {
+
+  .main-button {
+    margin-top: 50px;
+  }
+
   .row {
     &.first-row {
-      // height: ;
+  
     }
 
     &.second-row {
 
       .coffee-card {
-        width: 350px;
-        color: $white;
+        color: $primary-dark;
+        margin-top: 40px;
 
         &-1 {
 
         }
 
         &-image {
-          height: 300px;
+          height: 250px;
           width: 100%;
           object-fit: cover;
+          margin-bottom: -20px;
+          z-index: 1;
         }
 
         &-text-wrapper {
+          position: relative;
+
+          margin: 0 auto;
+          padding: 30px 20px;
+          background-color: $white;
+          margin-top: -30px;
+          z-index: 10;
 
         }
 
         &-heading {
+          font-family: $main-font;
+          font-size: 25px;
 
         }
 
         &-p {
-
+          font-family: $sub-font;
+          font-size: 14px;
+          margin: 0;
         }
       }
-
     }
   }
 

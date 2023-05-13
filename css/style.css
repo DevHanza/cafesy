@@ -10720,8 +10720,8 @@ textarea.form-control-lg {
   }
 }
 .main-button {
-  width: 195px;
-  height: 55px;
+  width: 200px;
+  height: 60px;
   background-color: #D5CEA3;
   color: #3C2A21;
   font-family: "DM Sans", sans-serif;
@@ -10760,6 +10760,9 @@ textarea.form-control-lg {
 }
 
 @media (max-width: 991.98px) {
+  body {
+    padding: 20px;
+  }
   .section-heading {
     font-size: 40px;
   }
@@ -10898,23 +10901,45 @@ textarea.form-control-lg {
     margin-bottom: 20px;
   }
   #about .about-image {
-    width: 100% !important;
     max-height: 250px;
     margin: 50px 0 20px 0;
     object-position: bottom;
+    width: 100%;
   }
   #about .brand-text {
     font-size: 25px;
   }
 }
+#products .main-button {
+  margin-top: 50px;
+}
 #products .row.second-row .coffee-card {
-  width: 350px;
-  color: #fff;
+  color: #1A120B;
+  margin-top: 40px;
 }
 #products .row.second-row .coffee-card-image {
-  height: 300px;
+  height: 250px;
   width: 100%;
   object-fit: cover;
+  margin-bottom: -20px;
+  z-index: 1;
+}
+#products .row.second-row .coffee-card-text-wrapper {
+  position: relative;
+  margin: 0 auto;
+  padding: 30px 20px;
+  background-color: #fff;
+  margin-top: -30px;
+  z-index: 10;
+}
+#products .row.second-row .coffee-card-heading {
+  font-family: "DM Serif Display", serif;
+  font-size: 25px;
+}
+#products .row.second-row .coffee-card-p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  margin: 0;
 }
 #products .section-heading {
   margin-top: 50px;
