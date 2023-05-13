@@ -23,6 +23,13 @@
     font-size: 20px;
     color: $white;
   }
+
+  &-image {
+    height: 600px;
+    width: 360px;
+    object-fit: cover;
+
+  }
 }
 
 @include media-breakpoint-down(lg) {
@@ -39,6 +46,12 @@
 
     &-heading-text {
       font-size: 16px;
+    }
+    &-image {
+            max-height: 250px;
+      margin: 50px 0 20px 0;
+      object-position: bottom;
+      width: 100%;
     }
   }
 
@@ -234,8 +247,10 @@
 
 #products {
 
+  height: $section-height;
+
   .main-button {
-    margin: 50px 0;
+    margin: 30px 0;
   }
 
   .row {
