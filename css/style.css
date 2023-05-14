@@ -10787,9 +10787,11 @@ button.main-button:hover {
     width: 100%;
   }
 }
+#hero {
+  height: 90vh;
+}
 #hero .row {
   margin-top: 85px;
-  height: 700px;
 }
 #hero .container h1, #hero .container .h1 {
   font-family: "DM Serif Display", serif;
@@ -10890,8 +10892,8 @@ button.main-button:hover {
     right: 0px;
   }
 }
-#about .row {
-  height: 700px;
+#about {
+  height: 90vh;
 }
 #about .section-heading {
   margin-bottom: 50px;
@@ -10908,7 +10910,7 @@ button.main-button:hover {
 }
 
 @media (max-width: 991.98px) {
-  #about .row {
+  #about {
     height: auto;
   }
   #about .section-heading {
@@ -10925,10 +10927,10 @@ button.main-button:hover {
   }
 }
 #products {
-  height: 700px;
+  height: 90vh;
 }
 #products .main-button {
-  margin: 30px 0;
+  margin-top: 50px;
 }
 #products .row.second-row .coffee-card {
   color: #1A120B;
@@ -10966,6 +10968,41 @@ button.main-button:hover {
   margin-top: 5px;
 }
 
+@media (max-width: 991.98px) {
+  #products {
+    height: auto;
+  }
+}
+#feedback {
+  height: 90vh;
+}
+#feedback #feedback-slider {
+  height: 300px;
+  border: 5px solid #fff;
+}
+#feedback .user-info {
+  color: #fff;
+}
+#feedback .user-info-pic {
+  height: 55px;
+  width: 55px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+@media (max-width: 991.98px) {
+  #feedback {
+    height: auto;
+  }
+  #feedback .section-image {
+    display: none;
+  }
+  #feedback .section-heading {
+    margin-top: 50px;
+  }
+  #feedback .section-heading-text {
+    margin-bottom: 20px;
+  }
+}
 body {
   background-color: #1A120B;
 }
