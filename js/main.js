@@ -7,7 +7,7 @@ window.onscroll = function () {
 };
 
 function scrollFunction() {
-  if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     header.classList.add("nav-container-shrink-sm", "nav-container-shrink");
   
   } else {

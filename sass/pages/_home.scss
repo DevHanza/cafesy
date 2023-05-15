@@ -60,8 +60,8 @@
 // Start - Hero Section
 
 #hero {
-  height: $section-height;
   .row {
+    height: $section-height;
     margin-top: 85px;
   }
 
@@ -147,6 +147,7 @@
 
       h2 {
         font-size: 20px;
+        margin-top: 20px;
       }
 
       p {
@@ -194,9 +195,9 @@
 // Start - About Section
 
 #about {
-  height: $section-height;
-
+  
   .row {
+    height: $section-height;
   }
 
   .section-heading {
@@ -245,12 +246,10 @@
   height: $section-height;
 
   .main-button {
-    margin-top: 50px;
+    margin-top: 40px;
   }
 
   .row {
-    &.first-row {
-    }
 
     &.second-row {
       .coffee-card {
@@ -295,7 +294,7 @@
 
   .section {
     &-heading {
-      margin-top: 50px;
+      // margin-top: 50px;
     }
     &-heading-text {
       margin-top: 5px;
@@ -317,9 +316,11 @@
   height: $section-height;
 
   #feedback-slider {
-    height: 300px;
+    // height: 300px;
     // width: 630px;
     border: 5px solid $white;
+    padding: 30px 30px;
+    margin-top: 40px;
   }
 
   .user-info {
@@ -332,29 +333,76 @@
       border-radius: 100%;
     }
 
-    &-username {
-    }
+    &-name {
+      font-family: $sub-font;
+      margin-left: 15px;
 
-    &-title {
+      h6 {
+        font-size: 18px;
+        margin: 0;
+      }
+
+      p {
+        font-size: 16px;
+        margin: 0;
+      }
     }
+  }
+
+  .review-wrapper {
+    color: $white;
+    font-family: $sub-font;
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 30px;
+    line-height: 200%;
   }
 }
 
 @include media-breakpoint-down(lg) {
   #feedback {
     height: auto;
+
+    #feedback-slider {
+      border: 3px solid $white;
+    }
+
+    .user-info {
+      &-pic {
+        height: 40px;
+        width: 40px;
+      }
+
+      &-name {
+        h6 {
+          font-size: 14px;
+          margin: 0;
+        }
+
+        p {
+          font-size: 12px;
+          margin: 0;
+        }
+      }
+    }
+
     .section {
       &-image {
         display: none;
       }
 
       &-heading {
-        margin-top: 50px;
+      
       }
 
       &-heading-text {
-        margin-bottom: 20px;
+        margin: 15px 0 20px 0;
+        // line-height: 200%;
       }
+    }
+
+    .review-wrapper {
+      font-size: 18px; 
     }
   }
 }
