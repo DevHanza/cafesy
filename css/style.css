@@ -10725,6 +10725,7 @@ textarea.form-control-lg {
   background-color: #D5CEA3;
   color: #3C2A21;
   font-family: "DM Sans", sans-serif;
+  line-height: normal;
   font-size: 18px;
   border-radius: 0;
   font-weight: 500;
@@ -10868,9 +10869,6 @@ textarea.form-control-lg {
 @media (max-width: 991.98px) {
   #hero .section-row {
     padding-top: 0;
-  }
-  #hero .container {
-    text-align: center;
   }
   #hero .container h1, #hero .container .h1 {
     margin: 0 0 0 0;
@@ -11065,12 +11063,12 @@ textarea.form-control-lg {
   padding: 30px;
 }
 #blog .blog-card-image-wrapper {
-  height: 200px;
-  width: 100%;
-  object-fit: cover;
   overflow: hidden;
 }
 #blog .blog-card-image-wrapper img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
   transition: all 0.4s;
 }
 #blog .blog-card-image-wrapper img:hover {
@@ -11094,6 +11092,97 @@ textarea.form-control-lg {
   color: #616161;
 }
 
+@media (max-width: 991.98px) {
+  #blog .blog-card {
+    margin-bottom: 20px;
+  }
+  #blog .section-heading-text {
+    margin-bottom: 30px;
+  }
+}
+#contact .social-icons-wrapper {
+  margin: 40px 0;
+}
+#contact .social-icons-wrapper .social-icon {
+  line-height: normal;
+  height: 50px;
+  width: 50px;
+  font-size: 25px;
+  background-color: #D5CEA3;
+}
+
+@media (max-width: 991.98px) {
+  .section-heading {
+    margin-top: 20px;
+  }
+}
+#newsletter {
+  background-color: #D5CEA3;
+}
+#newsletter .row {
+  height: 350px;
+  padding: 40px 0;
+}
+#newsletter h3, #newsletter .h3 {
+  font-family: "DM Serif Display", serif;
+  font-size: 40px;
+  color: #1A120B;
+  text-transform: capitalize;
+}
+#newsletter .form-email {
+  display: inline-block;
+  border-radius: 0;
+  font-family: "DM Sans", sans-serif;
+  height: 50px;
+  width: 100%;
+  padding: 0px 20px;
+  border: none;
+}
+#newsletter .form-email:focus {
+  border-radius: 0;
+  outline-color: transparent;
+}
+#newsletter .form-button {
+  display: inline-block;
+  font-family: "DM Sans", sans-serif;
+  height: 50px;
+  background-color: #3C2A21;
+  color: #fff;
+  font-weight: 500;
+  width: 100%;
+  letter-spacing: 2px;
+  outline-color: transparent;
+  border: none;
+}
+#newsletter .form-text-1 {
+  font-family: "DM Sans", sans-serif;
+  color: #1A120B;
+  font-weight: 500;
+  font-size: 18px;
+}
+#newsletter .form-text-2 {
+  font-family: "DM Sans", sans-serif;
+  color: #1A120B;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+@media (max-width: 991.98px) {
+  #newsletter .form-button {
+    width: 100%;
+  }
+  #newsletter .row {
+    height: auto;
+  }
+  #newsletter h3, #newsletter .h3 {
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+  #newsletter .form-text-1 {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+}
 body {
   background-color: #1A120B;
 }
