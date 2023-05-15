@@ -10958,9 +10958,7 @@ textarea.form-control-lg {
   transition: all 0.4s;
 }
 #products .row.second-row .coffee-card-image:hover {
-  height: 250px;
-  width: 100%;
-  transform: scale(1.08);
+  transform: scale(1.05);
   transition: all 0.4s;
 }
 #products .row.second-row .coffee-card-text-wrapper {
@@ -11060,6 +11058,42 @@ textarea.form-control-lg {
     font-size: 18px;
   }
 }
+#blog .blog-card {
+  background-color: #fff;
+}
+#blog .blog-card-data {
+  padding: 30px;
+}
+#blog .blog-card-image-wrapper {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+#blog .blog-card-image-wrapper img {
+  transition: all 0.4s;
+}
+#blog .blog-card-image-wrapper img:hover {
+  transform: scale(1.05);
+  transition: all 0.4s;
+}
+#blog .blog-card-title {
+  font-family: "DM Serif Display", serif;
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #1A120B;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+#blog .blog-card-meta {
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  color: #616161;
+}
+
 body {
   background-color: #1A120B;
 }
