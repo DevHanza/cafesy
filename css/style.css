@@ -10948,12 +10948,20 @@ textarea.form-control-lg {
 #products .row.second-row .coffee-card {
   color: #1A120B;
   background-color: #fff;
+  overflow: hidden;
 }
 #products .row.second-row .coffee-card-image {
   height: 250px;
   width: 100%;
   object-fit: cover;
   z-index: 1;
+  transition: all 0.4s;
+}
+#products .row.second-row .coffee-card-image:hover {
+  height: 250px;
+  width: 100%;
+  transform: scale(1.08);
+  transition: all 0.4s;
 }
 #products .row.second-row .coffee-card-text-wrapper {
   position: relative;
@@ -10989,7 +10997,7 @@ textarea.form-control-lg {
   }
 }
 #feedback #feedback-slider {
-  border: 5px solid #fff;
+  border: 3px solid #fff;
   padding: 30px 30px;
   margin-top: 40px;
 }
