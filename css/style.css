@@ -10739,7 +10739,7 @@ textarea.form-control-lg {
 }
 .main-button:hover .main-button-icon {
   transition: all 0.4s;
-  font-size: 20px;
+  margin-left: 10px;
 }
 .main-button:not(:disabled):not(:disabled):active {
   background-color: #E5E5CB;
