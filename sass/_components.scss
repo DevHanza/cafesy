@@ -1,6 +1,6 @@
 
 // Main Button
-.main-button, .main-button:hover {
+.main-button {
     height: 55px;
     padding: 0 35px;
     background-color: $primary-light;
@@ -10,17 +10,31 @@
     border-radius: 0;
     font-weight: 500;
     transition: all $main-tp;
+    &:hover {
+        // color: rgba($color: #000000, $alpha: 1.0);
+        filter: drop-shadow(0 0 70px rgba($color: $primary-light, $alpha: 1.0));
+        transition: all $main-tp;
+        background-color: $primary-light;
+        color: $secondary-dark;
+
+        padding: 0 40px;
+
+        .main-button-icon {
+            transition: all $main-tp;
+            font-size: 20px;
+        }
+
+    }
+    &:not(:disabled):not(:disabled):active {
+        background-color: $primary-light-2;
+    }
 }
 
-button.main-button:hover {
-    // color: rgba($color: #000000, $alpha: 1.0);
-    filter: drop-shadow(0 0 70px rgba($color: $primary-light, $alpha: 1.0));
-    transition: all $main-tp;
-}
 
 .main-button-icon {
     vertical-align: middle;
     margin-left: 5px;
+    transition: all $main-tp;
 }
 
 
@@ -30,5 +44,6 @@ button.main-button:hover {
         height: 45px;
         padding: 0 30px;
     }
+
 }
 

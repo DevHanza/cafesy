@@ -65,6 +65,7 @@
 // Start - Hero Section
 
 #hero {
+  margin-top: 85px;
 
   .container {
     h1 {
@@ -137,18 +138,29 @@
 
 @include media-breakpoint-down(lg) {
   #hero {
+    .section-row {
+      padding-top: 0;
+    }
 
     .container {
+      text-align: center;
       h1 {
+        margin: 0 0 0 0;
         font-size: 55px;
       }
 
       h2 {
+        margin-top: 30px;
         font-size: 20px;
       }
 
       p {
         font-size: 16px;
+        margin: 30px 0;
+      }
+
+      .main-button {
+        margin-top: 0;
       }
     }
   }
@@ -192,7 +204,6 @@
 // Start - About Section
 
 #about {
-
   .section-heading {
     margin-bottom: 50px;
   }
@@ -215,7 +226,7 @@
     height: auto;
 
     .section-heading {
-      margin-bottom: 20px;
+      margin: 20px 0;
     }
 
     .about-image {
@@ -235,9 +246,7 @@
 // Start - Products Section
 
 #products {
-
   .row {
-
     &.second-row {
       .coffee-card {
         color: $primary-dark;
@@ -280,9 +289,6 @@
   }
 
   .section {
-    &-heading {
-    
-    }
     &-heading-text {
       margin-top: 5px;
     }
@@ -291,6 +297,23 @@
 
 @include media-breakpoint-down(lg) {
   #products {
+    .row {
+      &.second-row {
+        .coffee-card {
+          margin-bottom: 20px;
+        }
+      }
+
+      .section {
+        &-heading-text {
+          margin: 10px 0 30px 0;
+        }
+    }
+    }
+
+    .main-button {
+      margin-top: 5px;
+    }
   }
 }
 
@@ -299,10 +322,7 @@
 // End - Feedback Section
 
 #feedback {
-
   #feedback-slider {
-    // height: 300px;
-    // width: 630px;
     border: 5px solid $white;
     padding: 30px 30px;
     margin-top: 40px;
@@ -376,8 +396,6 @@
         display: none;
       }
 
-      &-heading {
-      }
 
       &-heading-text {
         margin: 15px 0 20px 0;

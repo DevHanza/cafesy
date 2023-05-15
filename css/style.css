@@ -10719,7 +10719,7 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.main-button, .main-button:hover {
+.main-button {
   height: 55px;
   padding: 0 35px;
   background-color: #D5CEA3;
@@ -10730,15 +10730,25 @@ textarea.form-control-lg {
   font-weight: 500;
   transition: all 0.4s;
 }
-
-button.main-button:hover {
+.main-button:hover {
   filter: drop-shadow(0 0 70px #d5cea3);
   transition: all 0.4s;
+  background-color: #D5CEA3;
+  color: #3C2A21;
+  padding: 0 40px;
+}
+.main-button:hover .main-button-icon {
+  transition: all 0.4s;
+  font-size: 20px;
+}
+.main-button:not(:disabled):not(:disabled):active {
+  background-color: #E5E5CB;
 }
 
 .main-button-icon {
   vertical-align: middle;
   margin-left: 5px;
+  transition: all 0.4s;
 }
 
 @media (max-width: 991.98px) {
@@ -10793,6 +10803,9 @@ button.main-button:hover {
     object-position: bottom;
     width: 100%;
   }
+}
+#hero {
+  margin-top: 85px;
 }
 #hero .container h1, #hero .container .h1 {
   font-family: "DM Serif Display", serif;
@@ -10853,14 +10866,26 @@ button.main-button:hover {
 }
 
 @media (max-width: 991.98px) {
+  #hero .section-row {
+    padding-top: 0;
+  }
+  #hero .container {
+    text-align: center;
+  }
   #hero .container h1, #hero .container .h1 {
+    margin: 0 0 0 0;
     font-size: 55px;
   }
   #hero .container h2, #hero .container .h2 {
+    margin-top: 30px;
     font-size: 20px;
   }
   #hero .container p {
     font-size: 16px;
+    margin: 30px 0;
+  }
+  #hero .container .main-button {
+    margin-top: 0;
   }
   .hero-img {
     height: 300px;
@@ -10909,7 +10934,7 @@ button.main-button:hover {
     height: auto;
   }
   #about .section-heading {
-    margin-bottom: 20px;
+    margin: 20px 0;
   }
   #about .about-image {
     max-height: 250px;
@@ -10952,6 +10977,17 @@ button.main-button:hover {
   margin-top: 5px;
 }
 
+@media (max-width: 991.98px) {
+  #products .row.second-row .coffee-card {
+    margin-bottom: 20px;
+  }
+  #products .row .section-heading-text {
+    margin: 10px 0 30px 0;
+  }
+  #products .main-button {
+    margin-top: 5px;
+  }
+}
 #feedback #feedback-slider {
   border: 5px solid #fff;
   padding: 30px 30px;
