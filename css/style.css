@@ -10748,6 +10748,10 @@ button.main-button:hover {
     padding: 0 30px;
   }
 }
+.section-row {
+  height: 700px;
+  padding: 40px 0;
+}
 .section-heading {
   font-size: 65px;
   font-family: "DM Serif Display", serif;
@@ -10771,6 +10775,9 @@ button.main-button:hover {
 }
 
 @media (max-width: 991.98px) {
+  .section-row {
+    height: auto;
+  }
   .section-heading {
     font-size: 40px;
   }
@@ -10783,14 +10790,9 @@ button.main-button:hover {
   }
   .section-image {
     max-height: 250px;
-    margin: 50px 0 20px 0;
     object-position: bottom;
     width: 100%;
   }
-}
-#hero .row {
-  height: 700px;
-  margin-top: 85px;
 }
 #hero .container h1, #hero .container .h1 {
   font-family: "DM Serif Display", serif;
@@ -10859,7 +10861,6 @@ button.main-button:hover {
   }
   #hero .container h2, #hero .container .h2 {
     font-size: 20px;
-    margin-top: 20px;
   }
   #hero .container p {
     font-size: 16px;
@@ -10892,9 +10893,6 @@ button.main-button:hover {
     right: 0px;
   }
 }
-#about .row {
-  height: 700px;
-}
 #about .section-heading {
   margin-bottom: 50px;
 }
@@ -10918,7 +10916,6 @@ button.main-button:hover {
   }
   #about .about-image {
     max-height: 250px;
-    margin: 50px 0 20px 0;
     object-position: bottom;
     width: 100%;
   }
@@ -10926,15 +10923,8 @@ button.main-button:hover {
     font-size: 25px;
   }
 }
-#products {
-  height: 700px;
-}
-#products .main-button {
-  margin-top: 40px;
-}
 #products .row.second-row .coffee-card {
   color: #1A120B;
-  margin-top: 40px;
   background-color: #fff;
 }
 #products .row.second-row .coffee-card-image {
@@ -10965,14 +10955,6 @@ button.main-button:hover {
   margin-top: 5px;
 }
 
-@media (max-width: 991.98px) {
-  #products {
-    height: auto;
-  }
-}
-#feedback {
-  height: 700px;
-}
 #feedback #feedback-slider {
   border: 5px solid #fff;
   padding: 30px 30px;
@@ -11135,6 +11117,16 @@ header .nav-toggle-btn {
     transition: padding 0.4s;
   }
 }
+::-moz-selection {
+  color: #1A120B;
+  background: #D5CEA3;
+}
+
+::selection {
+  color: #1A120B;
+  background: #D5CEA3;
+}
+
 @media (max-width: 991.98px) {
   .navbar .container,
   .row > * {

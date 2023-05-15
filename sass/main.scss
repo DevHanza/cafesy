@@ -9,6 +9,17 @@
 @import "parts/_navigation";
 @import "parts/_footer";
 
+
+::-moz-selection {
+  color: $primary-dark;
+  background: $primary-light;
+}
+
+::selection {
+  color: $primary-dark;
+  background: $primary-light;
+}
+
 @include media-breakpoint-down(lg) {
 
   .navbar .container,

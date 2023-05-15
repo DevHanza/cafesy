@@ -4,6 +4,11 @@
 }
 
 .section {
+  &-row {
+    height: $section-height;
+    padding: 40px 0;
+  }
+
   &-heading {
     font-size: 65px;
     font-family: $main-font;
@@ -32,6 +37,10 @@
 
 @include media-breakpoint-down(lg) {
   .section {
+    &-row {
+      height: auto;
+    }
+
     &-heading {
       font-size: 40px;
     }
@@ -46,24 +55,21 @@
     }
     &-image {
       max-height: 250px;
-      margin: 50px 0 20px 0;
+      // margin: 50px 0 20px 0;
       object-position: bottom;
       width: 100%;
     }
-  }
-
-  .content-wrapper {
-    // margin: 0 15px;
   }
 }
 
 // Start - Hero Section
 
 #hero {
-  .row {
-    height: $section-height;
-    margin-top: 85px;
-  }
+  // .row {
+  //   height: $section-height;
+  //   margin-top: 85px;
+  //   padding: 40px 0;
+  // }
 
   .container {
     h1 {
@@ -134,8 +140,6 @@
   }
 }
 
-// Hero section Responsive Styles
-
 @include media-breakpoint-down(lg) {
   #hero {
     height: auto;
@@ -147,7 +151,6 @@
 
       h2 {
         font-size: 20px;
-        margin-top: 20px;
       }
 
       p {
@@ -195,9 +198,9 @@
 // Start - About Section
 
 #about {
-  
   .row {
-    height: $section-height;
+    // height: $section-height;
+    // padding: 40px 0;
   }
 
   .section-heading {
@@ -227,7 +230,6 @@
 
     .about-image {
       max-height: 250px;
-      margin: 50px 0 20px 0;
       object-position: bottom;
       width: 100%;
     }
@@ -243,10 +245,8 @@
 // Start - Products Section
 
 #products {
-  height: $section-height;
-
   .main-button {
-    margin-top: 40px;
+    // margin-top: 40px;
   }
 
   .row {
@@ -254,7 +254,7 @@
     &.second-row {
       .coffee-card {
         color: $primary-dark;
-        margin-top: 40px;
+        // margin-top: 40px;
         background-color: $white;
 
         &-1 {
@@ -304,7 +304,6 @@
 
 @include media-breakpoint-down(lg) {
   #products {
-    height: auto;
   }
 }
 
@@ -313,8 +312,10 @@
 // End - Feedback Section
 
 #feedback {
-  height: $section-height;
-
+  .row {
+  // height: $section-height;
+  // padding: 40px 0;
+  }
   #feedback-slider {
     // height: 300px;
     // width: 630px;
@@ -392,7 +393,6 @@
       }
 
       &-heading {
-      
       }
 
       &-heading-text {
@@ -402,7 +402,7 @@
     }
 
     .review-wrapper {
-      font-size: 18px; 
+      font-size: 18px;
     }
   }
 }

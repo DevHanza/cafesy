@@ -85,7 +85,7 @@
     <main>
       <section id="hero" class="d-flex align-items-center text-white">
         <div class="container">
-          <div class="row">
+          <div class="section-row row">
             <div class="col col-lg-6 my-auto order-lg-1 order-md-2 order-1">
               <h2>Where Every Sip is an</h2>
               <h1>Experience!</h1>
@@ -137,7 +137,7 @@
 
     <section id="about">
       <div class="container">
-        <div class="row align-items-center">
+        <div class="row section-row align-items-center">
           <div class="col-lg-5">
             <img class="section-image" src="img/about-section.webp" alt="" />
           </div>
@@ -163,64 +163,80 @@
 
     <section id="products">
       <div class="container">
-        <div class="row text-center first-row">
-          <h2 class="section-heading">Explore Our Coffee Selection</h2>
-          <p class="section-heading-text">
-            At Cafésy, we offer a wide variety of coffee types from around the
-            world.
-          </p>
-        </div>
+        <div class="row section-row align-items-center"> <!-- Container Row -->
+          <div class="container text-center first-row">
+            <h2 class="section-heading">Explore Our Coffee Selection</h2>
+            <p class="section-heading-text">
+              At Cafésy, we offer a wide variety of coffee types from around the
+              world.
+            </p>
+          </div>
 
-        <div class="row second-row">
-          <div class="col-lg-4">
-            <div class="coffee-card coffee-card-1">
-              <img class="coffee-card-image" src="/img/Americano.webp" alt="" />
+          <div class="container">
+            <div class="row second-row">
+              <div class="col-lg-4">
+                <div class="coffee-card coffee-card-1">
+                  <img
+                    class="coffee-card-image"
+                    src="/img/Americano.webp"
+                    alt=""
+                  />
 
-              <div class="coffee-card-text-wrapper">
-                <h3 class="coffee-card-heading">Espresso</h3>
-                <p class="coffee-card-p">
-                  An Awesome classic Italian coffee, characterized by its
-                  strong, rich flavor and thick cream.
-                </p>
+                  <div class="coffee-card-text-wrapper">
+                    <h3 class="coffee-card-heading">Espresso</h3>
+                    <p class="coffee-card-p">
+                      An Awesome classic Italian coffee, characterized by its
+                      strong, rich flavor and thick cream.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4">
+                <div class="coffee-card coffee-card-2">
+                  <img
+                    class="coffee-card-image"
+                    src="/img/Americano.webp"
+                    alt=""
+                  />
+
+                  <div class="coffee-card-text-wrapper">
+                    <h3 class="coffee-card-heading">Americano</h3>
+                    <p class="coffee-card-p">
+                      Made by adding hot water to a shot of espresso, creating a
+                      smooth, bold cup of coffee.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4">
+                <div class="coffee-card coffee-card-3">
+                  <img
+                    class="coffee-card-image"
+                    src="/img/Americano.webp"
+                    alt=""
+                  />
+
+                  <div class="coffee-card-text-wrapper">
+                    <h3 class="coffee-card-heading">Milk Latte</h3>
+                    <p class="coffee-card-p">
+                      A creamy, milky coffee made with espresso and steamed
+                      milk, topped with a layer of thick milk.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4">
-            <div class="coffee-card coffee-card-2">
-              <img class="coffee-card-image" src="/img/Americano.webp" alt="" />
-
-              <div class="coffee-card-text-wrapper">
-                <h3 class="coffee-card-heading">Americano</h3>
-                <p class="coffee-card-p">
-                  Made by adding hot water to a shot of espresso, creating a
-                  smooth, bold cup of coffee.
-                </p>
-              </div>
+          <div class="container align-items-center">
+            <div class="d-flex justify-content-center">
+              <button type="button" class="btn btn-light main-button">
+                Visit Shop
+                <i class="fa-solid fa-arrow-right main-button-icon"></i>
+              </button>
             </div>
-          </div>
-
-          <div class="col-lg-4">
-            <div class="coffee-card coffee-card-3">
-              <img class="coffee-card-image" src="/img/Americano.webp" alt="" />
-
-              <div class="coffee-card-text-wrapper">
-                <h3 class="coffee-card-heading">Milk Latte</h3>
-                <p class="coffee-card-p">
-                  A creamy, milky coffee made with espresso and steamed milk,
-                  topped with a layer of thick milk.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row align-items-center">
-          <div class="d-flex justify-content-center">
-            <button type="button" class="btn btn-light main-button">
-              Visit Shop
-              <i class="fa-solid fa-arrow-right main-button-icon"></i>
-            </button>
           </div>
         </div>
       </div>
@@ -228,7 +244,8 @@
 
     <section id="feedback" class="d-flex align-items-center">
       <div class="container">
-        <div class="row align-items-center">
+        <div class="row section-row align-items-center">
+
           <div class="col-lg-7">
             <h2 class="section-heading">People Love Cafésy!</h2>
             <p class="section-heading-text">
