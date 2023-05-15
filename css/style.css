@@ -10853,9 +10853,6 @@ button.main-button:hover {
 }
 
 @media (max-width: 991.98px) {
-  #hero {
-    height: auto;
-  }
   #hero .container h1, #hero .container .h1 {
     font-size: 55px;
   }

@@ -65,11 +65,6 @@
 // Start - Hero Section
 
 #hero {
-  // .row {
-  //   height: $section-height;
-  //   margin-top: 85px;
-  //   padding: 40px 0;
-  // }
 
   .container {
     h1 {
@@ -142,7 +137,6 @@
 
 @include media-breakpoint-down(lg) {
   #hero {
-    height: auto;
 
     .container {
       h1 {
@@ -198,10 +192,6 @@
 // Start - About Section
 
 #about {
-  .row {
-    // height: $section-height;
-    // padding: 40px 0;
-  }
 
   .section-heading {
     margin-bottom: 50px;
@@ -245,9 +235,6 @@
 // Start - Products Section
 
 #products {
-  .main-button {
-    // margin-top: 40px;
-  }
 
   .row {
 
@@ -294,7 +281,7 @@
 
   .section {
     &-heading {
-      // margin-top: 50px;
+    
     }
     &-heading-text {
       margin-top: 5px;
@@ -312,10 +299,7 @@
 // End - Feedback Section
 
 #feedback {
-  .row {
-  // height: $section-height;
-  // padding: 40px 0;
-  }
+
   #feedback-slider {
     // height: 300px;
     // width: 630px;
@@ -397,7 +381,6 @@
 
       &-heading-text {
         margin: 15px 0 20px 0;
-        // line-height: 200%;
       }
     }
 
