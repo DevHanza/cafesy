@@ -1,3 +1,96 @@
 footer {
-    
+  color: $white;
+
+  p {
+    font-family: $sub-font;
+    font-size: 16px;
+  }
+
+  h6 {
+    font-size: 20px;
+    font-family: $main-font;
+  }
+
+  .row {
+    padding: 40px 0 60px 0;
+
+    dl {
+      font-family: $sub-font;
+
+      dt {
+        font-size: 16px;
+        margin-top: 15px;
+      }
+    }
+
+    .footer-logo {
+      height: 100px;
+    }
+    .footer-brand {
+      h6 {
+        margin: 25px 0 10px 0;
+      }
+    }
+  }
+
+
+  .copyrights {
+    .nav-link {
+      color: $white;
+      font-family: $sub-font;
+      position: relative;
+      font-weight: 500;
+      padding: 0 20px;
+      padding-bottom: 5px;
+    }
+
+    .navbar-nav .nav-item {
+      .nav-link.active {
+        color: $white;
+      }
+
+      .nav-link:hover {
+        color: $white;
+      }
+    }
+
+    .nav-link::after {
+      content: "";
+      opacity: 0;
+      transition: all $main-tp;
+      height: 3px;
+      width: 100%;
+      background-color: white;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
+    .nav-link:hover::after {
+      opacity: 1;
+    }
+
+    .nav-link.active::after {
+      opacity: 1;
+    }
+  }
+
+  .social-icons-wrapper {
+    margin: 30px 0 0px 0;
+
+    .social-icon {
+      line-height: normal;
+      height: 30px;
+      width: 30px;
+      font-size: 16px;
+      background-color: $primary-light;
+      color: $primary-dark;
+
+      &:hover {
+        i {
+          transform: scale(1);
+        }
+      }
+    }
+  }
 }
