@@ -1,0 +1,95 @@
+// Start - Newsletter
+
+#newsletter {
+
+    background-color: $primary-light;
+  
+    .row {
+      height: 350px;
+      padding: 40px 0;
+    }
+  
+    h3 {
+      font-family: $main-font;
+      font-size: 50px;
+      color: $primary-dark;
+      text-transform: capitalize;
+    }
+  
+    .form {
+      &-email {
+        display: inline-block;
+        border-radius: 0;
+        font-family: $sub-font;
+        height: 50px;
+        width: 100%;
+        padding: 0px 20px;
+        border: none;
+  
+        &:focus {
+          border-radius: 0;
+          outline: 0;
+          outline-color: transparent;
+        }
+      }
+  
+      &-button {
+        display: inline-block;
+        font-family: $sub-font;
+        height: 50px;
+        background-color: $secondary-dark;
+        color: $white;
+        font-weight: 500;
+        // padding: 0 30px;
+        width: 100%;
+        letter-spacing: 2px;
+        outline-color: transparent;
+        border: none;
+      }
+  
+      &-text-1 {
+        font-family: $sub-font;
+        color: $primary-dark;
+        font-weight: 500;
+        font-size: 18px;
+      }
+  
+      &-text-2 {
+        font-family: $sub-font;
+        color: $primary-dark;
+        margin-top: 10px;
+        font-size: 14px;
+      }
+    }
+  }
+  
+  @include media-breakpoint-down(lg) {
+    #newsletter {
+      .form-button {
+        width: 100%;
+      }
+  
+      .row {
+        height: auto;
+      }
+  
+      h3 {
+        font-size: 35px;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+  
+      .form {
+        &-text-1 {
+          font-size: 16px;
+          margin-bottom: 20px;
+          text-align: center;
+        }
+      
+        &-text-2 {
+          text-align: center;
+        }
+      }
+    }
+  }
+  

@@ -11137,78 +11137,6 @@ a:hover {
     font-size: 20px;
   }
 }
-#newsletter {
-  background-color: #D5CEA3;
-}
-#newsletter .row {
-  height: 350px;
-  padding: 40px 0;
-}
-#newsletter h3, #newsletter .h3 {
-  font-family: "DM Serif Display", serif;
-  font-size: 40px;
-  color: #1A120B;
-  text-transform: capitalize;
-}
-#newsletter .form-email {
-  display: inline-block;
-  border-radius: 0;
-  font-family: "DM Sans", sans-serif;
-  height: 50px;
-  width: 100%;
-  padding: 0px 20px;
-  border: none;
-}
-#newsletter .form-email:focus {
-  border-radius: 0;
-  outline-color: transparent;
-}
-#newsletter .form-button {
-  display: inline-block;
-  font-family: "DM Sans", sans-serif;
-  height: 50px;
-  background-color: #3C2A21;
-  color: #fff;
-  font-weight: 500;
-  width: 100%;
-  letter-spacing: 2px;
-  outline-color: transparent;
-  border: none;
-}
-#newsletter .form-text-1 {
-  font-family: "DM Sans", sans-serif;
-  color: #1A120B;
-  font-weight: 500;
-  font-size: 18px;
-}
-#newsletter .form-text-2 {
-  font-family: "DM Sans", sans-serif;
-  color: #1A120B;
-  margin-top: 10px;
-  font-size: 14px;
-}
-
-@media (max-width: 991.98px) {
-  #newsletter .form-button {
-    width: 100%;
-  }
-  #newsletter .row {
-    height: auto;
-  }
-  #newsletter h3, #newsletter .h3 {
-    font-size: 35px;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  #newsletter .form-text-1 {
-    font-size: 16px;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  #newsletter .form-text-2 {
-    text-align: center;
-  }
-}
 body {
   background-color: #1A120B;
 }
@@ -11305,6 +11233,79 @@ header .nav-toggle-btn {
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     transition: padding 0.4s;
+  }
+}
+#newsletter {
+  background-color: #D5CEA3;
+}
+#newsletter .row {
+  height: 350px;
+  padding: 40px 0;
+}
+#newsletter h3, #newsletter .h3 {
+  font-family: "DM Serif Display", serif;
+  font-size: 50px;
+  color: #1A120B;
+  text-transform: capitalize;
+}
+#newsletter .form-email {
+  display: inline-block;
+  border-radius: 0;
+  font-family: "DM Sans", sans-serif;
+  height: 50px;
+  width: 100%;
+  padding: 0px 20px;
+  border: none;
+}
+#newsletter .form-email:focus {
+  border-radius: 0;
+  outline: 0;
+  outline-color: transparent;
+}
+#newsletter .form-button {
+  display: inline-block;
+  font-family: "DM Sans", sans-serif;
+  height: 50px;
+  background-color: #3C2A21;
+  color: #fff;
+  font-weight: 500;
+  width: 100%;
+  letter-spacing: 2px;
+  outline-color: transparent;
+  border: none;
+}
+#newsletter .form-text-1 {
+  font-family: "DM Sans", sans-serif;
+  color: #1A120B;
+  font-weight: 500;
+  font-size: 18px;
+}
+#newsletter .form-text-2 {
+  font-family: "DM Sans", sans-serif;
+  color: #1A120B;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+@media (max-width: 991.98px) {
+  #newsletter .form-button {
+    width: 100%;
+  }
+  #newsletter .row {
+    height: auto;
+  }
+  #newsletter h3, #newsletter .h3 {
+    font-size: 35px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  #newsletter .form-text-1 {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  #newsletter .form-text-2 {
+    text-align: center;
   }
 }
 ::-moz-selection {
