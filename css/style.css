@@ -10743,7 +10743,7 @@ textarea.form-control-lg {
   margin-left: 10px;
 }
 .main-button:not(:disabled):not(:disabled):active {
-  background-color: #E5E5CB;
+  background-color: #fff;
 }
 
 .main-button-icon {
@@ -10765,7 +10765,7 @@ a {
 }
 a:hover {
   transition: all 0.4s;
-  color: #E5E5CB;
+  color: #fff;
 }
 
 .section-row {
@@ -11248,7 +11248,7 @@ footer h6, footer .h6 {
   font-family: "DM Serif Display", serif;
 }
 footer .row {
-  padding: 40px 0 60px 0;
+  padding: 20px 0 60px 0;
 }
 footer .row dl {
   font-family: "DM Sans", sans-serif;
