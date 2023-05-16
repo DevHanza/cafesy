@@ -4,6 +4,7 @@ footer {
   p {
     font-family: $sub-font;
     font-size: 16px;
+    margin: 0;
   }
 
   h6 {
@@ -32,7 +33,6 @@ footer {
       }
     }
   }
-
 
   .copyrights {
     .nav-link {
@@ -93,4 +93,19 @@ footer {
       }
     }
   }
+}
+
+// Footer Responsive Styles
+
+@include media-breakpoint-down(lg) {
+  footer {
+    div.col:nth-child(2) {
+      display: none;
+    }
+
+    .row .col-12 {
+      padding-top: 30px;
+    }
+  }
+
 }

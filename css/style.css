@@ -11205,9 +11205,9 @@ header .nav-toggle-btn {
   header .nav-logo {
     max-height: 25px;
   }
-  header .nav-container .nav-toggle-btn {
+  header .nav-toggle-btn {
     color: #fff;
-    font-size: 20px;
+    font-size: 25px;
   }
   header .nav-link {
     text-align: center;
@@ -11241,6 +11241,7 @@ footer {
 footer p {
   font-family: "DM Sans", sans-serif;
   font-size: 16px;
+  margin: 0;
 }
 footer h6, footer .h6 {
   font-size: 20px;
@@ -11308,6 +11309,14 @@ footer .social-icons-wrapper .social-icon:hover i {
   transform: scale(1);
 }
 
+@media (max-width: 991.98px) {
+  footer div.col:nth-child(2) {
+    display: none;
+  }
+  footer .row .col-12 {
+    padding-top: 30px;
+  }
+}
 #newsletter {
   background-color: #D5CEA3;
 }
