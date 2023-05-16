@@ -1,0 +1,20 @@
+
+
+::-moz-selection {
+  color: $primary-dark;
+  background: $primary-light;
+}
+
+::selection {
+  color: $primary-dark;
+  background: $primary-light;
+}
+
+@include media-breakpoint-down(lg) {
+
+  .navbar .container,
+  .row > * {
+    padding: 0 30px;
+  }
+
+}

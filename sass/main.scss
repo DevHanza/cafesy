@@ -1,32 +1,12 @@
 // bootstrap@5.3.0-alpha3
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-// Other Modules
-@import "_variables";
-@import "_components";
-@import "pages/_home";
+@import "partials/_variables";
+@import "partials/_components";
+@import "partials/_global";
 
-@import "parts/_navigation";
 @import "parts/_footer";
+@import "parts/_navigation";
 @import "parts/_newsletter";
 
-
-
-::-moz-selection {
-  color: $primary-dark;
-  background: $primary-light;
-}
-
-::selection {
-  color: $primary-dark;
-  background: $primary-light;
-}
-
-@include media-breakpoint-down(lg) {
-
-  .navbar .container,
-  .row > * {
-    padding: 0 30px;
-  }
-
-}
+@import "pages/home";
