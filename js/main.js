@@ -1,4 +1,4 @@
-// // Sticky Glass Menu Styles
+// Sticky Glass Menu Styles //
 
 const header = document.querySelector("header");
 
@@ -15,3 +15,5 @@ function scrollFunction() {
   }
 
 }
+
+// OnScroll Loading Effect //
