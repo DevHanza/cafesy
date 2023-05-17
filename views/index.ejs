@@ -1,86 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-    />
-    <link rel="stylesheet" href="css/home.css" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=DM+Serif+Display&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-      crossorigin="anonymous"
-    ></script>
-
-    <script defer src="js/main.js"></script>
 
     <title>Cafésy - Connected. Organic. Alive.</title>
+    
+    <%- include('../views/partials/head'); %>
+    <link rel="stylesheet" href="css/home.css" />
+    <script defer src="js/main.js"></script>
+
   </head>
 
   <body>
-    <header class="fixed-top">
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container">
-          <img class="nav-logo" src="img/navbar-logo.webp" alt="Cafesy Logo" />
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon">
-              <i class="nav-toggle-btn fa fa-bars"></i
-            ></span>
-          </button>
-          <div
-            class="collapse navbar-collapse justify-content-end"
-            id="navbarNav"
-          >
-            <ul class="navbar-nav gap-3">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#products">Menu</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#blog">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">FAQs</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
+
+    <%- include('../views/partials/header'); %>
 
     <main>
       <section id="hero" class="d-flex align-items-center text-white">
@@ -93,7 +25,10 @@
                 Our coffee cafe offers a wide selection of high-quality,
                 ethically sourced coffee beans from around the world.
               </p>
-              <button type="button" class="btn btn-light main-button slide-up-hidden">
+              <button
+                type="button"
+                class="btn btn-light main-button slide-up-hidden"
+              >
                 Order Now
                 <i class="fa-solid fa-arrow-right main-button-icon"></i>
               </button>
@@ -139,7 +74,11 @@
       <div class="container text-center text-lg-start text-md-start">
         <div class="row section-row align-items-center">
           <div class="col-lg-5">
-            <img class="section-image slide-left-hidden" src="img/about-section.webp" alt="" />
+            <img
+              class="section-image slide-left-hidden"
+              src="img/about-section.webp"
+              alt=""
+            />
           </div>
 
           <div class="col-lg-7">
@@ -165,7 +104,9 @@
       <div class="container">
         <div class="row section-row align-items-center">
           <div class="container text-center first-row">
-            <h2 class="section-heading slide-up-hidden">Explore Our Coffee Selection</h2>
+            <h2 class="section-heading slide-up-hidden">
+              Explore Our Coffee Selection
+            </h2>
             <p class="section-heading-text slide-up-hidden">
               At Cafésy, we offer a wide variety of coffee types from around the
               world.
@@ -247,7 +188,9 @@
         <div class="row section-row align-items-center">
           <div class="col-lg-7">
             <div class="text-center text-lg-start text-md-start">
-              <h2 class="section-heading slide-up-hidden">People Love Cafésy!</h2>
+              <h2 class="section-heading slide-up-hidden">
+                People Love Cafésy!
+              </h2>
               <p class="section-heading-text slide-up-hidden">
                 We pride ourselves on providing not only the highest quality
                 coffee but also exceptional customer service.
@@ -429,7 +372,11 @@
       <div class="container text-center text-lg-start text-md-start">
         <div class="row section-row align-items-center">
           <div class="col-lg-5">
-            <img class="section-image slide-left-hidden" src="img/about-section.webp" alt="" />
+            <img
+              class="section-image slide-left-hidden"
+              src="img/about-section.webp"
+              alt=""
+            />
           </div>
 
           <div class="col-lg-7">
@@ -480,131 +427,11 @@
         </div>
       </div>
     </section>
+    
+    <%- include('../views/partials/newsletter'); %>
 
-    <div id="newsletter">
-      <div class="container">
-        <div class="row align-items-center">
-          <div
-            class="col-lg-7 d-flex justify-content-center justify-content-lg-start"
-          >
-            <h3 class="">Wanna know about <br />latest offers & events?</h3>
-          </div>
+    <%- include('../views/partials/footer'); %>
 
-          <div
-            class="col-lg-5 d-flex justify-content-center justify-content-lg-start"
-          >
-            <form class="">
-              <p class="form-text-1">
-                Be the first to know about special offers by subscribing to our
-                Newsletter.
-              </p>
-              <input
-                type="email"
-                class="form-email"
-                id="exampleInputEmail1"
-                aria-describedby="emailHelp"
-                placeholder="Email Address"
-                required
-              />
 
-              <button type="submit" class="form-button ">SUBSCRIBE</button>
-
-              <div id="emailHelp" class="form-text-2">
-                We respect your privacy and You can <b>unsubscribe</b> at any
-                time.
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <footer>
-      <div class="container my-5">
-        <div class="row">
-          <div class="col-12 col-lg-3 footer-brand">
-            <img class="footer-logo" src="img/footer-logo.webp" alt="" />
-            <h6>Connected. Organic. Alive.</h6>
-            <p>
-              Experience the richness, perfection and indulge in the true taste
-              of excellence.
-            </p>
-          </div>
-
-          <div class="col-12 col-lg-3 p-0"></div>
-
-          <div class="col-12 col-lg-3">
-            <h6>Visit us At</h6>
-
-            <dl>
-              <dt>Address :</dt>
-              <dd>Cafésy,<br />123, Coffee Street,<br />Kandy, Sri Lanka.</dd>
-            </dl>
-
-            <!-- Icons Section here -->
-
-            <div
-              class="social-icons-wrapper d-flex gap-3 justify-content-start"
-            >
-              <div
-                class="social-icon d-flex align-items-center justify-content-center"
-              >
-                <i class="fa-brands fa-facebook-f"></i>
-              </div>
-              <div
-                class="social-icon d-flex align-items-center justify-content-center"
-              >
-                <i class="fa-brands fa-instagram"></i>
-              </div>
-              <div
-                class="social-icon d-flex align-items-center justify-content-center"
-              >
-                <i class="fa-brands fa-twitter"></i>
-              </div>
-              <div
-                class="social-icon d-flex align-items-center justify-content-center"
-              >
-                <i class="fa-brands fa-pinterest"></i>
-              </div>
-              <div
-                class="social-icon d-flex align-items-center justify-content-center"
-              >
-                <i class="fa-brands fa-youtube"></i>
-              </div>
-            </div>
-
-            <!-- Icons Section here -->
-          </div>
-
-          <div class="col-12 col-lg-3">
-            <h6>Contact Us</h6>
-
-            <dl>
-              <dt>Email :</dt>
-              <dd>contact@cafesy.com</dd>
-            
-              <dt>Mobile :</dt>
-              <dd>+94 77 62 62 626</dd>
-            
-              <dt>Text :</dt>
-              <dd>+94 77 62 62 626</dd>
-            </dl>
-
-          </div>
-        </div>
-
-        <div class="copyrights container">
-          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Menu</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
-          </ul>
-          <p class="text-center">© 2023 Cafésy. All rights reserved.</p>
-        </div>
-      </div>
-    </footer>
   </body>
 </html>
