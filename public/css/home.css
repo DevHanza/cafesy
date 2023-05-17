@@ -11400,16 +11400,42 @@ a:hover {
     margin-top: 20px;
   }
 }
-.hidden {
+.slide-up-hidden {
   opacity: 0;
   filter: blur(5px);
-  transform: translateY(100%);
+  transform: translateY(80%);
 }
 
-.show {
+.slide-up-show {
   opacity: 1;
   filter: blur(0);
   transform: translateY(0);
+  transition: all 1s;
+}
+
+.slide-right-hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(20%);
+}
+
+.slide-right-show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+  transition: all 1s;
+}
+
+.slide-left-hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-20%);
+}
+
+.slide-left-show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
   transition: all 1s;
 }
 

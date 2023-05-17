@@ -23,13 +23,15 @@ const observer = new IntersectionObserver((entries) => {
     console.log(entry);
     if (entry.isIntersecting) {
       setTimeout(() => {
-        entry.target.classList.add('show');
+        entry.target.classList.add('slide-up-show', 'slide-right-show', 'slide-left-show');
       }, 200 * index);
     } else {
-      entry.target.classList.remove('show');
+      entry.target.classList.remove('slide-up-show', 'slide-right-show', 'slide-left-show');
     }
   });
 });
 
-const hiddenElements = document.querySelectorAll('.hidden');
+const hiddenElements = document.querySelectorAll('.slide-up-hidden, .slide-right-hidden, .slide-left-hidden');
 hiddenElements.forEach((el) => observer.observe(el));
+
+
