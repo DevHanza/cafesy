@@ -44,20 +44,82 @@ function scrollFunction() {
 // );
 // hiddenElements.forEach((el) => observer.observe(el));
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const observer = new IntersectionObserver((entries) => {
+//   entries.forEach((entry, index) => {
+//     console.log(entry);
+//     if (entry.isIntersecting && !hasAnimationPlayed(entry.target)) {
+//       setTimeout(() => {
+//         entry.target.classList.add('slide-up-show', 'slide-right-show', 'slide-left-show');
+//         entry.target.classList.remove('slide-up-hidden', 'slide-right-hidden', 'slide-left-hidden');
+//         setAnimationPlayed(entry.target);
+//       }, 200 * index);
+//     } else {
+//       entry.target.classList.remove('slide-up-show', 'slide-right-show', 'slide-left-show');
+//     }
+//   });
+// });
+
+// const hiddenElements = document.querySelectorAll('.slide-up-hidden, .slide-right-hidden, .slide-left-hidden');
+// hiddenElements.forEach((el) => {
+//   el.classList.add('hidden'); // Add a common class 'hidden' to initially hide the elements
+//   observer.observe(el);
+// });
+
+// function hasAnimationPlayed(element) {
+//   return element.getAttribute('data-animation-played') === 'true';
+// }
+
+// function setAnimationPlayed(element) {
+//   element.setAttribute('data-animation-played', 'true');
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry, index) => {
+  entries.forEach((entry) => {
     console.log(entry);
     if (entry.isIntersecting && !hasAnimationPlayed(entry.target)) {
-      setTimeout(() => {
-        entry.target.classList.add('slide-up-show', 'slide-right-show', 'slide-left-show');
-        entry.target.classList.remove('slide-up-hidden', 'slide-right-hidden', 'slide-left-hidden');
-        setAnimationPlayed(entry.target);
-      }, 200 * index);
+      entry.target.classList.add('slide-up-show', 'slide-right-show', 'slide-left-show');
+      entry.target.classList.remove('slide-up-hidden', 'slide-right-hidden', 'slide-left-hidden');
+      setAnimationPlayed(entry.target);
     } else {
       entry.target.classList.remove('slide-up-show', 'slide-right-show', 'slide-left-show');
     }
   });
-});
+}, { threshold: 0.2 }); // Adjust the threshold value as needed
 
 const hiddenElements = document.querySelectorAll('.slide-up-hidden, .slide-right-hidden, .slide-left-hidden');
 hiddenElements.forEach((el) => {
