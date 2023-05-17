@@ -10873,10 +10873,7 @@ header .nav-link {
   font-family: "DM Sans", sans-serif;
   font-weight: 500;
 }
-header .navbar-nav .nav-item .nav-link.active {
-  color: #fff;
-}
-header .navbar-nav .nav-item .nav-link:hover {
+header .navbar-nav .nav-item .nav-link.active, header .navbar-nav .nav-item .nav-link:focus, header .navbar-nav .nav-item .nav-link:hover {
   color: #fff;
 }
 header .nav-link::after {
@@ -10890,10 +10887,7 @@ header .nav-link::after {
   bottom: 0;
   left: 0;
 }
-header .nav-link:hover::after {
-  opacity: 1;
-}
-header .nav-link.active::after {
+header .nav-link:hover::after, header .nav-link.active::after, header .nav-link:focus::after {
   opacity: 1;
 }
 header .nav-logo {
@@ -11077,7 +11071,7 @@ a:hover {
   transition: all 0.4s;
 }
 .social-icons-wrapper .social-icon:hover i {
-  transform: scale(1.3);
+  transform: scale(1.1);
   transition: all 0.4s;
 }
 
@@ -11407,4 +11401,4 @@ a:hover {
   }
 }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=home.css.map */

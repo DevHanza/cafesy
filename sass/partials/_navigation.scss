@@ -20,33 +20,31 @@ header {
   }
 
   .navbar-nav .nav-item {
-    .nav-link.active {
-      color: $white;
+    .nav-link {
+      &.active,
+      &:focus,
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+
+  .nav-link {
+    &::after {
+      content: "";
+      opacity: 0;
+      transition: all $main-tp;
+      height: 3px;
+      width: 100%;
+      background-color: white;
+      position: absolute;
+      bottom: 0;
+      left: 0;
     }
 
-    .nav-link:hover {
-      color: $white;
+    &:hover::after, &.active::after, &:focus::after {
+      opacity: 1;
     }
-  }
-
-  .nav-link::after {
-    content: "";
-    opacity: 0;
-    transition: all $main-tp;
-    height: 3px;
-    width: 100%;
-    background-color: white;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-  }
-
-  .nav-link:hover::after {
-    opacity: 1;
-  }
-
-  .nav-link.active::after {
-    opacity: 1;
   }
 
   .nav-logo {
@@ -86,12 +84,10 @@ header {
       max-height: 25px;
     }
 
-    
-      .nav-toggle-btn {
-        color: $white;
-        font-size: 25px;
-      }
-    
+    .nav-toggle-btn {
+      color: $white;
+      font-size: 25px;
+    }
 
     .nav-link {
       text-align: center;

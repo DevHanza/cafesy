@@ -1,0 +1,21 @@
+# Dependency directories
+/node_modules
+
+# Log files
+*.log
+
+# IDE and editor files
+.vscode
+.idea
+*.iml
+
+# Compiled output
+*.map
+
+# Package lock files
+package-lock.json
+yarn.lock
+
+# Operating System files
+.DS_Store
+Thumbs.db

@@ -1,8 +1,15 @@
+// bootstrap@5.3.0-alpha3
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+@import "components/variables";
+@import "components/buttons";
+@import "components/global";
+
+@import "partials/footer";
+@import "partials/navigation";
+@import "partials/newsletter";
 
 // Homepage Global Styles
-* {
-  // border: 1px solid $white;
-}
 
 a {
   color: $primary-light;
@@ -56,20 +63,13 @@ a {
     font-size: 25px;
     background-color: $primary-light;
 
-
-
-
-
-
     i {
       transition: all $main-tp;
     }
 
-
     &:hover {
-  
       i {
-        transform: scale(1.3);
+        transform: scale(1.1);
         transition: all $main-tp;
       }
     }
@@ -96,22 +96,17 @@ a {
     }
     &-image {
       max-height: 250px;
-      // margin: 50px 0 20px 0;
       object-position: bottom;
       width: 100%;
     }
   }
 
   .social-icon {
-
     height: 40px;
     width: 40px;
     font-size: 20px;
-
   }
 }
-
-
 
 // Start - Hero Section
 
@@ -476,8 +471,8 @@ a {
 
       img {
         height: 200px;
-      width: 100%;
-      object-fit: cover;
+        width: 100%;
+        object-fit: cover;
         transition: all $main-tp;
 
         &:hover {
@@ -536,4 +531,3 @@ a {
   }
 }
 // End - Contact Section
-
