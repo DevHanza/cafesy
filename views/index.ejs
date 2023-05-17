@@ -1,17 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-
     <title>Cafésy - Connected. Organic. Alive.</title>
-    
+
     <%- include('../views/partials/head'); %>
     <link rel="stylesheet" href="css/home.css" />
     <script defer src="js/main.js"></script>
-
   </head>
 
   <body>
-
     <%- include('../views/partials/header'); %>
 
     <main>
@@ -201,7 +198,7 @@
               id="feedback-slider"
               class="carousel carousel-fade slide-up-hidden"
               data-bs-ride="carousel"
-              data-bs-interval="3000"
+              data-bs-interval="2000"
             >
               <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -358,10 +355,13 @@
 
           <div class="container align-items-center">
             <div class="d-flex justify-content-center">
-              <button type="button" class="btn main-button slide-up-hidden">
-                Visit Blog
-                <i class="fa-solid fa-arrow-right main-button-icon"></i>
-              </button>
+              <a href="https://medium.com/cafesy" target="_blank"
+                ><button type="button" class="btn main-button slide-up-hidden">
+                  Visit Our Blog
+                  <i
+                    class="fa-solid fa-arrow-right main-button-icon"
+                  ></i></button
+              ></a>
             </div>
           </div>
         </div>
@@ -427,11 +427,8 @@
         </div>
       </div>
     </section>
-    
-    <%- include('../views/partials/newsletter'); %>
 
-    <%- include('../views/partials/footer'); %>
-
-
+    <%- include('../views/partials/newsletter'); %> <%-
+    include('../views/partials/footer'); %>
   </body>
 </html>

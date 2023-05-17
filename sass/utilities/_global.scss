@@ -1,5 +1,3 @@
-
-
 ::-moz-selection {
   color: $primary-dark;
   background: $primary-light;
@@ -16,5 +14,8 @@
   .row > * {
     padding: 0 30px;
   }
+}
 
+main {
+  margin-top: 85px;
 }

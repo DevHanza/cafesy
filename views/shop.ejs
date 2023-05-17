@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Cafésy - Connected. Organic. Alive.</title>
+
+    <%- include('../views/partials/head'); %>
+    <link rel="stylesheet" href="css/shop.css" />
+    <script defer src="js/main.js"></script>
+  </head>
+
+  <body>
+    <%- include('../views/partials/header'); %>
+
+    <main>
+
+      <section id="banner">
+        <div class="container">
+          <div class="shop-banner">
+            <div class="row">
+              <div class="col-lg-8">
+                <h1>Coffee Festival</h1>
+                <p>Get up to a 50% Discount using “Cafesy50” coupon code.</p>
+
+                <a href="#products">
+                  <button type="button" class="btn main-button slide-up-hidden">
+                    Visit Our Blog
+                    <i class="fa-solid fa-arrow-right main-button-icon"> </i>
+                  </button>
+                </a>
+              </div>
+
+              <div class="col-lg-4">
+                <img src="img/footer-logo.webp" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+
+      <section id="products">
+
+      </section>
+
+    </main>
+
+    <%-include('../views/partials/newsletter'); %>
+    <%-include('../views/partials/footer'); %>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+@import "utilities/variables";
+@import "utilities/global";
+
+@import "components/buttons";
+
+@import "partials/footer";
+@import "partials/navigation";
+@import "partials/newsletter";
+
+// Shop Page Global Styles
+
+#banner {
+  .shop-banner {
+    height: 270px;
+    background-color: $primary-light; 
+}
+}
