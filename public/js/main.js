@@ -19,13 +19,15 @@ function scrollFunction() {
 // OnScroll Loading Effect //
 
 const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    console.log(entry)
+  entries.forEach((entry, index) => {
+    console.log(entry);
     if (entry.isIntersecting) {
-      entry.target.classList.add('show');
+      setTimeout(() => {
+        entry.target.classList.add('show');
+      }, 200 * index);
     } else {
       entry.target.classList.remove('show');
-    }  
+    }
   });
 });
 
