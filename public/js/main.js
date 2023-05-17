@@ -16,68 +16,58 @@ function scrollFunction() {
 
 // OnScroll Loading Effect //
 
-// const observer = new IntersectionObserver((entries) => {
-//   entries.forEach((entry, index) => {
-//     console.log(entry);
-//     if (entry.isIntersecting) {
-//       setTimeout(() => {
+// const observer = new IntersectionObserver(
+//   (entries) => {
+//     entries.forEach((entry) => {
+//       console.log(entry);
+//       if (entry.isIntersecting && !hasAnimationPlayed(entry.target)) {
 //         entry.target.classList.add(
 //           "slide-up-show",
 //           "slide-right-show",
 //           "slide-left-show",
 //           "slide-down-show"
 //         );
-//       }, 200 * index);
-//     } else {
-//       entry.target.classList.remove(
-//         "slide-up-show",
-//         "slide-right-show",
-//         "slide-left-show",
-//         "slide-down-show"
-//       );
-//     }
-//   });
-// });
+//         entry.target.classList.remove(
+//           "slide-up-hidden",
+//           "slide-right-hidden",
+//           "slide-left-hidden",
+//           "slide-down-hidden"
+//         );
+//         setAnimationPlayed(entry.target);
+//       } else {
+//         entry.target.classList.remove(
+//           "slide-up-show",
+//           "slide-right-show",
+//           "slide-left-show",
+//           "slide-down-show"
+//         );
+//       }
+//     });
+//   },
+//   { threshold: 0.2 }
+// );
 
 // const hiddenElements = document.querySelectorAll(
 //   ".slide-up-hidden, .slide-right-hidden, .slide-left-hidden, .slide-down-hidden"
 // );
-// hiddenElements.forEach((el) => observer.observe(el));
-
-// const observer = new IntersectionObserver((entries) => {
-//   entries.forEach((entry, index) => {
-//     console.log(entry);
-//     if (entry.isIntersecting && !hasAnimationPlayed(entry.target)) {
-//       setTimeout(() => {
-//         entry.target.classList.add('slide-up-show', 'slide-right-show', 'slide-left-show');
-//         entry.target.classList.remove('slide-up-hidden', 'slide-right-hidden', 'slide-left-hidden');
-//         setAnimationPlayed(entry.target);
-//       }, 200 * index);
-//     } else {
-//       entry.target.classList.remove('slide-up-show', 'slide-right-show', 'slide-left-show');
-//     }
-//   });
-// });
-
-// const hiddenElements = document.querySelectorAll('.slide-up-hidden, .slide-right-hidden, .slide-left-hidden');
 // hiddenElements.forEach((el) => {
-//   el.classList.add('hidden'); // Add a common class 'hidden' to initially hide the elements
+//   el.classList.add("hidden");
 //   observer.observe(el);
 // });
 
 // function hasAnimationPlayed(element) {
-//   return element.getAttribute('data-animation-played') === 'true';
+//   return element.getAttribute("data-animation-played") === "true";
 // }
 
 // function setAnimationPlayed(element) {
-//   element.setAttribute('data-animation-played', 'true');
+//   element.setAttribute("data-animation-played", "true");
 // }
 
-const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      console.log(entry);
-      if (entry.isIntersecting && !hasAnimationPlayed(entry.target)) {
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry, index) => {
+    console.log(entry);
+    if (entry.isIntersecting && !hasAnimationPlayed(entry.target)) {
+      setTimeout(() => {
         entry.target.classList.add(
           "slide-up-show",
           "slide-right-show",
@@ -91,18 +81,17 @@ const observer = new IntersectionObserver(
           "slide-down-hidden"
         );
         setAnimationPlayed(entry.target);
-      } else {
-        entry.target.classList.remove(
-          "slide-up-show",
-          "slide-right-show",
-          "slide-left-show",
-          "slide-down-show"
-        );
-      }
-    });
-  },
-  { threshold: 0.2 }
-);
+      }, 200 * index);
+    } else {
+      entry.target.classList.remove(
+        "slide-up-show",
+        "slide-right-show",
+        "slide-left-show",
+        "slide-down-show"
+      );
+    }
+  });
+});
 
 const hiddenElements = document.querySelectorAll(
   ".slide-up-hidden, .slide-right-hidden, .slide-left-hidden, .slide-down-hidden"
