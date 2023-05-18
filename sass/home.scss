@@ -12,16 +12,6 @@
 
 // Homepage Global Styles
 
-a {
-  color: $primary-light;
-  transition: all $main-tp;
-
-  &:hover {
-    transition: all $main-tp;
-    color: $white;
-  }
-}
-
 .section {
   &-row {
     height: $section-height;

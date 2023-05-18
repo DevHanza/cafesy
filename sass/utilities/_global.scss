@@ -8,6 +8,18 @@
   background: $primary-light;
 }
 
+// Anchor Tags Styles
+a {
+  color: $primary-light;
+  transition: all $main-tp;
+
+  &:hover {
+    transition: all $main-tp;
+    color: $white;
+  }
+}
+
+
 @include media-breakpoint-down(lg) {
 
   .navbar .container,

@@ -10729,6 +10729,15 @@ textarea.form-control-lg {
   background: #D5CEA3;
 }
 
+a {
+  color: #D5CEA3;
+  transition: all 0.4s;
+}
+a:hover {
+  transition: all 0.4s;
+  color: #fff;
+}
+
 @media (max-width: 991.98px) {
   .navbar .container,
   .row > * {
@@ -10740,7 +10749,7 @@ main {
 }
 
 .main-button {
-  height: 55px;
+  height: 50px;
   padding: 0 35px;
   background-color: #D5CEA3;
   color: #3C2A21;
@@ -10763,7 +10772,34 @@ main {
   margin-left: 10px;
 }
 .main-button:not(:disabled):not(:disabled):active {
-  background-color: #fff;
+  background-color: #E5E5CB;
+}
+
+.main-button-dark {
+  height: 50px;
+  padding: 0 35px;
+  background-color: #3C2A21;
+  color: #E5E5CB;
+  font-family: "DM Sans", sans-serif;
+  line-height: normal;
+  font-size: 18px;
+  border-radius: 0;
+  font-weight: 500;
+  transition: all 0.4s;
+}
+.main-button-dark:hover {
+  filter: drop-shadow(0 0 70px #d5cea3);
+  transition: all 0.4s;
+  background-color: #3C2A21;
+  color: #E5E5CB;
+  padding: 0 40px;
+}
+.main-button-dark:hover .main-button-icon {
+  transition: all 0.4s;
+  margin-left: 10px;
+}
+.main-button-dark:not(:disabled):not(:disabled):active {
+  background-color: #1A120B;
 }
 
 .main-button-icon {
@@ -11026,9 +11062,30 @@ header .nav-toggle-btn {
     text-align: center;
   }
 }
+#banner {
+  padding: 50px;
+}
 #banner .shop-banner {
-  height: 270px;
-  background-color: #D5CEA3;
+  border-radius: 15px;
+  background-color: #E5E5CB;
+  padding: 50px 70px;
+}
+#banner h1, #banner .h1 {
+  font-family: "DM Serif Display", serif;
+  font-size: 55px;
+}
+#banner p {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  margin-top: 10px;
+}
+#banner button {
+  margin-top: 20px;
+}
+
+#products {
+  background-color: #E5E5CB;
 }
 
 /*# sourceMappingURL=shop.css.map */

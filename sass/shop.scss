@@ -9,11 +9,37 @@
 @import "partials/navigation";
 @import "partials/newsletter";
 
+
+// Shop Page Global Styles
+body {}
 // Shop Page Global Styles
 
 #banner {
+  padding: 50px;
+
   .shop-banner {
-    height: 270px;
-    background-color: $primary-light; 
+    border-radius: 15px;
+    background-color: $primary-light-2;
+    padding: 50px 70px;
+  }
+
+  h1 {
+    font-family: $main-font;  
+    font-size: 55px;
 }
+
+p {
+    font-family: $sub-font;
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+button {
+    margin-top: 20px;
+}
+}
+
+#products {
+    background-color: $primary-light-2;
 }

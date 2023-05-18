@@ -1,36 +1,44 @@
 
 // Main Button
-.main-button {
-    height: 55px;
+
+@mixin main-button-styles($bgcolor, $t-color, $focus-bg) {
+    height: 50px;
     padding: 0 35px;
-    background-color: $primary-light;
-    color: $secondary-dark;
+    background-color: $bgcolor;
+    color: $t-color;
     font-family: $sub-font;
     line-height: normal;
     font-size: 18px;
     border-radius: 0;
     font-weight: 500;
     transition: all $main-tp;
+
     &:hover {
         filter: drop-shadow(0 0 70px rgba($color: $primary-light, $alpha: 1.0));
         transition: all $main-tp;
-        background-color: $primary-light;
-        color: $secondary-dark;
-
+        background-color: $bgcolor;
+        color: $t-color;
         padding: 0 40px;
 
         .main-button-icon {
             transition: all $main-tp;
-            margin-left: 10px;
-            
+            margin-left: 10px; 
         }
-
     }
     &:not(:disabled):not(:disabled):active {
-        background-color: $white;
+        background-color: $focus-bg;
     }
+  }
+
+
+
+.main-button {
+    @include main-button-styles($primary-light, $secondary-dark, $primary-light-2);
 }
 
+.main-button-dark {
+    @include main-button-styles($secondary-dark, $primary-light-2, $primary-dark);
+}
 
 .main-button-icon {
     vertical-align: middle;
@@ -47,4 +55,5 @@
     }
 
 }
+
 
