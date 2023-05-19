@@ -90,14 +90,10 @@ body {
 #products {
   background-color: $primary-light-2;
 
-  .row > * {
-    // padding: default;
-
-  }
-
   .product-card {
     font-family: $sub-font;
     color: $primary-dark;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 
     &-img {
       width: 100%;
@@ -117,18 +113,47 @@ body {
     &-p {
       font-size: 14px;
       color: $dark-gray;
-      margin: 5px 0 10px 0;
+      margin: 5px 0 15px 0;
     }
 
     &-price {
-      color: $primary-dark;
-      font-size: 20px;
-      font-weight: 700;
+      display: inline-block;
+      color: $white;
+      font-size: 16px;
+      font-weight: 500;
+      background-color: $secondary-dark;
+      padding: 5px 10px;
+
 
       span {
         font-weight: 500;
         font-size: 16px;
       }
     }
+
+    &-cta {
+      color: $secondary-dark;
+      transition: all $main-tp;
+      font-weight: 600;
+      padding-top: 5px;
+      text-decoration: none;
+
+      &:hover {
+        i {
+          margin-left: 10px;
+          transition: all $main-tp;
+        }
+      }
+
+      p {
+        margin: 0;
+      }
+
+      i {
+        font-size: 14px;
+        margin-left: 5px;
+      }
+    }
+
   }
 }

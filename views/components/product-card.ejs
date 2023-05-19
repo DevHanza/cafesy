@@ -1,8 +1,13 @@
-<div class="product-card mt-4">
-    <img class="product-card-img" src="img/Cappacino.webp" alt="">
-    <div class="product-card-details">
-      <h4 class="product-card-title"> <%= title %> </h4>
-      <p class="product-card-p"> <%= description %> </p>
-      <p class="product-card-price text-end m-0"><span>USD</span> <%= price %>$</p>
+<div class="product-card mt-4 text-center">
+  <img class="product-card-img" src="img/Cappacino.webp" alt="" />
+  <div class="product-card-details">
+    <h4 class="product-card-title"><%= title %></h4>
+    <p class="product-card-p"><%= description %></p>
+    <p class="product-card-price m-0"><%= price %>$ /<span>cup</span></p>
+    <a href="https://stripe.com">
+    <div class="product-card-cta text-center">
+      <p>Purchase<i class="fa-solid fa-arrow-right"></i></p>
     </div>
+  </a>
   </div>
+</div>
