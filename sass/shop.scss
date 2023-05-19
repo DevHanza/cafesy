@@ -89,4 +89,27 @@ body {
 
 #products {
   background-color: $primary-light-2;
+
+  .product-card {
+
+    &-img {
+      height: 250px;
+    }
+
+    &-details {
+
+    }
+
+    &-title {
+
+    }
+
+    &-p {
+
+    }
+
+    &-price {
+      
+    }
+  }
 }

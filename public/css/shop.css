@@ -11130,5 +11130,8 @@ header .nav-toggle-btn {
 #products {
   background-color: #E5E5CB;
 }
+#products .product-card-img {
+  height: 250px;
+}
 
 /*# sourceMappingURL=shop.css.map */
