@@ -10738,6 +10738,16 @@ a:hover {
   color: #fff;
 }
 
+.no-styles {
+  text-decoration: none;
+  color: inherit;
+}
+.no-styles:hover {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: inherit;
+}
+
 @media (max-width: 991.98px) {
   .navbar .container,
   .row > * {
@@ -11063,7 +11073,7 @@ header .nav-toggle-btn {
   }
 }
 .section-row {
-  height: 700px;
+  height: 900px;
   padding: 40px 0;
 }
 .section-heading {

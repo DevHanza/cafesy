@@ -19,6 +19,17 @@ a {
   }
 }
 
+.no-styles {
+  text-decoration: none;
+  color: inherit;
+
+  &:hover {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-color: inherit;
+  } 
+}
+
 
 @include media-breakpoint-down(lg) {
 

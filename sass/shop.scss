@@ -17,10 +17,18 @@ body {}
 #banner {
   padding: 50px;
 
+  .container {
+    position: relative;
+  }
+
   .shop-banner {
     border-radius: 15px;
     background-color: $primary-light-2;
     padding: 50px 70px;
+
+    &-img {
+      height: 250px;
+    }
   }
 
   h1 {
