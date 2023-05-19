@@ -1,66 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Cafésy - Connected. Organic. Alive.</title>
 
-    <%- include('../views/partials/head'); %>
-    <link rel="stylesheet" href="css/shop.css" />
-    <script defer src="js/main.js"></script>
-  </head>
+<head>
+  <title>Cafésy - Connected. Organic. Alive.</title>
 
-  <body>
-    <%- include('../views/partials/header'); %>
+  <%- include('../views/partials/head'); %>
+  <link rel="stylesheet" href="css/shop.css" />
+  <script defer src="js/main.js"></script>
+</head>
 
-    <main>
+<body>
+  <%- include('../views/partials/header'); %>
 
-      <section id="banner">
-        <div class="container">
-          <div class="shop-banner">
-            <div class="row h-100 align-items-center text-center text-lg-start">
-              <div class="col-lg-8 order-lg-1 order-2">
-                <h1>New-Year Coffee Festival</h1>
-                <p>Get up to a 50% Discount using <b>“Cafesy50”</b> coupon code.</p>
+  <main>
 
-                <a href="#products">
-                  <button type="button" class="btn main-button-dark slide-up-hidden">
-                    Explore
-                    <i class="fa-solid fa-arrow-right main-button-icon"> </i>
-                  </button>
-                </a>
-              </div>
+    <section id="banner">
+      <div class="container">
+        <div class="shop-banner">
+          <div class="row h-100 align-items-center text-center text-lg-start">
+            <div class="col-lg-8 order-lg-1 order-2">
+              <h1>New-Year Coffee Festival</h1>
+              <p>Get up to a 50% Discount using <b>“Cafesy50”</b> coupon code.</p>
 
-              <div class="col-lg-4 order-lg-2 order-1 text-center text-lg-end">
-                <img class="shop-banner-img" src="img/shop-banner-img.webp" alt="" />
-              </div>
+              <a href="#products">
+                <button type="button" class="btn main-button-dark slide-up-hidden">
+                  Explore
+                  <i class="fa-solid fa-arrow-right main-button-icon"> </i>
+                </button>
+              </a>
+            </div>
+
+            <div class="col-lg-4 order-lg-2 order-1 text-center text-lg-end">
+              <img class="shop-banner-img" src="img/shop-banner-img.webp" alt="" />
             </div>
           </div>
         </div>
-      </section>
-    
+      </div>
+    </section>
 
-      <section id="products">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-4">
-              <div class="product-card">
-                <img class="product-card-img" src="img/Cappacino.webp" alt="">
-                <div class="product-card-details">
-                  <h4 class="product-card-title">Cappacino</h4>
-                  <p class="product-card-p">Traditionally prepared coffee with steamed milk foam</p>
-                  <p class="product-card-price"><span>USD</span> 5.50$</p>
-                </div>
-              </div>
-            </div>
 
-            <div class="col-lg-4"></div>
-            <div class="col-lg-4"></div>
+    <section id="products">
+      <div class="container py-4">
+
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <%- include('components/product-card', {title: 'Cappacino', description: 'Traditionally prepared coffee with steamed milk foam.', price: '5.56'}); %>
           </div>
+
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <%- include('components/product-card', {title: 'Cappacino', description: 'Traditionally prepared coffee with steamed milk foam.', price: '5.56'}); %>
+          </div>
+
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <%- include('components/product-card', {title: 'Cappacino', description: 'Traditionally prepared coffee with steamed milk foam.', price: '5.56'}); %>
+          </div>
+
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <%- include('components/product-card', {title: 'Cappacino', description: 'Traditionally prepared coffee with steamed milk foam.', price: '5.56'}); %>
+          </div>
+
         </div>
-      </section>
 
-    </main>
 
-    <%-include('../views/partials/newsletter'); %>
-    <%-include('../views/partials/footer'); %>
-  </body>
+
+        </div>
+        
+
+      </div>
+    </section>
+
+  </main>
+
+  <%-include('../views/partials/newsletter'); %>
+  <%-include('../views/partials/footer'); %>
+</body>
+
 </html>

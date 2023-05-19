@@ -30,15 +30,17 @@ a {
   } 
 }
 
+main {
+  margin-top: 85px;
+}
 
 @include media-breakpoint-down(lg) {
+}
 
+
+@include media-breakpoint-down(md) {
   .navbar .container,
   .row > * {
     padding: 0 30px;
   }
-}
-
-main {
-  margin-top: 85px;
-}
+ }

@@ -90,26 +90,45 @@ body {
 #products {
   background-color: $primary-light-2;
 
+  .row > * {
+    // padding: default;
+
+  }
+
   .product-card {
+    font-family: $sub-font;
+    color: $primary-dark;
 
     &-img {
-      height: 250px;
+      width: 100%;
     }
 
     &-details {
-
+      background-color: $white;
+      padding: 15px 25px;
     }
 
     &-title {
-
+      font-size: 20px;
+      font-weight: 700;
+      margin-top: 5px;
     }
 
     &-p {
-
+      font-size: 14px;
+      color: $dark-gray;
+      margin: 5px 0 10px 0;
     }
 
     &-price {
-      
+      color: $primary-dark;
+      font-size: 20px;
+      font-weight: 700;
+
+      span {
+        font-weight: 500;
+        font-size: 16px;
+      }
     }
   }
 }

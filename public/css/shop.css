@@ -10748,16 +10748,16 @@ a:hover {
   text-decoration-color: inherit;
 }
 
-@media (max-width: 991.98px) {
+main {
+  margin-top: 85px;
+}
+
+@media (max-width: 767.98px) {
   .navbar .container,
   .row > * {
     padding: 0 30px;
   }
 }
-main {
-  margin-top: 85px;
-}
-
 .main-button {
   height: 50px;
   padding: 0 35px;
@@ -11130,8 +11130,35 @@ header .nav-toggle-btn {
 #products {
   background-color: #E5E5CB;
 }
+#products .product-card {
+  font-family: "DM Sans", sans-serif;
+  color: #1A120B;
+}
 #products .product-card-img {
-  height: 250px;
+  width: 100%;
+}
+#products .product-card-details {
+  background-color: #fff;
+  padding: 15px 25px;
+}
+#products .product-card-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 5px;
+}
+#products .product-card-p {
+  font-size: 14px;
+  color: #616161;
+  margin: 5px 0 10px 0;
+}
+#products .product-card-price {
+  color: #1A120B;
+  font-size: 20px;
+  font-weight: 700;
+}
+#products .product-card-price span {
+  font-weight: 500;
+  font-size: 16px;
 }
 
 /*# sourceMappingURL=shop.css.map */
