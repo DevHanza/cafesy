@@ -9,11 +9,12 @@
 @import "partials/navigation";
 @import "partials/newsletter";
 
-
 // Shop Page Global Styles
-body {}
+body {
+}
 // Shop Page Global Styles
 
+// Start - Banner Section
 #banner {
   padding: 50px;
 
@@ -24,30 +25,68 @@ body {}
   .shop-banner {
     border-radius: 15px;
     background-color: $primary-light-2;
-    padding: 50px 70px;
+    padding: 30px 70px;
 
     &-img {
       height: 250px;
+
+      &-bg {
+        height: 300px;
+        width: 300px;
+        background-color: $primary-light;
+        border-radius: 100%;
+      }
     }
   }
 
   h1 {
-    font-family: $main-font;  
+    font-family: $main-font;
     font-size: 55px;
-}
+  }
 
-p {
+  p {
     font-family: $sub-font;
     font-weight: 500;
     font-size: 18px;
     margin-top: 10px;
+  }
+
+  button {
+    margin-top: 20px;
+  }
 }
 
-button {
-    margin-top: 20px;
+@include media-breakpoint-down(lg) {
+  #banner {
+    padding: 20px;
+
+    .shop-banner {
+      padding: 30px 0px;
+
+      &-img {
+        height: 200px;
+        margin-bottom: 20px;
+      }
+
+      h1 {
+        font-size: 35px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+
+      button {
+        margin-top: 10px;
+      }
+    }
+  }
 }
-}
+
+// End - Banner Section
+
+// Start - Products Section
 
 #products {
-    background-color: $primary-light-2;
+  background-color: $primary-light-2;
 }

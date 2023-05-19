@@ -10819,7 +10819,7 @@ main {
 }
 
 @media (max-width: 991.98px) {
-  .main-button {
+  .main-button, .main-button-dark {
     font-size: 14px;
     height: 45px;
     padding: 0 30px;

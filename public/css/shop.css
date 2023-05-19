@@ -10819,7 +10819,7 @@ main {
 }
 
 @media (max-width: 991.98px) {
-  .main-button {
+  .main-button, .main-button-dark {
     font-size: 14px;
     height: 45px;
     padding: 0 30px;
@@ -11081,10 +11081,16 @@ header .nav-toggle-btn {
 #banner .shop-banner {
   border-radius: 15px;
   background-color: #E5E5CB;
-  padding: 50px 70px;
+  padding: 30px 70px;
 }
 #banner .shop-banner-img {
   height: 250px;
+}
+#banner .shop-banner-img-bg {
+  height: 300px;
+  width: 300px;
+  background-color: #D5CEA3;
+  border-radius: 100%;
 }
 #banner h1, #banner .h1 {
   font-family: "DM Serif Display", serif;
@@ -11100,6 +11106,27 @@ header .nav-toggle-btn {
   margin-top: 20px;
 }
 
+@media (max-width: 991.98px) {
+  #banner {
+    padding: 20px;
+  }
+  #banner .shop-banner {
+    padding: 30px 0px;
+  }
+  #banner .shop-banner-img {
+    height: 200px;
+    margin-bottom: 20px;
+  }
+  #banner .shop-banner h1, #banner .shop-banner .h1 {
+    font-size: 35px;
+  }
+  #banner .shop-banner p {
+    font-size: 16px;
+  }
+  #banner .shop-banner button {
+    margin-top: 10px;
+  }
+}
 #products {
   background-color: #E5E5CB;
 }
