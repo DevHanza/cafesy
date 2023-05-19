@@ -11127,32 +11127,29 @@ header .nav-toggle-btn {
     margin-top: 10px;
   }
 }
-#products {
-  background-color: #E5E5CB;
-}
-#products .product-card {
+.product-card {
   font-family: "DM Sans", sans-serif;
   color: #1A120B;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
-#products .product-card-img {
+.product-card-img {
   width: 100%;
 }
-#products .product-card-details {
+.product-card-details {
   background-color: #fff;
   padding: 15px 25px;
 }
-#products .product-card-title {
+.product-card-title {
   font-size: 20px;
   font-weight: 700;
   margin-top: 5px;
 }
-#products .product-card-p {
+.product-card-p {
   font-size: 14px;
   color: #616161;
   margin: 5px 0 15px 0;
 }
-#products .product-card-price {
+.product-card-price {
   display: inline-block;
   color: #fff;
   font-size: 16px;
@@ -11160,27 +11157,67 @@ header .nav-toggle-btn {
   background-color: #3C2A21;
   padding: 5px 10px;
 }
-#products .product-card-price span {
+.product-card-price span {
   font-weight: 500;
   font-size: 16px;
 }
-#products .product-card-cta {
+.product-card-cta {
   color: #3C2A21;
   transition: all 0.4s;
   font-weight: 600;
   padding-top: 5px;
   text-decoration: none;
 }
-#products .product-card-cta:hover i {
+.product-card-cta:hover i {
   margin-left: 10px;
   transition: all 0.4s;
 }
-#products .product-card-cta p {
+.product-card-cta p {
   margin: 0;
 }
-#products .product-card-cta i {
+.product-card-cta i {
   font-size: 14px;
   margin-left: 5px;
+}
+
+#products {
+  background-color: #E5E5CB;
+}
+
+#special-products {
+  background-color: #1A120B;
+  color: #fff;
+  padding: 50px 0 80px 0;
+}
+#special-products .sp-heading {
+  font-family: "DM Serif Display", serif;
+  font-size: 50px;
+}
+#special-products .sp-p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+#special-products .product-card {
+  transform: scale(1.05);
+}
+#special-products .sp-card-wrapper-1 .product-card {
+  position: relative;
+  z-index: 1;
+  rotate: -3deg;
+  transform: translateX(10px);
+}
+#special-products .sp-card-wrapper-2 .product-card {
+  position: relative;
+  z-index: 3;
+  transform: scale(1.05);
+  box-shadow: 1px 1px 64px 5px rgba(17, 17, 26, 0.39), 0px 8px 32px rgba(17, 17, 26, 0.05);
+}
+#special-products .sp-card-wrapper-3 .product-card {
+  position: relative;
+  z-index: 1;
+  rotate: 3deg;
+  transform: translateX(-10px);
 }
 
 /*# sourceMappingURL=shop.css.map */
