@@ -11145,371 +11145,42 @@ header .nav-toggle-btn {
     text-align: center;
   }
 }
-.section-row {
-  height: 700px;
-  padding: 40px 0;
-}
-.section-heading {
-  font-size: 65px;
-  font-family: "DM Serif Display", serif;
-  color: #fff;
-}
-.section-p {
-  font-size: 20px;
-  font-family: "DM Sans", sans-serif;
-  line-height: 2;
-  color: #fff;
-}
-.section-heading-text {
-  font-family: "DM Sans", sans-serif;
-  font-size: 20px;
-  color: #fff;
-}
-.section-image {
-  height: 600px;
-  width: 360px;
-  object-fit: cover;
-}
-
-.social-icons-wrapper {
-  margin: 40px 0;
-}
-.social-icons-wrapper .social-icon {
-  line-height: normal;
-  height: 50px;
-  width: 50px;
-  font-size: 25px;
-  background-color: #D5CEA3;
-}
-.social-icons-wrapper .social-icon i {
-  transition: all 0.4s;
-}
-.social-icons-wrapper .social-icon:hover i {
-  transform: scale(1.1);
-  transition: all 0.4s;
-}
-
-@media (max-width: 991.98px) {
-  .section-row {
-    height: auto;
-  }
-  .section-heading {
-    font-size: 40px;
-  }
-  .section-p {
-    font-size: 16px;
-    line-height: 2;
-  }
-  .section-heading-text {
-    font-size: 16px;
-  }
-  .section-image {
-    max-height: 250px;
-    object-position: bottom;
-    width: 100%;
-  }
-  .social-icon {
-    height: 40px;
-    width: 40px;
-    font-size: 20px;
-  }
-}
-#hero .container h1, #hero .container .h1 {
-  font-family: "DM Serif Display", serif;
-  font-size: 95px;
-  text-transform: uppercase;
-  line-height: 1;
-  margin: 15px 0 30px 0;
-}
-#hero .container h2, #hero .container .h2 {
-  font-family: "DM Sans", sans-serif;
-  font-size: 32px;
-  font-weight: 500;
-  line-height: 1;
-}
-#hero .container p {
-  font-family: "DM Sans", sans-serif;
-  font-size: 20px;
-  line-height: 200%;
-}
-#hero .container .main-button {
-  margin-top: 20px;
-}
-
-.hero-img-wrapper {
-  width: 500px;
+#heading-section {
   position: relative;
-  overflow: hidden;
-}
-.hero-img-wrapper .hero-img {
-  width: 330px;
-}
-.hero-img-wrapper .bean-1 {
-  height: 50px;
-  position: absolute;
-  top: 50px;
-  right: 85px;
-  z-index: -1;
-  transform: rotate(15deg);
-}
-.hero-img-wrapper .bean-2 {
-  height: 60px;
-  position: absolute;
-  bottom: 40px;
-  left: 85px;
-  transform: rotate(-10deg);
-}
-.hero-img-wrapper .bean-3 {
-  position: absolute;
-  height: 120px;
-  top: 140px;
-  left: 30px;
-}
-.hero-img-wrapper .bean-4 {
-  position: absolute;
-  height: 150px;
-  bottom: 70px;
-  right: 0px;
-}
-
-@media (max-width: 991.98px) {
-  #hero .section-row {
-    padding-top: 0;
-  }
-  #hero .container h1, #hero .container .h1 {
-    margin: 0 0 0 0;
-    font-size: 55px;
-  }
-  #hero .container h2, #hero .container .h2 {
-    margin-top: 30px;
-    font-size: 20px;
-  }
-  #hero .container p {
-    font-size: 16px;
-    margin: 30px 0;
-  }
-  #hero .container .main-button {
-    margin-top: 0;
-  }
-  .hero-img {
-    height: 300px;
-    width: auto !important;
-  }
-  .hero-img-wrapper {
-    width: 275px;
-  }
-  .hero-img-wrapper .bean-1 {
-    height: 30px;
-    top: 25px;
-    right: 40px;
-  }
-  .hero-img-wrapper .bean-2 {
-    height: 35px;
-    bottom: 15px;
-    left: 40px;
-  }
-  .hero-img-wrapper .bean-3 {
-    height: 80px;
-    top: 80px;
-    left: 0;
-  }
-  .hero-img-wrapper .bean-4 {
-    height: 80px;
-    bottom: 35px;
-    right: 0px;
-  }
-}
-#about .section-heading {
-  margin-bottom: 50px;
-}
-#about .brand-text {
-  font-family: "DM Serif Display", serif;
-  text-transform: uppercase;
-  font-size: 32px;
-}
-#about .about-image {
-  height: 600px;
-  width: 360px;
-  object-fit: cover;
-}
-
-@media (max-width: 991.98px) {
-  #about {
-    height: auto;
-  }
-  #about .section-heading {
-    margin: 20px 0;
-  }
-  #about .about-image {
-    max-height: 250px;
-    object-position: bottom;
-    width: 100%;
-  }
-  #about .brand-text {
-    font-size: 25px;
-  }
-}
-#products .row.second-row .coffee-card {
-  color: #1A120B;
-  background-color: #fff;
-  overflow: hidden;
-}
-#products .row.second-row .coffee-card-image {
-  height: 250px;
-  width: 100%;
-  object-fit: cover;
-  z-index: 1;
-  transition: all 0.4s;
-}
-#products .row.second-row .coffee-card-image:hover {
-  transform: scale(1.05);
-  transition: all 0.4s;
-}
-#products .row.second-row .coffee-card-text-wrapper {
-  position: relative;
-  width: 85%;
-  margin: 0 auto;
-  padding: 30px 20px;
-  background-color: #fff;
-  margin-top: -60px;
-  z-index: 10;
-}
-#products .row.second-row .coffee-card-heading {
-  font-family: "DM Serif Display", serif;
-  font-size: 25px;
-}
-#products .row.second-row .coffee-card-p {
-  font-family: "DM Sans", sans-serif;
-  font-size: 14px;
-  margin: 0;
-}
-#products .section-heading-text {
-  margin-top: 5px;
-}
-
-@media (max-width: 991.98px) {
-  #products .row.second-row .coffee-card {
-    margin-bottom: 20px;
-  }
-  #products .row .section-heading-text {
-    margin: 10px 0 30px 0;
-  }
-  #products .main-button {
-    margin-top: 5px;
-  }
-}
-#feedback #feedback-slider {
-  border: 3px solid #fff;
-  padding: 30px 30px;
-  margin-top: 40px;
-}
-#feedback .user-info {
+  height: 300px;
   color: #fff;
+  background-color: #1a120b;
 }
-#feedback .user-info-pic {
-  height: 55px;
-  width: 55px;
-  object-fit: cover;
-  border-radius: 100%;
-}
-#feedback .user-info-name {
-  font-family: "DM Sans", sans-serif;
-  margin-left: 15px;
-}
-#feedback .user-info-name h6, #feedback .user-info-name .h6 {
-  font-size: 18px;
-  margin: 0;
-}
-#feedback .user-info-name p {
-  font-size: 16px;
-  margin: 0;
-}
-#feedback .review-wrapper {
-  color: #fff;
-  font-family: "DM Sans", sans-serif;
-  font-size: 25px;
-  font-weight: 500;
-  margin-top: 30px;
-  line-height: 200%;
-}
-
-@media (max-width: 991.98px) {
-  #feedback {
-    height: auto;
-  }
-  #feedback #feedback-slider {
-    border: 3px solid #fff;
-  }
-  #feedback .user-info-pic {
-    height: 40px;
-    width: 40px;
-  }
-  #feedback .user-info-name h6, #feedback .user-info-name .h6 {
-    font-size: 14px;
-    margin: 0;
-  }
-  #feedback .user-info-name p {
-    font-size: 12px;
-    margin: 0;
-  }
-  #feedback .section-image {
-    display: none;
-  }
-  #feedback .section-heading-text {
-    margin: 15px 0 20px 0;
-  }
-  #feedback .review-wrapper {
-    font-size: 18px;
-  }
-}
-#blog .blog-card {
-  background-color: #fff;
-}
-#blog .blog-card-data {
-  padding: 30px;
-}
-#blog .blog-card-image-wrapper {
-  overflow: hidden;
-}
-#blog .blog-card-image-wrapper img {
-  height: 200px;
-  width: 100%;
-  object-fit: cover;
-  transition: all 0.4s;
-}
-#blog .blog-card-image-wrapper img:hover {
-  transform: scale(1.05);
-  transition: all 0.4s;
-}
-#blog .blog-card-title {
+#heading-section h1, #heading-section .h1 {
   font-family: "DM Serif Display", serif;
-  font-size: 24px;
-  margin-bottom: 10px;
-  color: #1A120B;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  line-clamp: 2;
-  -webkit-box-orient: vertical;
+  font-size: 50px;
 }
-#blog .blog-card-meta {
+#heading-section p {
   font-family: "DM Sans", sans-serif;
-  font-size: 14px;
-  color: #616161;
+  color: #e4e4e4;
 }
 
-@media (max-width: 991.98px) {
-  #blog .blog-card {
-    margin-bottom: 20px;
-  }
-  #blog .section-heading-text {
-    margin-bottom: 30px;
-  }
+#content-section {
+  padding: 50px 0;
+  background-color: #E5E5CB;
 }
-@media (max-width: 991.98px) {
-  .section-heading {
-    margin-top: 20px;
-  }
+#content-section h1, #content-section .h1,
+#content-section h2,
+#content-section .h2,
+#content-section h3,
+#content-section .h3,
+#content-section h4,
+#content-section .h4,
+#content-section h5,
+#content-section .h5,
+#content-section h6,
+#content-section .h6,
+#content-section p {
+  font-family: "DM Serif Display", serif;
+}
+#content-section p {
+  font-family: "DM Sans", sans-serif;
+  color: #3C2A21;
 }
 
-/*# sourceMappingURL=home.css.map */
+/*# sourceMappingURL=single-page.css.map */
