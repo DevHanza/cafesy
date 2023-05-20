@@ -39,12 +39,12 @@ main {
 
 @include media-breakpoint-down(md) {
   .bg-body-tertiary {
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 20px;
+    padding-left: 20px;
   }
 
   .container {
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 20px;
+    padding-left: 20px;
   }
 }

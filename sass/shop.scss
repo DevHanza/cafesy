@@ -86,6 +86,9 @@ body {
 // End - Banner Section
 
 // Start - Products Section
+#products {
+  background-color: $primary-light-2;
+}
 
 .product-card {
   font-family: $sub-font;
@@ -152,8 +155,11 @@ body {
   }
 }
 
-#products {
-  background-color: $primary-light-2;
+@include media-breakpoint-down(lg) {
+  .product-card {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 
 // End - Products Section
@@ -204,6 +210,36 @@ body {
       transform: translateX(-10px);
     }
   }
+}
+
+@include media-breakpoint-down(lg) {
+
+  #special-products {
+    .sp {
+      &-heading {
+        font-family: $main-font;
+        font-size: 40px;
+      }
+  
+      &-p {
+        font-family: $sub-font;
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+    }
+    .product-card {
+      transform: scale(1.05);
+
+    }
+    .sp-card-wrapper {
+      &-1 .product-card {
+        transform: translateX(0px);
+      }
+
+
+    }
+  }
+
 }
 
 // End - Special Products Section

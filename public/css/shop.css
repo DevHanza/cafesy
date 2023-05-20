@@ -10754,12 +10754,12 @@ main {
 
 @media (max-width: 767.98px) {
   .bg-body-tertiary {
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 20px;
+    padding-left: 20px;
   }
   .container {
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 20px;
+    padding-left: 20px;
   }
 }
 .main-button {
@@ -10948,10 +10948,22 @@ header .nav-logo {
   height: 30px;
 }
 header .navbar-toggler {
+  border: 0;
   border-radius: 0;
   padding: 0;
   outline-color: transparent;
   text-align: end;
+}
+header .navbar-toggler:focus, header .navbar-toggler:active {
+  outline: none;
+  box-shadow: none;
+}
+header .navbar-toggler-icon {
+  background-image: none;
+}
+header .navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
 }
 header .nav-toggle-btn {
   color: #fff;
@@ -11131,6 +11143,10 @@ header .nav-toggle-btn {
     margin-top: 10px;
   }
 }
+#products {
+  background-color: #E5E5CB;
+}
+
 .product-card {
   font-family: "DM Sans", sans-serif;
   color: #1A120B;
@@ -11184,10 +11200,12 @@ header .nav-toggle-btn {
   margin-left: 5px;
 }
 
-#products {
-  background-color: #E5E5CB;
+@media (max-width: 991.98px) {
+  .product-card {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
-
 #special-products {
   background-color: #1A120B;
   color: #fff;
@@ -11223,6 +11241,24 @@ header .nav-toggle-btn {
   z-index: 1;
   rotate: 3deg;
   transform: translateX(-10px);
+}
+
+@media (max-width: 991.98px) {
+  #special-products .sp-heading {
+    font-family: "DM Serif Display", serif;
+    font-size: 40px;
+  }
+  #special-products .sp-p {
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  #special-products .product-card {
+    transform: scale(1.05);
+  }
+  #special-products .sp-card-wrapper-1 .product-card {
+    transform: translateX(0px);
+  }
 }
 
 /*# sourceMappingURL=shop.css.map */

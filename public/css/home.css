@@ -10754,12 +10754,12 @@ main {
 
 @media (max-width: 767.98px) {
   .bg-body-tertiary {
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 20px;
+    padding-left: 20px;
   }
   .container {
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 20px;
+    padding-left: 20px;
   }
 }
 .main-button {
@@ -10948,10 +10948,22 @@ header .nav-logo {
   height: 30px;
 }
 header .navbar-toggler {
+  border: 0;
   border-radius: 0;
   padding: 0;
   outline-color: transparent;
   text-align: end;
+}
+header .navbar-toggler:focus, header .navbar-toggler:active {
+  outline: none;
+  box-shadow: none;
+}
+header .navbar-toggler-icon {
+  background-image: none;
+}
+header .navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
 }
 header .nav-toggle-btn {
   color: #fff;

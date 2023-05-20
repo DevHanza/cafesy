@@ -42,7 +42,9 @@ header {
       left: 0;
     }
 
-    &:hover::after, &.active::after, &:focus::after {
+    &:hover::after,
+    &.active::after,
+    &:focus::after {
       opacity: 1;
     }
   }
@@ -52,10 +54,31 @@ header {
   }
 
   .navbar-toggler {
+    border: 0;
     border-radius: 0;
     padding: 0;
     outline-color: transparent;
     text-align: end;
+
+    // &:hover {
+    //   border: 0;
+    // }
+
+    &:focus,
+    &:active {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+
+  .navbar-toggler-icon {
+
+    background-image: none;
+    
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
   }
 
   .nav-toggle-btn {
