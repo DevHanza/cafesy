@@ -13,6 +13,10 @@ app.get("/shop", (req,res) => {
     res.render("shop");
 });
 
+app.get("/about", (req, res) => {
+    res.render("about");
+});
+
 app.listen(3000, (req, res) => {
     console.log("Server is up & Running on port 3000.")
 });
