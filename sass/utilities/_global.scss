@@ -15,7 +15,7 @@ a {
 
   &:hover {
     transition: all $main-tp;
-    color: $white;
+    color: inherit;
   }
 }
 
@@ -27,7 +27,7 @@ a {
     color: inherit;
     text-decoration: underline;
     text-decoration-color: inherit;
-  } 
+  }
 }
 
 main {
@@ -37,10 +37,14 @@ main {
 @include media-breakpoint-down(lg) {
 }
 
-
 @include media-breakpoint-down(md) {
-  .navbar .container,
-  .row > * {
-    padding: 0 30px;
+  .bg-body-tertiary {
+    padding-right: 15px;
+    padding-left: 15px;
   }
- }
+
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}

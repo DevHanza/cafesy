@@ -10735,7 +10735,7 @@ a {
 }
 a:hover {
   transition: all 0.4s;
-  color: #fff;
+  color: inherit;
 }
 
 .no-styles {
@@ -10753,9 +10753,13 @@ main {
 }
 
 @media (max-width: 767.98px) {
-  .navbar .container,
-  .row > * {
-    padding: 0 30px;
+  .bg-body-tertiary {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
   }
 }
 .main-button {
