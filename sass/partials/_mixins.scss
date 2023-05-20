@@ -1,0 +1,6 @@
+@mixin img-hover {
+    &:hover {
+        transform: scale(1.05);
+        transition: all $main-tp;
+      }
+}

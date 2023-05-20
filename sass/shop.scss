@@ -9,6 +9,7 @@
 @import "partials/footer";
 @import "partials/navigation";
 @import "partials/newsletter";
+@import "partials/mixins";
 
 // Start - Banner Section
 #banner {
@@ -90,12 +91,20 @@
   font-family: $sub-font;
   color: $primary-dark;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  overflow: hidden;
 
   &-img {
+    position: relative;
+    z-index: 1;
     width: 100%;
+    transition: all $main-tp;
+
+    @include img-hover;
   }
 
   &-details {
+    position: relative;
+    z-index: 2;
     background-color: $white;
     padding: 15px 25px;
   }
