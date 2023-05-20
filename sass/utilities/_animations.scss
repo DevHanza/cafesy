@@ -1,0 +1,66 @@
+
+// Load on Scroll Animations
+
+// Slide Up
+.slide-up-hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(80%);  
+  }
+  
+  .slide-up-show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+    transition: all 1s;
+  }
+  
+  // Slide Down
+  .slide-down-hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(-80%);  
+  }
+  
+  .slide-down-show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+    transition: all 1s;
+  }
+  
+  // Slide Right
+  .slide-right-hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(20%);  
+  }
+  
+  .slide-right-show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    transition: all 1s;
+  }
+  
+  // Slide Left
+  
+  .slide-left-hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-20%);  
+  }
+  
+  .slide-left-show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    transition: all 1s;
+  }
+  
+  @media(prefers-reduced-motion) {
+    .hidden {
+      transition: none;
+    }
+  }
+  
