@@ -11191,5 +11191,51 @@ header .nav-toggle-btn {
     font-size: 16px;
   }
 }
+#content-section .container {
+  width: 75%;
+}
+#content-section .about-heading {
+  font-size: 50px;
+  background-color: #D5CEA3;
+  display: inline-block;
+}
+#content-section .about-sub-heading {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 15px 0 0 0;
+}
+#content-section .about-p {
+  margin: 30px 0 40px 0;
+}
+#content-section .about-image {
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+  margin-bottom: 40px;
+}
 
-/*# sourceMappingURL=single-page.css.map */
+@media (max-width: 991.98px) {
+  #content-section .container {
+    width: 100%;
+  }
+  #content-section .about-heading {
+    font-size: 30px;
+  }
+  #content-section .about-sub-heading {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 15px 0 0 0;
+  }
+  #content-section .about-p {
+    font-size: 16px;
+    margin: 15px 0 30px 0;
+  }
+  #content-section .about-image {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    margin-bottom: 40px;
+  }
+}
+
+/*# sourceMappingURL=about.css.map */

@@ -13,27 +13,25 @@
 @import "partials/mixins";
 
 #heading-section {
-  position: relative;
   height: 300px;
   color: $white;
-  // background-image: url("https://images.pexels.com/photos/11069896/pexels-photo-11069896.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-  background-color: rgba($color: $primary-dark, $alpha: 1);
-  // background-blend-mode: overlay;
-  
+  background-color: $primary-dark;
+
   h1 {
     font-family: $main-font;
-    font-size: 50px;
+    font-size: 55px;
   }
-  
+
   p {
     font-family: $sub-font;
     color: $light-gray;
   }
 }
 
-
 #content-section {
-    padding: 50px 0;   
+  padding: 80px 0;
+  background-color: $bg-color;
+
   h1,
   h2,
   h3,
@@ -41,15 +39,23 @@
   h5,
   h6,
   p {
-    // margin: 0;
     font-family: $main-font;
   }
 
   p {
     font-family: $sub-font;
-    color: $secondary-dark;
+    color: $dark-gray;
+    font-size: 18px;
   }
+}
 
-
-  background-color: $primary-light-2;
+@include media-breakpoint-down(lg) {
+  #heading-section {
+    h1 {
+      font-size: 40px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
 }
