@@ -23,13 +23,7 @@
                 ethically sourced coffee beans from around the world.
               </p>
               <a href="/shop">
-                <button
-                  type="button"
-                  class="btn btn-light main-button slide-up-hidden"
-                >
-                  Order Now
-                  <i class="fa-solid fa-arrow-right main-button-icon"></i>
-                </button>
+                <%- include('components/main-button', { btntext: "Order Now" ,btnclass : 'main-button', btnanim: "slide-up-hidden" }); %>
               </a>
             </div>
 
@@ -182,10 +176,9 @@
 
           <div class="container align-items-center">
             <div class="d-flex justify-content-center">
-              <button type="button" class="btn main-button slide-up-hidden">
+              <%- include('components/main-button', { btntext: "Visit Shop" ,btnclass : 'main-button', btnanim: "slide-up-hidden" }); %>
                 Visit Shop
-                <i class="fa-solid fa-arrow-right main-button-icon"></i>
-              </button>
+               
             </div>
           </div>
         </div>
