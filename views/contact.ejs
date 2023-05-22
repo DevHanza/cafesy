@@ -38,7 +38,7 @@
                   </p>
 
                   <%- include('components/social-buttons', { myclass :
-                  'justify-content-start' }); %>
+                  ' ' }); %>
                 </div>
               </div>
 
@@ -56,8 +56,7 @@
                   <input
                     class="form-control"
                     type="text"
-                    value="+94"
-                    placeholder="+94 77 1234567"
+                    placeholder="+94 123 456 789"
                     maxlength="14"
                     oninput="formatPhoneNumber(this)"
                     required
@@ -78,6 +77,9 @@
                     rows="3"
                     placeholder="Hi, I have a question about..."
                   ></textarea>
+
+                  <input class="submit-btn" type="submit" value="Submit">
+
                 </div>
               </div>
             </div>

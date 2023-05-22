@@ -11222,6 +11222,17 @@ header .nav-toggle-btn {
   color: #e4e4e4;
   font-family: "DM Sans", sans-serif;
 }
+.contact-form-details .social-icons-wrapper {
+  margin: 50px 0 0 0;
+}
+.contact-form-details .social-icons-wrapper .social-icon {
+  height: 40px;
+  width: 40px;
+  font-size: 20px;
+}
+.contact-form-details .social-icons-wrapper .social-icon:hover i {
+  transform: scale(1);
+}
 .contact-form-inputs {
   height: 100%;
   background-color: #D5CEA3;
@@ -11235,6 +11246,19 @@ header .nav-toggle-btn {
   box-shadow: 0;
   border-bottom: 5px solid black;
   font-family: "DM Sans", sans-serif;
+}
+.contact-form-inputs .submit-btn {
+  background-color: #1A120B;
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+  padding: 10px 30px;
+  margin-top: 15px;
+}
+
+@media (max-width: 991.98px) {
+  .contact-form .row {
+    height: auto;
+  }
 }
 
 /*# sourceMappingURL=contact.css.map */

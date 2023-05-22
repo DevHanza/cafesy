@@ -9,7 +9,7 @@
     height: 100%;
     background-color: $primary-dark;
     padding: 40px;
-    
+
     h2 {
       font-family: $main-font;
       color: $white;
@@ -21,9 +21,24 @@
       color: $light-gray;
       font-family: $sub-font;
     }
-    
+
+    .social-icons-wrapper {
+      margin: 50px 0 0 0;
+
+      .social-icon {
+        height: 40px;
+        width: 40px;
+        font-size: 20px;
+
+        &:hover {
+          i {
+            transform: scale(1);
+          }
+        }
+      }
+    }
   }
-  
+
   &-inputs {
     height: 100%;
     background-color: $primary-light;
@@ -38,6 +53,21 @@
       box-shadow: 0;
       border-bottom: 5px solid black;
       font-family: $sub-font;
+    }
+    .submit-btn {
+      background-color: $primary-dark;
+      color: $white;
+      font-family: $sub-font;
+      padding: 10px 30px;
+      margin-top: 15px;
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .contact-form {
+    .row {
+      height: auto;
     }
   }
 }

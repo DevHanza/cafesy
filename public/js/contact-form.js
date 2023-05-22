@@ -1,3 +1,6 @@
+// Phone Number Character Validation
+
+
 function formatPhoneNumber(input) {
   // Remove all non-digit characters
   let phoneNumber = input.value.replace(/\D/g, "");
@@ -10,5 +13,6 @@ function formatPhoneNumber(input) {
   }
 
   // Update the input value
-  input.value = "+" + phoneNumber;
+  input.value = phoneNumber;
 }
+
