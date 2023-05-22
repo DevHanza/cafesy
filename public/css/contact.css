@@ -11227,5 +11227,14 @@ header .nav-toggle-btn {
   background-color: #D5CEA3;
   padding: 40px;
 }
+.contact-form-inputs .form-label {
+  font-family: "DM Sans", sans-serif;
+  margin-top: 15px;
+}
+.contact-form-inputs .form-control {
+  box-shadow: 0;
+  border-bottom: 5px solid black;
+  font-family: "DM Sans", sans-serif;
+}
 
 /*# sourceMappingURL=contact.css.map */

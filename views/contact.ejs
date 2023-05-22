@@ -6,6 +6,7 @@
     <%- include('../views/partials/head'); %>
     <link rel="stylesheet" href="css/contact.css" />
     <script defer src="js/main.js"></script>
+    <script defer src="js/contact-form.js"></script>
   </head>
 
   <body>
@@ -26,7 +27,7 @@
         <div class="contact-form">
           <div class="container">
             <div class="row g-0">
-              <div class="col-5">
+              <div class="col col-lg-5">
                 <div class="contact-form-details">
                   <h2>Get in Touch!</h2>
                   <p>We value your feedback, inquiries, and suggestions.</p>
@@ -41,40 +42,42 @@
                 </div>
               </div>
 
-              <div class="col-7">
+              <div class="col col-lg-7">
                 <div class="contact-form-inputs">
-
-                  <label for="" class="form-label"
-                    >Name</label
-                  >
+                  <label for="" class="form-label">Name</label>
                   <input
                     type="text"
                     class="form-control"
                     id=""
-                    placeholder=""
+                    placeholder="John Doe"
                   />
 
+                  <label for="" class="form-label">Phone</label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    value="+94"
+                    placeholder="+94 77 1234567"
+                    maxlength="14"
+                    oninput="formatPhoneNumber(this)"
+                    required
+                  />
 
-                  <label for="" class="form-label"
-                    >Email address</label
-                  >
+                  <label for="" class="form-label">Email address</label>
                   <input
                     type="email"
                     class="form-control"
                     id=""
-                    placeholder="name@example.com"
+                    placeholder="johndoe@example.com"
                   />
 
-                  <label for="" class="form-label"
-                    >Message</label
-                  >
+                  <label for="" class="form-label">Message</label>
                   <textarea
                     class="form-control"
                     id=""
                     rows="3"
+                    placeholder="Hi, I have a question about..."
                   ></textarea>
-
-
                 </div>
               </div>
             </div>
