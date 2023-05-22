@@ -10889,19 +10889,16 @@ main {
 .social-icons-wrapper {
   margin: 40px 0;
 }
+.social-icons-wrapper a {
+  text-decoration: none;
+  color: #1A120B;
+}
 .social-icons-wrapper .social-icon {
   line-height: normal;
   height: 50px;
   width: 50px;
   font-size: 25px;
   background-color: #D5CEA3;
-}
-.social-icons-wrapper .social-icon i {
-  transition: all 0.4s;
-}
-.social-icons-wrapper .social-icon:hover i {
-  transform: scale(1.1);
-  transition: all 0.4s;
 }
 
 @media (max-width: 991.98px) {
