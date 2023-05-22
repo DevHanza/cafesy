@@ -2,7 +2,8 @@
 
 .contact-form {
   .row {
-    height: 550px;
+    min-height: 550px;
+    height: auto;
   }
 
   &-details {
@@ -46,14 +47,22 @@
 
     .form-label {
       font-family: $sub-font;
-      margin-top: 15px;
+      &:not(:first-child) {
+        margin-top: 15px;
+      }
     }
 
     .form-control {
-      box-shadow: 0;
+      border-radius: 0;
       border-bottom: 5px solid black;
       font-family: $sub-font;
+
+      &:focus {
+        border-color: $primary-dark;
+  box-shadow: 0 1px 1px rgba($primary-dark, 0.075);
+      }
     }
+
     .submit-btn {
       background-color: $primary-dark;
       color: $white;
@@ -64,10 +73,3 @@
   }
 }
 
-@include media-breakpoint-down(lg) {
-  .contact-form {
-    .row {
-      height: auto;
-    }
-  }
-}

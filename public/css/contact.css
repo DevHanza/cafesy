@@ -11205,7 +11205,8 @@ header .nav-toggle-btn {
   }
 }
 .contact-form .row {
-  height: 550px;
+  min-height: 550px;
+  height: auto;
 }
 .contact-form-details {
   height: 100%;
@@ -11240,12 +11241,18 @@ header .nav-toggle-btn {
 }
 .contact-form-inputs .form-label {
   font-family: "DM Sans", sans-serif;
+}
+.contact-form-inputs .form-label:not(:first-child) {
   margin-top: 15px;
 }
 .contact-form-inputs .form-control {
-  box-shadow: 0;
+  border-radius: 0;
   border-bottom: 5px solid black;
   font-family: "DM Sans", sans-serif;
+}
+.contact-form-inputs .form-control:focus {
+  border-color: #1A120B;
+  box-shadow: 0 1px 1px rgba(26, 18, 11, 0.075);
 }
 .contact-form-inputs .submit-btn {
   background-color: #1A120B;
@@ -11253,12 +11260,6 @@ header .nav-toggle-btn {
   font-family: "DM Sans", sans-serif;
   padding: 10px 30px;
   margin-top: 15px;
-}
-
-@media (max-width: 991.98px) {
-  .contact-form .row {
-    height: auto;
-  }
 }
 
 /*# sourceMappingURL=contact.css.map */
