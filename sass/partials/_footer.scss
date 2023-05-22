@@ -79,16 +79,14 @@ footer {
     margin: 30px 0 0px 0;
 
     .social-icon {
-      line-height: normal;
       height: 30px;
       width: 30px;
       font-size: 16px;
-      background-color: $primary-light;
       color: $primary-dark;
 
       &:hover {
         i {
-          transform: scale(1);
+          transform: scale(none);
         }
       }
     }

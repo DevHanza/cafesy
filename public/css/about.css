@@ -10974,15 +10974,13 @@ footer .social-icons-wrapper {
   margin: 30px 0 0px 0;
 }
 footer .social-icons-wrapper .social-icon {
-  line-height: normal;
   height: 30px;
   width: 30px;
   font-size: 16px;
-  background-color: #D5CEA3;
   color: #1A120B;
 }
 footer .social-icons-wrapper .social-icon:hover i {
-  transform: scale(1);
+  transform: scale(none);
 }
 
 @media (max-width: 991.98px) {
@@ -11188,9 +11186,6 @@ header .nav-toggle-btn {
   padding: 80px 0;
   background-color: #EAEDE9;
 }
-#content-section .container {
-  width: 75%;
-}
 #content-section h1, #content-section .h1,
 #content-section h2,
 #content-section .h2,
@@ -11205,10 +11200,25 @@ header .nav-toggle-btn {
 #content-section p {
   font-family: "DM Serif Display", serif;
 }
+#content-section h2, #content-section .h2 {
+  font-size: 50px;
+  background-color: #D5CEA3;
+  display: inline-block;
+}
+#content-section .container {
+  width: 75%;
+}
 #content-section p {
   font-family: "DM Sans", sans-serif;
   color: #616161;
   font-size: 18px;
+  margin: 30px 0 40px 0;
+}
+#content-section img {
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+  margin-bottom: 40px;
 }
 
 @media (max-width: 991.98px) {
@@ -11218,47 +11228,17 @@ header .nav-toggle-btn {
   #heading-section p {
     font-size: 16px;
   }
-}
-#content-section .container {
-  width: 75%;
-}
-#content-section .about-heading {
-  font-size: 50px;
-  background-color: #D5CEA3;
-  display: inline-block;
-}
-#content-section .about-sub-heading {
-  font-size: 20px;
-  font-weight: 500;
-  margin: 15px 0 0 0;
-}
-#content-section .about-p {
-  margin: 30px 0 40px 0;
-}
-#content-section .about-image {
-  width: 100%;
-  height: 550px;
-  object-fit: cover;
-  margin-bottom: 40px;
-}
-
-@media (max-width: 991.98px) {
   #content-section .container {
     width: 100%;
   }
-  #content-section .about-heading {
+  #content-section .about h2, #content-section .about .h2 {
     font-size: 30px;
   }
-  #content-section .about-sub-heading {
-    font-size: 20px;
-    font-weight: 500;
-    margin: 15px 0 0 0;
-  }
-  #content-section .about-p {
+  #content-section .about p {
     font-size: 16px;
     margin: 15px 0 30px 0;
   }
-  #content-section .about-image {
+  #content-section .about img {
     width: 100%;
     height: 550px;
     object-fit: cover;

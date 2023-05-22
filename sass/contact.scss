@@ -11,8 +11,17 @@
   &-details {
     height: 100%;
     background-color: $primary-dark;
-  }
+    padding: 40px;
+    
+    p {
+      color: $light-gray !important;
+    }
+    
+    h2 {
 
+    }
+  }
+  
   &-inputs {
   }
 }
