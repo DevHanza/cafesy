@@ -11168,6 +11168,39 @@ header .nav-toggle-btn {
     text-align: center;
   }
 }
+#heading-section {
+  height: 300px;
+  color: #fff;
+  background-color: #1A120B;
+}
+#heading-section h1, #heading-section .h1 {
+  font-family: "DM Serif Display", serif;
+  font-size: 55px;
+}
+#heading-section p {
+  font-family: "DM Sans", sans-serif;
+  color: #e4e4e4;
+}
+
+#content-section {
+  padding: 80px 0;
+  background-color: #EAEDE9;
+}
+#content-section .container {
+  width: 75%;
+}
+
+@media (max-width: 991.98px) {
+  #heading-section h1, #heading-section .h1 {
+    font-size: 40px;
+  }
+  #heading-section p {
+    font-size: 16px;
+  }
+  #content-section .container {
+    width: 100%;
+  }
+}
 .section-row {
   height: 700px;
   padding: 40px 0;

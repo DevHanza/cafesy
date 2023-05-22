@@ -1,39 +1,8 @@
-// bootstrap@5.3.0-alpha3
-@import "../node_modules/bootstrap/scss/bootstrap";
-
-@import "utilities/variables";
-@import "utilities/global";
-@import "utilities/animations";
-
-@import "components/buttons";
-@import "components/social-buttons";
+@import "main";
 
 
-@import "partials/footer";
-@import "partials/navigation";
-@import "partials/newsletter";
-@import "partials/mixins";
-
-#heading-section {
-  height: 300px;
-  color: $white;
-  background-color: $primary-dark;
-
-  h1 {
-    font-family: $main-font;
-    font-size: 55px;
-  }
-
-  p {
-    font-family: $sub-font;
-    color: $light-gray;
-  }
-}
 
 #content-section {
-
-  padding: 80px 0;
-  background-color: $bg-color;
 
   h1,
   h2,
@@ -45,16 +14,12 @@
     font-family: $main-font;
   }
 
-
   h2 {
-      font-size: 50px;
-      background-color: $primary-light;
-      display: inline-block;
-    }
-
-  .container {
-    width: 75%;
+    font-size: 50px;
+    background-color: $primary-light;
+    display: inline-block;
   }
+
 
   p {
     font-family: $sub-font;
@@ -73,37 +38,22 @@
 
 @include media-breakpoint-down(lg) {
 
-  #heading-section {
-    h1 {
-      font-size: 40px;
+  #content-section {
+
+    h2 {
+      font-size: 30px;
     }
+
     p {
       font-size: 16px;
+      margin: 15px 0 30px 0;
     }
-  }
 
-  #content-section {
-    .container {
+    img {
       width: 100%;
-    }
-
-    .about {
-      h2 {
-        font-size: 30px;
-      }
-
-      p {
-        font-size: 16px;
-        margin: 15px 0 30px 0;
-      }
-
-      img {
-        width: 100%;
-        height: 550px;
-        object-fit: cover;
-        margin-bottom: 40px;
-      }
+      height: 350px;
+      object-fit: cover;
+      margin-bottom: 40px;
     }
   }
 }
-

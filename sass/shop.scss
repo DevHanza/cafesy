@@ -1,15 +1,4 @@
-@import "../node_modules/bootstrap/scss/bootstrap";
-
-@import "utilities/variables";
-@import "utilities/global";
-@import "utilities/animations";
-
-@import "components/buttons";
-
-@import "partials/footer";
-@import "partials/navigation";
-@import "partials/newsletter";
-@import "partials/mixins";
+@import "main";
 
 // Start - Banner Section
 #banner {
