@@ -1,0 +1,22 @@
+@import "main";
+
+#FAQaccordion {
+    .accordion-button {
+        font-family: $sub-font;
+        font-weight: 500;
+        font-size: 18px;
+        color: $primary-dark;
+
+        &:not(.collapsed), &:focus {
+            color: $secondary-dark;
+            background-color: rgba($color: $secondary-dark, $alpha: .1);
+            box-shadow: 0 0 0 0.25rem rgba($color: $secondary-dark, $alpha: .1);
+            border-color: rgba($color: $secondary-dark, $alpha: .1) ;
+        }
+    }
+
+    .accordion-body {
+        font-family: $sub-font;
+        color: $primary-dark;
+    }
+}
