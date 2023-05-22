@@ -11219,5 +11219,15 @@ header .nav-toggle-btn {
     font-size: 16px;
   }
 }
+.contact-form {
+  color: #fff;
+}
+.contact-form .row {
+  height: 550px;
+}
+.contact-form-details {
+  height: 100%;
+  background-color: #1A120B;
+}
 
-/*# sourceMappingURL=single-page.css.map */
+/*# sourceMappingURL=contact.css.map */

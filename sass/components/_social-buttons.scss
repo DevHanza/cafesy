@@ -1,0 +1,31 @@
+.social-icons-wrapper {
+    margin: 40px 0;
+  
+    .social-icon {
+      line-height: normal;
+      height: 50px;
+      width: 50px;
+      font-size: 25px;
+      background-color: $primary-light;
+  
+      i {
+        transition: all $main-tp;
+      }
+  
+      &:hover {
+        i {
+          transform: scale(1.1);
+          transition: all $main-tp;
+        }
+      }
+    }
+  }
+
+
+  @include media-breakpoint-down(lg) {
+    .social-icon {
+        height: 40px;
+        width: 40px;
+        font-size: 20px;
+      }
+  }

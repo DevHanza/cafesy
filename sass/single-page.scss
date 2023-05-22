@@ -6,6 +6,8 @@
 @import "utilities/animations";
 
 @import "components/buttons";
+@import "components/social-buttons";
+
 
 @import "partials/footer";
 @import "partials/navigation";
@@ -31,6 +33,10 @@
 #content-section {
   padding: 80px 0;
   background-color: $bg-color;
+
+  .container {
+    width: 75%;
+  }
 
   h1,
   h2,

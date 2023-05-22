@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Cafésy - Connected. Organic. Alive.</title>
+
+    <%- include('../views/partials/head'); %>
+    <link rel="stylesheet" href="css/contact.css" />
+    <script defer src="js/main.js"></script>
+  </head>
+
+  <body>
+    <%- include('../views/partials/header'); %>
+
+    <main>
+      <section
+        id="heading-section"
+        class="d-flex align-items-center text-center"
+      >
+        <div class="container">
+          <h1>Contact</h1>
+          <p>Get in Touch with Cafesy & We're Here to Assist You!</p>
+        </div>
+      </section>
+
+      <section id="content-section">
+        <div class="contact-form">
+          <div class="container">
+            <div class="row">
+              <div class="col-5">
+                <div class="contact-form-details">
+                  <h1>Get in Touch!</h1>
+                  <p>
+                    We value your feedback, inquiries, and suggestions. If you
+                    have any questions or need assistance, please don't hesitate
+                    to reach out to us. Our dedicated customer support team is
+                    here to help.
+                  </p>
+
+                  <%- include('components/social-buttons', { myclass : 'justify-content-start' }); %>
+                </div>
+              </div>
+
+              <div class="col-7">
+                <div class="contact-form-inputs">
+                  <div class="form-floating mb-3">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="floatingInput"
+                      placeholder="name@example.com"
+                    />
+                    <label for="floatingInput">Email address</label>
+                  </div>
+
+                  <div class="form-floating mb-3">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="floatingInput"
+                      placeholder="name@example.com"
+                    />
+                    <label for="floatingInput">Email address</label>
+                  </div>
+
+                  <div class="form-floating">
+                    <textarea
+                      class="form-control"
+                      placeholder="Leave a comment here"
+                      id="floatingTextarea2"
+                      style="height: 200px"
+                    ></textarea>
+                    <label for="floatingTextarea2">Comments</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <%-include('../views/partials/newsletter'); %>
+    <%-include('../views/partials/footer'); %>
+  </body>
+</html>

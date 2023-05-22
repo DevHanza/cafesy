@@ -10886,6 +10886,31 @@ main {
     padding: 0 30px;
   }
 }
+.social-icons-wrapper {
+  margin: 40px 0;
+}
+.social-icons-wrapper .social-icon {
+  line-height: normal;
+  height: 50px;
+  width: 50px;
+  font-size: 25px;
+  background-color: #D5CEA3;
+}
+.social-icons-wrapper .social-icon i {
+  transition: all 0.4s;
+}
+.social-icons-wrapper .social-icon:hover i {
+  transform: scale(1.1);
+  transition: all 0.4s;
+}
+
+@media (max-width: 991.98px) {
+  .social-icon {
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+  }
+}
 footer {
   color: #fff;
 }
@@ -11171,24 +11196,6 @@ header .nav-toggle-btn {
   object-fit: cover;
 }
 
-.social-icons-wrapper {
-  margin: 40px 0;
-}
-.social-icons-wrapper .social-icon {
-  line-height: normal;
-  height: 50px;
-  width: 50px;
-  font-size: 25px;
-  background-color: #D5CEA3;
-}
-.social-icons-wrapper .social-icon i {
-  transition: all 0.4s;
-}
-.social-icons-wrapper .social-icon:hover i {
-  transform: scale(1.1);
-  transition: all 0.4s;
-}
-
 @media (max-width: 991.98px) {
   .section-row {
     height: auto;
@@ -11207,11 +11214,6 @@ header .nav-toggle-btn {
     max-height: 250px;
     object-position: bottom;
     width: 100%;
-  }
-  .social-icon {
-    height: 40px;
-    width: 40px;
-    font-size: 20px;
   }
 }
 #hero .container h1, #hero .container .h1 {
