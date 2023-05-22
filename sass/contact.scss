@@ -1,8 +1,6 @@
 @import "main";
 
 .contact-form {
-  color: $white;
-
   .row {
     height: 550px;
   }
@@ -12,15 +10,23 @@
     background-color: $primary-dark;
     padding: 40px;
     
+    h2 {
+      font-family: $main-font;
+      color: $white;
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
     p {
-      color: $light-gray !important;
+      color: $light-gray;
+      font-family: $sub-font;
     }
     
-    h2 {
-
-    }
   }
   
   &-inputs {
+    height: 100%;
+    background-color: $primary-light;
+    padding: 40px;
   }
 }

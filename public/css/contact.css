@@ -11191,6 +11191,9 @@ header .nav-toggle-btn {
 }
 
 @media (max-width: 991.98px) {
+  #heading-section {
+    padding: 0 30px;
+  }
   #heading-section h1, #heading-section .h1 {
     font-size: 40px;
   }
@@ -11201,9 +11204,6 @@ header .nav-toggle-btn {
     width: 100%;
   }
 }
-.contact-form {
-  color: #fff;
-}
 .contact-form .row {
   height: 550px;
 }
@@ -11212,8 +11212,20 @@ header .nav-toggle-btn {
   background-color: #1A120B;
   padding: 40px;
 }
+.contact-form-details h2, .contact-form-details .h2 {
+  font-family: "DM Serif Display", serif;
+  color: #fff;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
 .contact-form-details p {
-  color: #e4e4e4 !important;
+  color: #e4e4e4;
+  font-family: "DM Sans", sans-serif;
+}
+.contact-form-inputs {
+  height: 100%;
+  background-color: #D5CEA3;
+  padding: 40px;
 }
 
 /*# sourceMappingURL=contact.css.map */

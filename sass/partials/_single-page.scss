@@ -26,6 +26,8 @@
 
 @include media-breakpoint-down(lg) {
   #heading-section {
+    padding: 0 30px;
+    
     h1 {
       font-size: 40px;
     }
