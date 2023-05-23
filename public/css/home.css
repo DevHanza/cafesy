@@ -10908,6 +10908,24 @@ main {
     font-size: 20px;
   }
 }
+.accordion-button {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #1A120B;
+}
+.accordion-button:not(.collapsed), .accordion-button:focus {
+  color: #3C2A21;
+  background-color: rgba(60, 42, 33, 0.1);
+  box-shadow: 0 0 0 0.25rem rgba(60, 42, 33, 0.1);
+  border-color: rgba(60, 42, 33, 0.1);
+}
+
+.accordion-body {
+  font-family: "DM Sans", sans-serif;
+  color: #1A120B;
+}
+
 footer {
   color: #fff;
 }
@@ -11202,8 +11220,7 @@ header .nav-toggle-btn {
   }
 }
 .section-row {
-  height: 700px;
-  padding: 40px 0;
+  padding: 100px 0;
 }
 .section-heading {
   font-size: 65px;
@@ -11219,7 +11236,7 @@ header .nav-toggle-btn {
 .section-heading-text {
   font-family: "DM Sans", sans-serif;
   font-size: 20px;
-  color: #fff;
+  color: #e4e4e4;
 }
 .section-image {
   height: 600px;
@@ -11246,6 +11263,10 @@ header .nav-toggle-btn {
     object-position: bottom;
     width: 100%;
   }
+}
+#hero .section-row {
+  padding: 120px 0;
+  height: auto;
 }
 #hero .container h1, #hero .container .h1 {
   font-family: "DM Serif Display", serif;
@@ -11382,6 +11403,9 @@ header .nav-toggle-btn {
     font-size: 25px;
   }
 }
+#products .row.second-row {
+  margin: 55px 0;
+}
 #products .row.second-row .coffee-card {
   color: #1A120B;
   background-color: #fff;
@@ -11494,6 +11518,9 @@ header .nav-toggle-btn {
   #feedback .review-wrapper {
     font-size: 18px;
   }
+}
+#blog .second-row {
+  margin: 55px 0 0;
 }
 #blog .blog-card {
   background-color: #fff;

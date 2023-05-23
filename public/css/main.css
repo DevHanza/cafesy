@@ -10908,6 +10908,24 @@ main {
     font-size: 20px;
   }
 }
+.accordion-button {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #1A120B;
+}
+.accordion-button:not(.collapsed), .accordion-button:focus {
+  color: #3C2A21;
+  background-color: rgba(60, 42, 33, 0.1);
+  box-shadow: 0 0 0 0.25rem rgba(60, 42, 33, 0.1);
+  border-color: rgba(60, 42, 33, 0.1);
+}
+
+.accordion-body {
+  font-family: "DM Sans", sans-serif;
+  color: #1A120B;
+}
+
 footer {
   color: #fff;
 }

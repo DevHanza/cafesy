@@ -34,7 +34,7 @@ const observer = new IntersectionObserver((entries) => {
           "slide-down-hidden"
         );
         setAnimationPlayed(entry.target);
-      }, 200 * index);
+      }, 150 * index);
     } else {
       entry.target.classList.remove(
         "slide-up-show",

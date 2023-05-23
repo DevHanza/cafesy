@@ -6,7 +6,7 @@ app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
 app.get("/", (req, res)=> {
-    res.render("index");
+    res.render("home");
 });
 
 app.get("/shop", (req,res) => {
@@ -23,6 +23,10 @@ app.get("/contact", (req, res) => {
 
 app.get("/faq", (req, res) => {
     res.render("faq");
+});
+
+app.get("blog", (req, res) => {
+    res.render("blog");
 });
 
 app.listen(3000, (req, res) => {
