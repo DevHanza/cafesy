@@ -11247,6 +11247,7 @@ header .nav-toggle-btn {
 @media (max-width: 991.98px) {
   .section-row {
     height: auto;
+    padding: 50px 0;
   }
   .section-heading {
     font-size: 40px;
@@ -11445,6 +11446,9 @@ header .nav-toggle-btn {
 }
 
 @media (max-width: 991.98px) {
+  #products .row.second-row {
+    margin: 10px 0 0 0s;
+  }
   #products .row.second-row .coffee-card {
     margin-bottom: 20px;
   }
@@ -11559,6 +11563,9 @@ header .nav-toggle-btn {
 }
 
 @media (max-width: 991.98px) {
+  #blog .second-row {
+    margin: 10px 0 0 0;
+  }
   #blog .blog-card {
     margin-bottom: 20px;
   }

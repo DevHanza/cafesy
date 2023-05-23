@@ -37,6 +37,7 @@
   .section {
     &-row {
       height: auto;
+      padding: 50px 0;
     }
 
     &-heading {
@@ -247,6 +248,7 @@
   .row {
     &.second-row {
       margin: 55px 0;
+
       .coffee-card {
         color: $primary-dark;
         background-color: $white;
@@ -300,6 +302,7 @@
   #products {
     .row {
       &.second-row {
+        margin: 10px 0 0 0s;
         .coffee-card {
           margin-bottom: 20px;
         }
@@ -413,7 +416,6 @@
 // Start - Blog Section
 
 #blog {
-
   .second-row {
     margin: 55px 0 0;
   }
@@ -460,6 +462,10 @@
 
 @include media-breakpoint-down(lg) {
   #blog {
+    .second-row {
+      margin: 10px 0 0 0;
+    }
+
     .blog-card {
       margin-bottom: 20px;
     }
