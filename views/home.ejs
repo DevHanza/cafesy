@@ -1,355 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Cafésy - Connected. Organic. Alive.</title>
 
-    <%- include('../views/partials/head'); %>
-    <link rel="stylesheet" href="css/home.css" />
-  </head>
+<head>
+  <title>Cafésy - Connected. Organic. Alive.</title>
 
-  <body>
-    <%- include('../views/partials/header'); %>
+  <%- include('../views/partials/head'); %>
+  <link rel="stylesheet" href="css/home.css" />
+</head>
 
-    <main>
-      <section id="hero" class="d-flex align-items-center text-white">
-        <div class="container text-center text-lg-start text-md-start">
-          <div class="section-row row">
-            <div class="col col-lg-6 my-auto order-2 order-lg-1">
-              <h2 class="slide-up-hidden">Where Every Sip is an</h2>
-              <h1 class="slide-up-hidden">Experience!</h1>
-              <p class="slide-up-hidden">
-                Our coffee cafe offers a wide selection of high-quality,
-                ethically sourced coffee beans from around the world.
-              </p>
-              <a href="/shop">
-                <%- include('components/main-button', { btntext: "Order Now" ,btnclass : 'main-button', btnanim: "slide-up-hidden" }); %>
-              </a>
-            </div>
+<body>
+  <%- include('../views/partials/header'); %>
 
-            <div class="col col-lg-6 my-auto order-1 order-lg-2">
-              <div class="text-center d-flex justify-content-center">
-                <div class="hero-img-wrapper slide-right-hidden">
-                  <img
-                    class="bean-1"
-                    src="/img/Beans-1.webp"
-                    alt="Coffee Bean 1"
-                  />
-                  <img
-                    class="bean-2"
-                    src="/img/Beans-2.webp"
-                    alt="Coffee Bean 2"
-                  />
-                  <img
-                    class="bean-3"
-                    src="/img/Beans-3.webp"
-                    alt="Coffee Bean 3"
-                  />
-                  <img
-                    class="bean-4"
-                    src="/img/Beans-4.webp"
-                    alt="Coffee Bean 4"
-                  />
-                  <img
-                    class="hero-img"
-                    src="/img/cafesy-coffee-cup.webp"
-                    alt="Picture of a Cafesy Coffee Cup"
-                  />
-                </div>
+  <main>
+    <section id="hero" class="d-flex align-items-center text-white">
+      <div class="container text-center text-lg-start text-md-start">
+        <div class="section-row row">
+          <div class="col col-lg-6 my-auto order-2 order-lg-1">
+            <h2 class="slide-up-hidden">Where Every Sip is an</h2>
+            <h1 class="slide-up-hidden">Experience!</h1>
+            <p class="slide-up-hidden">
+              Our coffee cafe offers a wide selection of high-quality,
+              ethically sourced coffee beans from around the world.
+            </p>
+            <a href="/shop">
+              <%- include('components/main-button', { btntext: "Order Now" ,btnclass : 'main-button', btnanim: "slide-up-hidden" }); %>
+            </a>
+          </div>
+
+          <div class="col col-lg-6 my-auto order-1 order-lg-2">
+            <div class="text-center d-flex justify-content-center">
+              <div class="hero-img-wrapper slide-right-hidden">
+                <img class="bean-1" src="/img/Beans-1.webp" alt="Coffee Bean 1" />
+                <img class="bean-2" src="/img/Beans-2.webp" alt="Coffee Bean 2" />
+                <img class="bean-3" src="/img/Beans-3.webp" alt="Coffee Bean 3" />
+                <img class="bean-4" src="/img/Beans-4.webp" alt="Coffee Bean 4" />
+                <img class="hero-img" src="/img/cafesy-coffee-cup.webp" alt="Picture of a Cafesy Coffee Cup" />
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <section id="about">
-      <div class="container text-center text-lg-start text-md-start">
-        <div class="row section-row align-items-center">
-          <div class="col-lg-5">
-            <img
-              class="section-image slide-left-hidden"
-              src="img/about-section.webp"
-              alt=""
-            />
-          </div>
-
-          <div class="col-lg-7">
-            <h2 class="section-heading slide-up-hidden">Our Story</h2>
-
-            <p class="section-p slide-up-hidden">
-              At <span class="brand-text">Cafésy</span>, we're passionate about
-              coffee. Our journey began 2018 when our founder, Hansana Prabath,
-              set out to create a coffee shop that was more than just a place to
-              grab a quick cup of joe.
-            </p>
-            <br />
-            <p class="section-p slide-up-hidden">
-              Today, our cafe is a community hub where coffee lovers can gather,
-              relax, and enjoy a delicious cup of coffee made with only the
-              freshest and highest quality ingredients.
-            </p>
           </div>
         </div>
       </div>
     </section>
+  </main>
 
-    <section id="products">
-      <div class="container">
-        <div class="row section-row align-items-center">
-          <div class="container text-center first-row">
-            <h2 class="section-heading slide-up-hidden">
-              Explore Coffee Selection
-            </h2>
-            <p class="section-heading-text slide-up-hidden">
-              At Cafésy, we offer a wide variety of coffee types from around the
-              world.
-            </p>
-          </div>
+  <section id="about">
+    <div class="container text-center text-lg-start text-md-start">
+      <div class="row section-row align-items-center">
+        <div class="col-lg-5">
+          <img class="section-image slide-left-hidden" src="img/about-section.webp" alt="" />
+        </div>
 
-          <div class="container">
-            <div class="row second-row">
-              <div class="col-lg-4">
-                <div class="coffee-card slide-up-hidden">
-                  <a href="/shop">
-                    <img
-                      class="coffee-card-image"
-                      src="/img/Americano.webp"
-                      alt="Cup of Espresso"
-                    />
-                  </a>
-                  <div class="coffee-card-text-wrapper">
-                    <h3 class="coffee-card-heading">
-                      <a class="no-styles" href="/shop">Espresso</a>
-                    </h3>
-                    <p class="coffee-card-p">
-                      An Awesome classic Italian coffee, characterized by its
-                      strong, rich flavor and thick cream.
-                    </p>
-                  </div>
+        <div class="col-lg-7">
+          <h2 class="section-heading slide-up-hidden">Our Story</h2>
+
+          <p class="section-p slide-up-hidden">
+            At <span class="brand-text">Cafésy</span>, we're passionate about
+            coffee. Our journey began 2018 when our founder, Hansana Prabath,
+            set out to create a coffee shop that was more than just a place to
+            grab a quick cup of joe.
+          </p>
+          <br />
+          <p class="section-p slide-up-hidden">
+            Today, our cafe is a community hub where coffee lovers can gather,
+            relax, and enjoy a delicious cup of coffee made with only the
+            freshest and highest quality ingredients.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="products">
+    <div class="container">
+      <div class="row section-row align-items-center">
+        <div class="container text-center first-row">
+          <h2 class="section-heading slide-up-hidden">
+            Explore Coffee Selection
+          </h2>
+          <p class="section-heading-text slide-up-hidden">
+            At Cafésy, we offer a wide variety of coffee types from around the
+            world.
+          </p>
+        </div>
+
+        <div class="container">
+          <div class="row second-row">
+            <div class="col-lg-4">
+              <div class="coffee-card slide-up-hidden">
+                <a href="/shop">
+                  <img class="coffee-card-image" src="/img/Americano.webp" alt="Cup of Espresso" />
+                </a>
+                <div class="coffee-card-text-wrapper">
+                  <h3 class="coffee-card-heading">
+                    <a class="no-styles" href="/shop">Espresso</a>
+                  </h3>
+                  <p class="coffee-card-p">
+                    An Awesome classic Italian coffee, characterized by its
+                    strong, rich flavor and thick cream.
+                  </p>
                 </div>
               </div>
+            </div>
 
-              <div class="col-lg-4">
-                <div class="coffee-card slide-up-hidden">
-                  <a href="/shop">
-                    <img
-                      class="coffee-card-image"
-                      src="/img/Americano.webp"
-                      alt="Cup of Americano"
-                    />
-                  </a>
-                  <div class="coffee-card-text-wrapper">
-                    <h3 class="coffee-card-heading">
-                      <a class="no-styles" href="/shop">Americano</a>
-                    </h3>
-                    <p class="coffee-card-p">
-                      Made by adding hot water to a shot of espresso, creating a
-                      smooth, bold cup of coffee.
-                    </p>
-                  </div>
+            <div class="col-lg-4">
+              <div class="coffee-card slide-up-hidden">
+                <a href="/shop">
+                  <img class="coffee-card-image" src="/img/Americano.webp" alt="Cup of Americano" />
+                </a>
+                <div class="coffee-card-text-wrapper">
+                  <h3 class="coffee-card-heading">
+                    <a class="no-styles" href="/shop">Americano</a>
+                  </h3>
+                  <p class="coffee-card-p">
+                    Made by adding hot water to a shot of espresso, creating a
+                    smooth, bold cup of coffee.
+                  </p>
                 </div>
               </div>
+            </div>
 
-              <div class="col-lg-4">
-                <div class="coffee-card slide-up-hidden">
-                  <a href="/shop">
-                    <img
-                      class="coffee-card-image"
-                      src="/img/Americano.webp"
-                      alt="Cup of Milk Latte"
-                    />
-                  </a>
-                  <div class="coffee-card-text-wrapper">
-                    <h3 class="coffee-card-heading">
-                      <a class="no-styles" href="/shop">Milk Latte</a>
-                    </h3>
-                    <p class="coffee-card-p">
-                      A creamy, milky coffee made with espresso and steamed
-                      milk, topped with a layer of thick milk.
-                    </p>
-                  </div>
+            <div class="col-lg-4">
+              <div class="coffee-card slide-up-hidden">
+                <a href="/shop">
+                  <img class="coffee-card-image" src="/img/Americano.webp" alt="Cup of Milk Latte" />
+                </a>
+                <div class="coffee-card-text-wrapper">
+                  <h3 class="coffee-card-heading">
+                    <a class="no-styles" href="/shop">Milk Latte</a>
+                  </h3>
+                  <p class="coffee-card-p">
+                    A creamy, milky coffee made with espresso and steamed
+                    milk, topped with a layer of thick milk.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="container align-items-center">
-            <div class="d-flex justify-content-center">
-              <a href="/shop">
+        <div class="container align-items-center">
+          <div class="d-flex justify-content-center">
+            <a href="/shop">
               <%- include('components/main-button', { btntext: "Visit Shop" ,btnclass : 'main-button', btnanim: "slide-up-hidden" }); %>
             </a>
-            </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="feedback" class="d-flex align-items-center">
-      <div class="container">
-        <div class="row section-row align-items-center">
-          <div class="col-lg-7">
-            <div class="text-center text-lg-start text-md-start">
-              <h2 class="section-heading slide-up-hidden">
-                People Love Cafésy!
-              </h2>
-              <p class="section-heading-text slide-up-hidden">
-                We pride ourselves on providing not only the highest quality
-                coffee but also exceptional customer service.
-              </p>
-            </div>
-
-            <div
-              id="feedback-slider"
-              class="carousel carousel-fade slide-up-hidden"
-              data-bs-ride="carousel"
-              data-bs-interval="2000"
-            >
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <div class="user-info d-flex flex-row align-items-center">
-                    <div class="user-info-pic">
-                      <img
-                        class="user-info-pic"
-                        src="img/user-1.webp"
-                        alt="Photo of the User"
-                      />
-                    </div>
-                    <div class="user-info-name">
-                      <h6>Ryan T.</h6>
-                      <p>First-Time Customer</p>
-                    </div>
-                  </div>
-
-                  <div class="review-wrapper">
-                    <p>
-                      “ The coffee here is so fresh and flavorful. You can tell
-                      they really care about the quality of their beans and
-                      their brewing process. ”
-                    </p>
-                  </div>
-                </div>
-
-                <div class="carousel-item">
-                  <div class="user-info d-flex flex-row align-items-center">
-                    <div class="user-info-pic">
-                      <img
-                        class="user-info-pic"
-                        src="img/user-2.webp"
-                        alt="Photo of the User"
-                      />
-                    </div>
-                    <div class="user-info-name">
-                      <h6>Jake S.</h6>
-                      <p>Coffee Expert</p>
-                    </div>
-                  </div>
-
-                  <div class="review-wrapper">
-                    <p>
-                      “ I love the cozy, relaxed atmosphere at Cafésy and It's
-                      the perfect spot to catch up with friends while enjoying a
-                      great cup of coffee. ”
-                    </p>
-                  </div>
-                </div>
-
-                <div class="carousel-item">
-                  <div class="user-info d-flex flex-row align-items-center">
-                    <div class="user-info-pic">
-                      <img
-                        class="user-info-pic"
-                        src="img/user-3.webp"
-                        alt="Photo of the User"
-                      />
-                    </div>
-                    <div class="user-info-name">
-                      <h6>Maria K.</h6>
-                      <p>Satisfied Customer</p>
-                    </div>
-                  </div>
-
-                  <div class="review-wrapper">
-                    <p>
-                      “ This is my go-to coffee spot. The baristas are always
-                      friendly and remember my order, and the coffee is
-                      consistently delicious. ”
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-5">
-            <img
-              class="section-image slide-right-hidden"
-              src="img/about-section.webp"
-              alt="A Lady Pouring Coffee into a Glass"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="blog">
-      <div class="container">
-        <div class="row section-row align-items-center">
-          <div class="container text-center first-row">
-            <h2 class="section-heading slide-up-hidden">Sip & Share</h2>
+  <section id="feedback" class="d-flex align-items-center justify-content-center justify-content-lg-start">
+    <div class="container">
+      <div class="row section-row align-items-center">
+        <div class="col">
+          <div class="text-center">
+            <h2 class="section-heading slide-up-hidden">
+              People Love Cafésy!
+            </h2>
             <p class="section-heading-text slide-up-hidden">
-              Insights and Inspiration for Coffee Aficionados
+              We pride ourselves with our high quality
+              coffee and exceptional customer service.
             </p>
           </div>
 
-          <div class="container">
-            <div class="row second-row align-items-center">
-              <div class="col-lg-4">
-                <div class="blog-card slide-up-hidden">
-                  <div class="blog-card-image-wrapper">
-                    <img src="img/post-1.webp" alt="" />
-                  </div>
+          <div id="feedback-slider" class="carousel carousel-fade slide-up-hidden mx-auto" data-bs-ride="carousel" data-bs-interval="2500">
+            <div class="carousel-inner">
 
-                  <div class="blog-card-data">
-                    <div class="blog-card-title">
-                      5 Surprising Health Benefits of Drinking Coffee
-                    </div>
-                    <div class="blog-card-meta">
-                      By Marie — Published on May 06
-                    </div>
+              <div class="carousel-item active">
+
+                <%- include('components/feedback-slide', { name: "Maria K.", title: "Satisfied Customer", rating: "2", user: "3" , review: "“ This is my go-to coffee spot. The baristas are alwaysfriendly and remember my order, and the coffee is consistently delicious. ”"}); %>
+              
+              </div>
+
+              <div class="carousel-item">
+
+                <%- include('components/feedback-slide', { name: "Ryan T.", rating: "1", user: "2" ,title: "First-Time Customer", review: "“ The coffee here is so fresh and flavorful. You can tell they really care about the quality of their beans and their brewing process. ”" }); %>
+
+              </div>
+
+              <div class="carousel-item">
+
+                <%- include('components/feedback-slide', { name: "Jake S.", rating: "1", user: "1" ,title: "Coffee Expert", review: "       “ I love the cozy, relaxed atmosphere at Cafésy and It's the perfect spot to catch up with friends while enjoying a great cup of coffee. ”" }); %>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="blog">
+    <div class="container">
+      <div class="row section-row align-items-center">
+        <div class="container text-center first-row">
+          <h2 class="section-heading slide-up-hidden">Sip & Share</h2>
+          <p class="section-heading-text slide-up-hidden">
+            Insights and Inspiration for Coffee Aficionados
+          </p>
+        </div>
+
+        <div class="container">
+          <div class="row second-row align-items-center">
+            <div class="col-lg-4">
+              <div class="blog-card slide-up-hidden">
+                <div class="blog-card-image-wrapper">
+                  <img src="img/post-1.webp" alt="" />
+                </div>
+
+                <div class="blog-card-data">
+                  <div class="blog-card-title">
+                    5 Surprising Health Benefits of Drinking Coffee
+                  </div>
+                  <div class="blog-card-meta">
+                    By Marie — Published on May 06
                   </div>
                 </div>
               </div>
+            </div>
 
-              <div class="col-lg-4">
-                <div class="blog-card slide-up-hidden">
-                  <div class="blog-card-image-wrapper">
-                    <img src="img/post-2.webp" alt="" />
+            <div class="col-lg-4">
+              <div class="blog-card slide-up-hidden">
+                <div class="blog-card-image-wrapper">
+                  <img src="img/post-2.webp" alt="" />
+                </div>
+
+                <div class="blog-card-data">
+                  <div class="blog-card-title">
+                    The Art of Latte Art: How Our Baristas Create Perfect
+                    Coffees
                   </div>
-
-                  <div class="blog-card-data">
-                    <div class="blog-card-title">
-                      The Art of Latte Art: How Our Baristas Create Perfect
-                      Coffees
-                    </div>
-                    <div class="blog-card-meta">
-                      By Charles — Published on May 05
-                    </div>
+                  <div class="blog-card-meta">
+                    By Charles — Published on May 05
                   </div>
                 </div>
               </div>
+            </div>
 
-              <div class="col-lg-4">
-                <div class="blog-card slide-up-hidden">
-                  <div class="blog-card-image-wrapper">
-                    <img src="img/post-3.webp" alt="" />
+            <div class="col-lg-4">
+              <div class="blog-card slide-up-hidden">
+                <div class="blog-card-image-wrapper">
+                  <img src="img/post-3.webp" alt="" />
+                </div>
+
+                <div class="blog-card-data">
+                  <div class="blog-card-title">
+                    How to Brew the Perfect Cup of Coffee at Home
                   </div>
-
-                  <div class="blog-card-data">
-                    <div class="blog-card-title">
-                      How to Brew the Perfect Cup of Coffee at Home
-                    </div>
-                    <div class="blog-card-meta">
-                      By Joseph — Published on May 05
-                    </div>
+                  <div class="blog-card-meta">
+                    By Joseph — Published on May 05
                   </div>
                 </div>
               </div>
@@ -357,39 +257,35 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="contact">
-      <div class="container text-center text-lg-start text-md-start">
-        <div class="row section-row align-items-center">
-          <div class="col-lg-5">
-            <img
-              class="section-image slide-left-hidden"
-              src="img/about-section.webp"
-              alt=""
-            />
-          </div>
+  <section id="contact">
+    <div class="container text-center text-lg-start text-md-start">
+      <div class="row section-row align-items-center">
+        <div class="col-lg-5">
+          <img class="section-image slide-left-hidden" src="img/about-section.webp" alt="" />
+        </div>
 
-          <div class="col-lg-7">
-            <h2 class="section-heading slide-up-hidden">Get in Touch</h2>
+        <div class="col-lg-7">
+          <h2 class="section-heading slide-up-hidden">Get in Touch</h2>
 
-         
-              <%- include('components/social-buttons', { myclass : 'justify-content-center justify-content-md-start justify-content-lg-start slide-up-hidden' }); %>
-            
+          <%- include('components/social-buttons', { myclass :'justify-content-center justify-content-md-start justify-content-lg-start slide-up-hidden' }); %>
 
-            <p class="section-p slide-up-hidden">
-              We love hearing from our customers! Whether you have a question,
-              comment, or just want to say hello, we're here to help. You can
-              reach us by phone, email, or by filling out the contact form
-              <a href="/contact">here</a>. Our team will get back to you as soon as
-              possible.
-            </p>
-          </div>
+          <p class="section-p slide-up-hidden">
+            We love hearing from our customers! Whether you have a question,
+            comment, or just want to say hello, we're here to help. You can
+            reach us by phone, email, or by filling out the contact form
+            <a href="/contact">here</a>. Our team will get back to you as soon
+            as possible.
+          </p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <%- include('../views/partials/newsletter'); %> <%-
-    include('../views/partials/footer'); %>
-  </body>
+  <%- include('../views/partials/newsletter'); %>
+  <%- include('../views/partials/footer'); %>
+</body>
+
 </html>

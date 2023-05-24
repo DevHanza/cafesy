@@ -327,9 +327,11 @@
 
 #feedback {
   #feedback-slider {
+    width: 65%;
     border: 3px solid $white;
-    padding: 30px 30px;
-    margin-top: 40px;
+    padding: 40px 60px;
+    margin-top: 70px;
+
   }
 
   .user-info {
@@ -356,6 +358,10 @@
         margin: 0;
       }
     }
+
+    .user-rating {
+      height: 30px;
+    }
   }
 
   .review-wrapper {
@@ -363,7 +369,7 @@
     font-family: $sub-font;
     font-size: 25px;
     font-weight: 500;
-    margin-top: 30px;
+    margin-top: 40px;
     line-height: 200%;
   }
 }
@@ -371,9 +377,12 @@
 @include media-breakpoint-down(lg) {
   #feedback {
     height: auto;
+    width: 100%;
 
     #feedback-slider {
       border: 3px solid $white;
+      padding: 25px 20px;
+      width: 100%;
     }
 
     .user-info {
@@ -390,8 +399,13 @@
 
         p {
           font-size: 12px;
-          margin: 0;
+          margin-bottom: 0;
         }
+      }
+
+      .user-rating {
+        height: 20px;
+        margin-top: 25px;
       }
     }
 
@@ -407,6 +421,7 @@
 
     .review-wrapper {
       font-size: 18px;
+      margin-top: 25px;
     }
   }
 }

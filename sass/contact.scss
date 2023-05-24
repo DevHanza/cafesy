@@ -64,11 +64,19 @@
     }
 
     .submit-btn {
+      border: 0;
       background-color: $primary-dark;
       color: $white;
       font-family: $sub-font;
       padding: 10px 30px;
       margin-top: 15px;
+      transition: all $main-tp;
+
+      &:focus {
+        transition: all $main-tp;
+        color: $primary-dark;
+        background-color: $primary-light-2;
+      }
     }
   }
 }

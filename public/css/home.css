@@ -11460,9 +11460,10 @@ header .nav-toggle-btn {
   }
 }
 #feedback #feedback-slider {
+  width: 65%;
   border: 3px solid #fff;
-  padding: 30px 30px;
-  margin-top: 40px;
+  padding: 40px 60px;
+  margin-top: 70px;
 }
 #feedback .user-info {
   color: #fff;
@@ -11485,21 +11486,27 @@ header .nav-toggle-btn {
   font-size: 16px;
   margin: 0;
 }
+#feedback .user-info .user-rating {
+  height: 30px;
+}
 #feedback .review-wrapper {
   color: #fff;
   font-family: "DM Sans", sans-serif;
   font-size: 25px;
   font-weight: 500;
-  margin-top: 30px;
+  margin-top: 40px;
   line-height: 200%;
 }
 
 @media (max-width: 991.98px) {
   #feedback {
     height: auto;
+    width: 100%;
   }
   #feedback #feedback-slider {
     border: 3px solid #fff;
+    padding: 25px 20px;
+    width: 100%;
   }
   #feedback .user-info-pic {
     height: 40px;
@@ -11511,7 +11518,11 @@ header .nav-toggle-btn {
   }
   #feedback .user-info-name p {
     font-size: 12px;
-    margin: 0;
+    margin-bottom: 0;
+  }
+  #feedback .user-info .user-rating {
+    height: 20px;
+    margin-top: 25px;
   }
   #feedback .section-image {
     display: none;
@@ -11521,6 +11532,7 @@ header .nav-toggle-btn {
   }
   #feedback .review-wrapper {
     font-size: 18px;
+    margin-top: 25px;
   }
 }
 #blog .second-row {

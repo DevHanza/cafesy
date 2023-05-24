@@ -11270,11 +11270,18 @@ header .nav-toggle-btn {
   box-shadow: 0 1px 1px rgba(26, 18, 11, 0.075);
 }
 .contact-form-inputs .submit-btn {
+  border: 0;
   background-color: #1A120B;
   color: #fff;
   font-family: "DM Sans", sans-serif;
   padding: 10px 30px;
   margin-top: 15px;
+  transition: all 0.4s;
+}
+.contact-form-inputs .submit-btn:focus {
+  transition: all 0.4s;
+  color: #1A120B;
+  background-color: #E5E5CB;
 }
 
 /*# sourceMappingURL=contact.css.map */
