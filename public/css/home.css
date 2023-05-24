@@ -10762,6 +10762,50 @@ main {
     padding-left: 20px;
   }
 }
+@keyframes floating-1 {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatex(5px) translatey(8px) rotate(15deg);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+@keyframes floating-2 {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatex(10px) translatey(5px) rotate(-10deg);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+@keyframes floating-3 {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatex(15px) translatey(5px) rotate(0deg);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+@keyframes floating-4 {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatex(10px) translatey(0px) rotate(10deg);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
 .slide-up-hidden {
   opacity: 0;
   filter: blur(5px);
@@ -11294,7 +11338,6 @@ header .nav-toggle-btn {
 .hero-img-wrapper {
   width: 500px;
   position: relative;
-  overflow: hidden;
 }
 .hero-img-wrapper .hero-img {
   width: 330px;
@@ -11306,6 +11349,7 @@ header .nav-toggle-btn {
   right: 85px;
   z-index: -1;
   transform: rotate(15deg);
+  animation: floating-1 11s cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
 }
 .hero-img-wrapper .bean-2 {
   height: 60px;
@@ -11313,18 +11357,21 @@ header .nav-toggle-btn {
   bottom: 40px;
   left: 85px;
   transform: rotate(-10deg);
+  animation: floating-2 15s cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
 }
 .hero-img-wrapper .bean-3 {
   position: absolute;
   height: 120px;
   top: 140px;
   left: 30px;
+  animation: floating-3 12s cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
 }
 .hero-img-wrapper .bean-4 {
   position: absolute;
   height: 150px;
   bottom: 70px;
   right: 0px;
+  animation: floating-4 10s cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
 }
 
 @media (max-width: 991.98px) {
@@ -11369,7 +11416,7 @@ header .nav-toggle-btn {
     left: 0;
   }
   .hero-img-wrapper .bean-4 {
-    height: 80px;
+    height: 90px;
     bottom: 35px;
     right: 0px;
   }

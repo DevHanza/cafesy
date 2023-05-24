@@ -98,7 +98,6 @@
 .hero-img-wrapper {
   width: 500px;
   position: relative;
-  overflow: hidden;
 
   .hero-img {
     width: 330px;
@@ -111,6 +110,8 @@
     right: 85px;
     z-index: -1;
     transform: rotate(15deg);
+    animation: floating-1 11s cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
+
   }
 
   .bean-2 {
@@ -119,6 +120,8 @@
     bottom: 40px;
     left: 85px;
     transform: rotate(-10deg);
+    animation: floating-2 15s cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
+    
   }
 
   .bean-3 {
@@ -126,6 +129,7 @@
     height: 120px;
     top: 140px;
     left: 30px;
+    animation: floating-3 12s cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
   }
 
   .bean-4 {
@@ -133,6 +137,7 @@
     height: 150px;
     bottom: 70px;
     right: 0px;
+    animation: floating-4 10s cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
   }
 }
 
@@ -190,7 +195,7 @@
       }
 
       .bean-4 {
-        height: 80px;
+        height: 90px;
         bottom: 35px;
         right: 0px;
       }

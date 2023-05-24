@@ -1,3 +1,31 @@
+// HomePage Beans floating animation
+
+
+@function floatingTransformValues($translateX, $translateY, $rotate) {
+  @return unquote("translatex(#{$translateX}px) translatey(#{$translateY}px) rotate(#{$rotate}deg)");
+}
+
+@mixin keyframeAnimation($name, $translateX, $translateY, $rotate) {
+  @keyframes #{$name} {
+    0% {
+      transform: translatey(0px);
+    }
+    50% {
+      transform: floatingTransformValues($translateX, $translateY, $rotate);
+    }
+    100% {
+      transform: translatey(0px);
+    }
+  }
+}
+
+@include keyframeAnimation(floating-1, 5, 8, 15);
+@include keyframeAnimation(floating-2, 10, 5, -10);
+@include keyframeAnimation(floating-3, 15, 5, 0);
+@include keyframeAnimation(floating-4, 10, 0, 10);
+
+
+
 
 // Load on Scroll Animations
 
