@@ -11398,7 +11398,7 @@ header .nav-toggle-btn {
   border-color: #1A120B;
   box-shadow: 0 1px 1px rgba(26, 18, 11, 0.075);
 }
-.contact-form-inputs .submit-btn {
+.contact-form-inputs .form-button {
   border: 0;
   background-color: #1A120B;
   color: #fff;
@@ -11407,7 +11407,7 @@ header .nav-toggle-btn {
   margin-top: 15px;
   transition: all 0.4s;
 }
-.contact-form-inputs .submit-btn:focus {
+.contact-form-inputs .form-button:focus {
   transition: all 0.4s;
   color: #1A120B;
   background-color: #E5E5CB;
