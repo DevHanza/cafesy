@@ -25,10 +25,6 @@ app.get("/faq", (req, res) => {
     res.render("faq");
 });
 
-app.get("blog", (req, res) => {
-    res.render("blog");
-});
-
 app.listen(process.env.PORT || 3000, (req, res) => {
     console.log("Server is up & Running on port 3000.")
 });
