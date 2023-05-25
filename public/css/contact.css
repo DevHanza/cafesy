@@ -10789,7 +10789,7 @@ main {
     transform: translatey(0px);
   }
   50% {
-    transform: translatex(15px) translatey(5px) rotate(0deg);
+    transform: translatex(15px) translatey(5px) rotate(-10deg);
   }
   100% {
     transform: translatey(0px);
@@ -10801,6 +10801,17 @@ main {
   }
   50% {
     transform: translatex(10px) translatey(0px) rotate(10deg);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+@keyframes floating-5 {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatex(5px) translatey(5px) rotate(0deg);
   }
   100% {
     transform: translatey(0px);

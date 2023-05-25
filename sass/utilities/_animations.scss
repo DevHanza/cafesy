@@ -1,4 +1,4 @@
-// HomePage Beans floating animation
+// HomePage Coffee Beans floating animation
 
 
 @function floatingTransformValues($translateX, $translateY, $rotate) {
@@ -21,8 +21,9 @@
 
 @include keyframeAnimation(floating-1, 5, 8, 15);
 @include keyframeAnimation(floating-2, 10, 5, -10);
-@include keyframeAnimation(floating-3, 15, 5, 0);
+@include keyframeAnimation(floating-3, 15, 5, -10);
 @include keyframeAnimation(floating-4, 10, 0, 10);
+@include keyframeAnimation(floating-5, 5, 5, 0);
 
 
 

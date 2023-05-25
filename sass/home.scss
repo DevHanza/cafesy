@@ -98,6 +98,7 @@
 .hero-img-wrapper {
   width: 500px;
   position: relative;
+  animation: floating-5 11s cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
 
   .hero-img {
     width: 330px;
