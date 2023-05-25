@@ -11384,10 +11384,13 @@ header .nav-toggle-btn {
 
 @media (max-width: 991.98px) {
   #banner {
-    padding: 20px;
+    padding: 20px 0;
+  }
+  #banner .container {
+    padding: 0 10px;
   }
   #banner .shop-banner {
-    padding: 30px 0px;
+    padding: 30px 20px;
   }
   #banner .shop-banner-img {
     height: 200px;

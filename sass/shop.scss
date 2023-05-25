@@ -44,10 +44,14 @@
 
 @include media-breakpoint-down(lg) {
   #banner {
-    padding: 20px;
+    padding: 20px 0;
+
+    .container {
+      padding: 0 10px;
+    }
 
     .shop-banner {
-      padding: 30px 0px;
+      padding: 30px 20px;
 
       &-img {
         height: 200px;

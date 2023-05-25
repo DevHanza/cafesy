@@ -112,7 +112,6 @@
     z-index: -1;
     transform: rotate(15deg);
     animation: floating-1 11s cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
-
   }
 
   .bean-2 {
@@ -122,7 +121,6 @@
     left: 85px;
     transform: rotate(-10deg);
     animation: floating-2 15s cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
-    
   }
 
   .bean-3 {
@@ -297,7 +295,6 @@
     border: 3px solid $white;
     padding: 40px 60px;
     margin-top: 70px;
-
   }
 
   .user-info {
@@ -423,13 +420,18 @@
 
 // Start - Contact Section
 
-#contact {
-}
-
 @include media-breakpoint-down(lg) {
-  .section {
-    &-heading {
-      margin-top: 20px;
+  #contact {
+    .section {
+
+      &-heading {
+        margin-top: 20px;
+      }
+
+      &-image {
+          object-position: 50% 70%;
+      }
+      
     }
   }
 }

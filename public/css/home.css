@@ -11650,8 +11650,11 @@ header .nav-toggle-btn {
   }
 }
 @media (max-width: 991.98px) {
-  .section-heading {
+  #contact .section-heading {
     margin-top: 20px;
+  }
+  #contact .section-image {
+    object-position: 50% 70%;
   }
 }
 
