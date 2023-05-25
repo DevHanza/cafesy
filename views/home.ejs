@@ -86,54 +86,21 @@
         <div class="container">
           <div class="row second-row">
             <div class="col-lg-4">
-              <div class="coffee-card slide-up-hidden">
-                <a href="/shop">
-                  <img class="coffee-card-image" src="/img/Americano.webp" alt="Cup of Espresso" />
-                </a>
-                <div class="coffee-card-text-wrapper">
-                  <h3 class="coffee-card-heading">
-                    <a class="no-styles" href="/shop">Espresso</a>
-                  </h3>
-                  <p class="coffee-card-p">
-                    An Awesome classic Italian coffee, characterized by its
-                    strong, rich flavor and thick cream.
-                  </p>
-                </div>
-              </div>
+              <%- include('components/coffee-card', { coffee_img: "Americano", coffee_name: "Espresso", coffee_details: "An Awesome classic Italian coffee, characterized by its strong, rich flavor and thick cream." }); %>
+
             </div>
 
             <div class="col-lg-4">
-              <div class="coffee-card slide-up-hidden">
-                <a href="/shop">
-                  <img class="coffee-card-image" src="/img/Americano.webp" alt="Cup of Americano" />
-                </a>
-                <div class="coffee-card-text-wrapper">
-                  <h3 class="coffee-card-heading">
-                    <a class="no-styles" href="/shop">Americano</a>
-                  </h3>
-                  <p class="coffee-card-p">
-                    Made by adding hot water to a shot of espresso, creating a
-                    smooth, bold cup of coffee.
-                  </p>
-                </div>
-              </div>
+
+              <%- include('components/coffee-card', { coffee_img: "Americano", coffee_name: "Americano", coffee_details: "Made by adding hot water to a shot of espresso, creating a smooth, bold cup of coffee." }); %>
+
             </div>
 
             <div class="col-lg-4">
-              <div class="coffee-card slide-up-hidden">
-                <a href="/shop">
-                  <img class="coffee-card-image" src="/img/Americano.webp" alt="Cup of Milk Latte" />
-                </a>
-                <div class="coffee-card-text-wrapper">
-                  <h3 class="coffee-card-heading">
-                    <a class="no-styles" href="/shop">Milk Latte</a>
-                  </h3>
-                  <p class="coffee-card-p">
-                    A creamy, milky coffee made with espresso and steamed
-                    milk, topped with a layer of thick milk.
-                  </p>
-                </div>
-              </div>
+
+
+              <%- include('components/coffee-card', { coffee_img: "Americano", coffee_name: "Milk Latte", coffee_details: "A creamy, milky coffee made with espresso and steamed milk, topped with a layer of thick milk." }); %>
+
             </div>
           </div>
         </div>
@@ -203,56 +170,23 @@
 
         <div class="container">
           <div class="row second-row align-items-center">
-            <div class="col-lg-4">
-              <div class="blog-card slide-up-hidden">
-                <div class="blog-card-image-wrapper">
-                  <img src="img/post-1.webp" alt="" />
-                </div>
 
-                <div class="blog-card-data">
-                  <div class="blog-card-title">
-                    5 Surprising Health Benefits of Drinking Coffee
-                  </div>
-                  <div class="blog-card-meta">
-                    By Marie — Published on May 06
-                  </div>
-                </div>
-              </div>
+            <div class="col-lg-4">
+              
+              <%- include('components/blog-card', { post_img: "post-1", post_title: "5 Surprising Health Benefits of Drinking Coffee", post_author: "Marie" ,post_date: "May 06", }); %>
+
             </div>
 
             <div class="col-lg-4">
-              <div class="blog-card slide-up-hidden">
-                <div class="blog-card-image-wrapper">
-                  <img src="img/post-2.webp" alt="" />
-                </div>
 
-                <div class="blog-card-data">
-                  <div class="blog-card-title">
-                    The Art of Latte Art: How Our Baristas Create Perfect
-                    Coffees
-                  </div>
-                  <div class="blog-card-meta">
-                    By Charles — Published on May 05
-                  </div>
-                </div>
-              </div>
+              <%- include('components/blog-card', { post_img: "post-2", post_title: "The Art of Latte Art: How Our Baristas Create Perfect Coffees", post_author: "Charles" ,post_date: "May 05", }); %>
+
             </div>
 
             <div class="col-lg-4">
-              <div class="blog-card slide-up-hidden">
-                <div class="blog-card-image-wrapper">
-                  <img src="img/post-3.webp" alt="" />
-                </div>
 
-                <div class="blog-card-data">
-                  <div class="blog-card-title">
-                    How to Brew the Perfect Cup of Coffee at Home
-                  </div>
-                  <div class="blog-card-meta">
-                    By Joseph — Published on May 05
-                  </div>
-                </div>
-              </div>
+              <%- include('components/blog-card', { post_img: "post-3", post_title: "How to Brew the Perfect Cup of Coffee at Home", post_author: "Joseph" ,post_date: "May 05", }); %>
+
             </div>
           </div>
         </div>

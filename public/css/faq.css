@@ -10874,113 +10874,6 @@ main {
     transition: none;
   }
 }
-.main-button {
-  height: 50px;
-  padding: 0 35px;
-  background-color: #D5CEA3;
-  color: #3C2A21;
-  font-family: "DM Sans", sans-serif;
-  line-height: normal;
-  font-size: 18px;
-  border-radius: 0;
-  font-weight: 500;
-  transition: all 0.4s;
-}
-.main-button:hover {
-  filter: drop-shadow(0 0 70px #d5cea3);
-  transition: all 0.4s;
-  background-color: #D5CEA3;
-  color: #3C2A21;
-  padding: 0 40px;
-}
-.main-button:hover .main-button-icon {
-  transition: all 0.4s;
-  margin-left: 10px;
-}
-.main-button:not(:disabled):not(:disabled):active {
-  background-color: #E5E5CB;
-}
-
-.main-button-dark {
-  height: 50px;
-  padding: 0 35px;
-  background-color: #3C2A21;
-  color: #E5E5CB;
-  font-family: "DM Sans", sans-serif;
-  line-height: normal;
-  font-size: 18px;
-  border-radius: 0;
-  font-weight: 500;
-  transition: all 0.4s;
-}
-.main-button-dark:hover {
-  filter: drop-shadow(0 0 70px #d5cea3);
-  transition: all 0.4s;
-  background-color: #3C2A21;
-  color: #E5E5CB;
-  padding: 0 40px;
-}
-.main-button-dark:hover .main-button-icon {
-  transition: all 0.4s;
-  margin-left: 10px;
-}
-.main-button-dark:not(:disabled):not(:disabled):active {
-  background-color: #1A120B;
-}
-
-.main-button-icon {
-  vertical-align: middle;
-  margin-left: 5px;
-  transition: all 0.4s;
-}
-
-@media (max-width: 991.98px) {
-  .main-button, .main-button-dark {
-    font-size: 14px;
-    height: 45px;
-    padding: 0 30px;
-  }
-}
-.social-icons-wrapper {
-  margin: 40px 0;
-}
-.social-icons-wrapper a {
-  text-decoration: none;
-  color: #1A120B;
-}
-.social-icons-wrapper .social-icon {
-  line-height: normal;
-  height: 50px;
-  width: 50px;
-  font-size: 25px;
-  background-color: #D5CEA3;
-}
-
-@media (max-width: 991.98px) {
-  .social-icon {
-    height: 40px;
-    width: 40px;
-    font-size: 20px;
-  }
-}
-.accordion-button {
-  font-family: "DM Sans", sans-serif;
-  font-weight: 500;
-  font-size: 18px;
-  color: #1A120B;
-}
-.accordion-button:not(.collapsed), .accordion-button:focus {
-  color: #3C2A21;
-  background-color: rgba(60, 42, 33, 0.1);
-  box-shadow: 0 0 0 0.25rem rgba(60, 42, 33, 0.1);
-  border-color: rgba(60, 42, 33, 0.1);
-}
-
-.accordion-body {
-  font-family: "DM Sans", sans-serif;
-  color: #616161;
-}
-
 footer {
   color: #fff;
 }
@@ -11273,6 +11166,186 @@ header .nav-toggle-btn {
   #content-section .container {
     width: 100%;
   }
+}
+.main-button {
+  height: 50px;
+  padding: 0 35px;
+  background-color: #D5CEA3;
+  color: #3C2A21;
+  font-family: "DM Sans", sans-serif;
+  line-height: normal;
+  font-size: 18px;
+  border-radius: 0;
+  font-weight: 500;
+  transition: all 0.4s;
+  filter: drop-shadow(0 0 0 rgba(213, 206, 163, 0));
+}
+.main-button:hover {
+  filter: drop-shadow(0 0 70px #d5cea3);
+  transition: all 0.4s;
+  background-color: #D5CEA3;
+  color: #3C2A21;
+  padding: 0 40px;
+}
+.main-button:hover .main-button-icon {
+  transition: all 0.4s;
+  margin-left: 10px;
+}
+.main-button:not(:disabled):not(:disabled):active {
+  background-color: #E5E5CB;
+}
+
+.main-button-dark {
+  height: 50px;
+  padding: 0 35px;
+  background-color: #3C2A21;
+  color: #E5E5CB;
+  font-family: "DM Sans", sans-serif;
+  line-height: normal;
+  font-size: 18px;
+  border-radius: 0;
+  font-weight: 500;
+  transition: all 0.4s;
+  filter: drop-shadow(0 0 0 rgba(213, 206, 163, 0));
+}
+.main-button-dark:hover {
+  filter: drop-shadow(0 0 70px #d5cea3);
+  transition: all 0.4s;
+  background-color: #3C2A21;
+  color: #E5E5CB;
+  padding: 0 40px;
+}
+.main-button-dark:hover .main-button-icon {
+  transition: all 0.4s;
+  margin-left: 10px;
+}
+.main-button-dark:not(:disabled):not(:disabled):active {
+  background-color: #1A120B;
+}
+
+.main-button-icon {
+  vertical-align: middle;
+  margin-left: 5px;
+  transition: all 0.4s;
+}
+
+@media (max-width: 991.98px) {
+  .main-button, .main-button-dark {
+    font-size: 14px;
+    height: 45px;
+    padding: 0 30px;
+  }
+}
+.social-icons-wrapper {
+  margin: 40px 0;
+}
+.social-icons-wrapper a {
+  text-decoration: none;
+  color: #1A120B;
+}
+.social-icons-wrapper .social-icon {
+  line-height: normal;
+  height: 50px;
+  width: 50px;
+  font-size: 25px;
+  background-color: #D5CEA3;
+}
+
+@media (max-width: 991.98px) {
+  .social-icon {
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+  }
+}
+.accordion-button {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #1A120B;
+}
+.accordion-button:not(.collapsed), .accordion-button:focus {
+  color: #3C2A21;
+  background-color: rgba(60, 42, 33, 0.1);
+  box-shadow: 0 0 0 0.25rem rgba(60, 42, 33, 0.1);
+  border-color: rgba(60, 42, 33, 0.1);
+}
+
+.accordion-body {
+  font-family: "DM Sans", sans-serif;
+  color: #616161;
+}
+
+.blog-card {
+  background-color: #fff;
+}
+.blog-card-data {
+  padding: 30px;
+}
+.blog-card-image-wrapper {
+  overflow: hidden;
+}
+.blog-card-image-wrapper img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  transition: all 0.4s;
+}
+.blog-card-image-wrapper img:hover {
+  transform: scale(1.05);
+  transition: all 0.4s;
+}
+.blog-card-title {
+  font-family: "DM Serif Display", serif;
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #1A120B;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.blog-card-meta {
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  color: #616161;
+}
+
+.coffee-card {
+  background-color: #fff;
+  overflow: hidden;
+}
+.coffee-card-image {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+  z-index: 1;
+  transition: all 0.4s;
+}
+.coffee-card-image:hover {
+  transform: scale(1.05);
+  transition: all 0.4s;
+}
+.coffee-card-text-wrapper {
+  position: relative;
+  width: 85%;
+  margin: 0 auto;
+  padding: 30px 20px;
+  background-color: #fff;
+  margin-top: -60px;
+  z-index: 10;
+}
+.coffee-card-heading {
+  color: #1A120B;
+  font-family: "DM Serif Display", serif;
+  font-size: 25px;
+}
+.coffee-card-p {
+  color: #616161;
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  margin: 0;
 }
 
 /*# sourceMappingURL=faq.css.map */

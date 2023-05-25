@@ -12,6 +12,7 @@
     border-radius: 0;
     font-weight: 500;
     transition: all $main-tp;
+    filter: drop-shadow(0 0 0 rgba($color: $primary-light, $alpha: 0));
 
     &:hover {
         filter: drop-shadow(0 0 70px rgba($color: $primary-light, $alpha: 1.0));

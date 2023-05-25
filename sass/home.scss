@@ -254,46 +254,6 @@
   .row {
     &.second-row {
       margin: 55px 0;
-
-      .coffee-card {
-        color: $primary-dark;
-        background-color: $white;
-        overflow: hidden;
-
-        &-image {
-          height: 250px;
-          width: 100%;
-          object-fit: cover;
-          z-index: 1;
-          transition: all $main-tp;
-
-          &:hover {
-            transform: scale(1.05);
-            transition: all $main-tp;
-          }
-        }
-
-        &-text-wrapper {
-          position: relative;
-          width: 85%;
-          margin: 0 auto;
-          padding: 30px 20px;
-          background-color: $white;
-          margin-top: -60px;
-          z-index: 10;
-        }
-
-        &-heading {
-          font-family: $main-font;
-          font-size: 25px;
-        }
-
-        &-p {
-          font-family: $sub-font;
-          font-size: 14px;
-          margin: 0;
-        }
-      }
     }
   }
 
@@ -439,45 +399,6 @@
 #blog {
   .second-row {
     margin: 55px 0;
-  }
-  .blog-card {
-    background-color: $white;
-
-    &-data {
-      padding: 30px;
-    }
-
-    &-image-wrapper {
-      overflow: hidden;
-
-      img {
-        height: 200px;
-        width: 100%;
-        object-fit: cover;
-        transition: all $main-tp;
-
-        @include img-hover;
-      }
-    }
-
-    &-title {
-      font-family: $main-font;
-      font-size: 24px;
-      margin-bottom: 10px;
-      color: $primary-dark;
-
-      overflow: hidden;
-      display: -webkit-box;
-      -webkit-line-clamp: 2;
-      line-clamp: 2;
-      -webkit-box-orient: vertical;
-    }
-
-    &-meta {
-      font-family: $sub-font;
-      font-size: 14px;
-      color: $dark-gray;
-    }
   }
 }
 

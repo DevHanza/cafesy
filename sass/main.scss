@@ -5,12 +5,16 @@
 @import "utilities/global";
 @import "utilities/animations";
 
-@import "components/buttons";
-@import "components/social-buttons";
-@import "components/accordion";
-
 @import "partials/footer";
 @import "partials/navigation";
 @import "partials/newsletter";
 @import "partials/mixins";
 @import "partials/single-page";
+
+@import "components/buttons";
+@import "components/social-buttons";
+@import "components/accordion";
+@import "components/blog-card";
+@import "components/coffee-card";
+
+
