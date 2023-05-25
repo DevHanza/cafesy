@@ -9,8 +9,8 @@ app.get("/", (req, res)=> {
     res.render("home");
 });
 
-app.get("/shop", (req,res) => {
-    res.render("shop");
+app.get("/menu", (req,res) => {
+    res.render("menu");
 });
 
 app.get("/about", (req, res) => {
