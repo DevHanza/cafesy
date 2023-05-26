@@ -86,20 +86,17 @@
         <div class="container">
           <div class="row second-row">
             <div class="col-lg-4">
-              <%- include('components/coffee-card', { coffee_img: "Americano", coffee_name: "Espresso", coffee_details: "An Awesome classic Italian coffee, characterized by its strong, rich flavor and thick cream." }); %>
+              <%- include('components/product-card', {title: 'Espresso', description: 'Intensely strong and concentrated coffee.', price: '5.55', img: 'coffeecup', link: 'https://stripe.com', custom_class: 'slide-up-hidden'}); %>
+            </div>
+
+            <div class="col-lg-4">
+              <%- include('components/product-card', {title: 'Latte', description: 'Creamy espresso with steamed milk.', price: '5.75', img: 'coffeecup', link: 'https://stripe.com', custom_class: 'slide-up-hidden'}); %>
 
             </div>
 
             <div class="col-lg-4">
 
-              <%- include('components/coffee-card', { coffee_img: "Americano", coffee_name: "Americano", coffee_details: "Made by adding hot water to a shot of espresso, creating a smooth, bold cup of coffee." }); %>
-
-            </div>
-
-            <div class="col-lg-4">
-
-
-              <%- include('components/coffee-card', { coffee_img: "Americano", coffee_name: "Milk Latte", coffee_details: "A creamy, milky coffee made with espresso and steamed milk, topped with a layer of thick milk." }); %>
+              <%- include('components/product-card', {title: 'Americano', description: 'Bold, robust espresso diluted with hot water.', price: '4.35', img: 'coffeecup', link: 'https://stripe.com', custom_class: 'slide-up-hidden'}); %>
 
             </div>
           </div>

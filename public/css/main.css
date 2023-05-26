@@ -11310,42 +11310,6 @@ header .nav-toggle-btn {
   color: #616161;
 }
 
-.coffee-card {
-  background-color: #fff;
-  overflow: hidden;
-}
-.coffee-card-image {
-  height: 250px;
-  width: 100%;
-  object-fit: cover;
-  z-index: 1;
-  transition: all 0.4s;
-}
-.coffee-card-image:hover {
-  transform: scale(1.05);
-  transition: all 0.4s;
-}
-.coffee-card-text-wrapper {
-  position: relative;
-  width: 85%;
-  margin: 0 auto;
-  padding: 30px 20px;
-  background-color: #fff;
-  margin-top: -60px;
-  z-index: 10;
-}
-.coffee-card-heading {
-  color: #1A120B;
-  font-family: "DM Serif Display", serif;
-  font-size: 25px;
-}
-.coffee-card-p {
-  color: #616161;
-  font-family: "DM Sans", sans-serif;
-  font-size: 14px;
-  margin: 0;
-}
-
 .product-card {
   font-family: "DM Sans", sans-serif;
   color: #1A120B;
