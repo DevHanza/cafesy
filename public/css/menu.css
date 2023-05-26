@@ -11443,6 +11443,7 @@ header .nav-toggle-btn {
 }
 #products {
   background-color: #E5E5CB;
+  scroll-margin-top: 80px;
 }
 
 #special-products {
