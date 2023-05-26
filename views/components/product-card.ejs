@@ -1,13 +1,21 @@
 <div class="product-card mt-4 text-center">
-  <img class="product-card-img" src="img/coffeecup.webp" alt="Cup of <%= title %> on Cafesy" />
+  <a href="<%= link %>">
+    <img
+      class="product-card-img"
+      src="img/<%= img %>.webp"
+      alt="Cup of <%= title %> on Cafesy"
+    />
+  </a>
   <div class="product-card-details">
+    <a href="<%= link %>">
     <h4 class="product-card-title"><%= title %></h4>
+    </a>
     <p class="product-card-p"><%= description %></p>
     <p class="product-card-price m-0"><%= price %>$ /<span>cup</span></p>
-    <a href="https://stripe.com">
-    <div class="product-card-cta text-center">
-      <p>Purchase<i class="fa-solid fa-arrow-right"></i></p>
-    </div>
-  </a>
+    <a href="<%= link %>">
+      <div class="product-card-cta text-center">
+        <p>Purchase<i class="fa-solid fa-arrow-right"></i></p>
+      </div>
+    </a>
   </div>
 </div>

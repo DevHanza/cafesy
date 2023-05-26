@@ -8,27 +8,30 @@
   background: $primary-light;
 }
 
+
 // Anchor Tags Styles
 a {
-  color: $primary-light;
-  transition: all $main-tp;
 
-  &:hover {
-    transition: all $main-tp;
-    color: inherit;
-  }
-}
-
-.no-styles {
-  text-decoration: none;
   color: inherit;
+  text-decoration: none;
 
   &:hover {
     color: inherit;
+  }
+
+  &.link {
+    color: $primary-light;
+    transition: all $main-tp;
     text-decoration: underline;
-    text-decoration-color: inherit;
+  
+    &:hover {
+      color: inherit;
+      transition: all $main-tp;
+    }
   }
 }
+
+
 
 main {
   margin-top: 85px;
