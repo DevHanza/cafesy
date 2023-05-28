@@ -1,35 +1,34 @@
 <div id="newsletter">
-    <div class="container">
-      <div class="row align-items-center">
-        <div
-          class="col-lg-7 d-flex justify-content-center justify-content-lg-start"
-        >
-          <h3 class="">Wanna know about <br />latest offers & events?</h3>
-        </div>
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-7 d-flex justify-content-center justify-content-lg-start">
+        <h3 class="">Wanna know about <br />latest offers & events?</h3>
+      </div>
 
-        <div
-          class="col-lg-5 d-flex justify-content-center justify-content-lg-start"
-        >
-          <form>
-            <p class="form-text-1">
-              Be the first to know about special offers by subscribing to our
-              Newsletter.
-            </p>
-            <input
-              type="email"
-              class="form-email"
-              placeholder="Email Address"
-              required
-            />
+      <div class="col-lg-5 d-flex justify-content-center justify-content-lg-start">
 
-            <button type="submit" class="form-button">SUBSCRIBE</button>
 
-            <div  class="form-text-2">
-              We respect your privacy and You can <b>unsubscribe</b> at any
-              time.
-            </div>
-          </form>
-        </div>
+
+        
+        <form action ="/subscribe" method="post">
+          <p class="form-text-1">
+            Be the first to know about special offers by subscribing to our
+            Newsletter.
+          </p>
+          <input type="email" class="form-email" name="email" placeholder="Email Address" required />
+
+          <button type="submit" class="form-button">SUBSCRIBE</button>
+
+          <div class="form-text-2">
+            We respect your privacy and You can <b>unsubscribe</b> at any
+            time.
+          </div>
+        </form>
+
+
+
+
       </div>
     </div>
   </div>
+</div>
