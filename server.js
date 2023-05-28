@@ -4,6 +4,8 @@ const bodyParser = require("body-parser");
 const request = require("request");
 const https = require("https");
 
+require("dotenv").config();
+
 const app = express();
 
 app.set('view engine', 'ejs');
@@ -34,7 +36,7 @@ app.get("/faq", (req, res) => {
 // Mailchimp Newsletter Submission
 
 app.post("/subscribe", (req, res) => {
-    console.log(res.statusCode + " : Post Request received!");
+    console.log("Status Code : " + res.statusCode);
   
     const email = req.body.email;
   
@@ -49,25 +51,23 @@ app.post("/subscribe", (req, res) => {
   
     const jsonData = JSON.stringify(data);
   
-    const url = "https://us11.api.mailchimp.com/3.0/lists/eba0622f4d";
+    const url = `https://us11.api.mailchimp.com/3.0/lists/${process.env.MAILCHIMP_LIST_ID}`;
   
     const options = {
       method: "POST",
-      auth: "hansana:32b2a727ecc11c81277606e359a28377-us11",
+      auth: `hansana:${process.env.MAILCHIMP_API_KEY}`,
     };
   
     const request = https.request(url, options, (response) => {
       response.on("data", function (data) {
-        // console.log(JSON.parse(data));
+        console.log(JSON.parse(data));
       });
-
-      
   
-      if (response.statusCode === 200) {
-          res.send("Submission Successful!");
-      } else {
-          res.send("Something went wrong!");
-      }
+    //   if (response.statusCode === 200) {
+    //       res.send("Submission Successful!");
+    //   } else {
+    //       res.send("Something went wrong!");
+    //   }
 
 
     });
