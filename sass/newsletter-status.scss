@@ -1,0 +1,68 @@
+// bootstrap@5.3.0-alpha3
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+@import "utilities/variables";
+@import "utilities/global";
+
+.newsletter-box {
+  .container {
+    height: 100vh;
+  }
+
+  &-wrapper {
+    display: inline-block;
+    background-color: $white;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+      rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    padding: 60px 80px;
+
+  }
+
+  h1 {
+    font-family: $main-font;
+    color: $primary-dark;
+  }
+
+  p {
+    font-family: $sub-font;
+    color: $dark-gray;
+    margin: 10px 0 40px 0;
+  }
+
+  &-btn {
+    font-family: $sub-font;
+    padding: 10px 0px;
+    border-color: transparent;
+    font-weight: 500;
+    width: 170px;
+    background-color: $primary-dark;
+    color: $white;
+  
+
+  }
+}
+
+#lottieAnimation {
+  height: 200px;
+  margin: 0 0 15px 0;
+}
+
+@include media-breakpoint-down(lg) {
+  .newsletter-box {
+    .container {
+      height: 90vh;
+    }
+
+    h1 {
+      font-size: 35px;
+    }
+
+    &-wrapper {
+      padding: 40px;
+    }
+  }
+
+  #lottieAnimation {
+    height: 150px;
+  }
+}

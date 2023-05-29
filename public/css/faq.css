@@ -11077,6 +11077,7 @@ header .nav-toggle-btn {
   width: 100%;
   padding: 0px 20px;
   border: none;
+  color: #1A120B;
 }
 #newsletter .form-email:focus {
   border-radius: 0;
