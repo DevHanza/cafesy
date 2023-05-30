@@ -59,13 +59,12 @@ app.post("/subscribe", (req, res) => {
 
   const request = https.request(url, options, (response) => {
     response.on("data", function (data) {
-
-      // console.log(JSON.parse(data);
+      console.log(JSON.parse(data));
 
       if (response.statusCode === 200) {
         res.render("newsletter-status", {
-          title: "Hooray! You have successfully subscribed.",
-          heading: "Subscription Completed!",
+          title: "Hooray!🎉 You have successfully subscribed.",
+          heading: "Subscribed!",
           message: "You have successfully subscribed to our email list.",
           status_icon: "success-tick",
         });
@@ -77,7 +76,6 @@ app.post("/subscribe", (req, res) => {
           status_icon: "failure-cross",
         });
       }
-
     });
   });
 
@@ -85,15 +83,39 @@ app.post("/subscribe", (req, res) => {
   request.end();
 });
 
-app.get("/success", (req, res) => {
+
+
+
+app.get("/newsletter", (req, res) => {
+  res.render("newsletter", {
+    title: "Wanna Know About Latest Offers & Events?",
+    heading: "You will be missed!",
+    btntext: "Unsubscribe me!",
+    text: "By submitting this form you will be removed from our email list and <br> You will no longer able to hear about our events & offers.",
+  });
+});
+
+
+
+
+
+
+app.get("/unsubscribe", (req, res) => {
+  res.render("newsletter", {
+    title: "You will be missed!",
+    heading: "You will be missed!",
+    btntext: "Unsubscribe me!",
+    text: "By submitting this form you will be removed from our email list and <br> You will no longer able to hear about our events & offers.",
+  });
+
   // res.render("newsletter-status", {
-  //   title: "Hooray! You have successfully subscribed.",
-  //   heading: "Subscription Completed!",
-  //   message:
-  //     "You have successfully subscribed to our email list.",
-  //   status_icon: "success-tick"
+  //   title: "Bye!👋 You have successfully Unsubscribed.",
+  //   heading: "Unsubscribed!",
+  //   message: "You have successfully Unsubscribed from our email list.",
+  //   status_icon: "success-tick",
   // });
 });
+
 
 app.listen(process.env.PORT || 3000, (req, res) => {
   console.log("Cafesy is up & Running smoothly on locahost.");

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title><%= title %> | Cafésy</title>
+
+    <%- include('../views/partials/head'); %>
+
+    <link rel="stylesheet" href="css/newsletter.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.11.0/lottie.min.js"></script>
+  </head>
+
+  <body>
+    <section class="newsletter-box">
+      <div
+        class="container text-center d-flex justify-content-center align-items-center"
+      >
+        <div class="newsletter-box-wrapper">
+          <h1><%= heading %></h1>
+          <p><%- text %></p>
+
+          <form action="/" method="post">
+            <input
+              type="email"
+              class="form-email"
+              name="email"
+              placeholder="Email Address"
+              required
+            />
+          </form>
+
+          <button class="newsletter-box-btn newsletter-box-btn">
+            <%= btntext %>
+          </button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

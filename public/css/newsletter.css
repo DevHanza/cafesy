@@ -10804,15 +10804,25 @@ body {
     padding: 40px;
   }
 }
-#lottieAnimation {
-  height: 200px;
-  margin: 0 0 15px 0;
+.newsletter-box-btn {
+  margin-top: 10px;
+  width: 100%;
 }
 
-@media (max-width: 991.98px) {
-  #lottieAnimation {
-    height: 150px;
-  }
+.form-email {
+  display: inline-block;
+  border-radius: 0;
+  font-family: "DM Sans", sans-serif;
+  height: 50px;
+  width: 100%;
+  padding: 0px 20px;
+  border: 3px solid #1A120B;
+  color: #1A120B;
+}
+.form-email:focus {
+  border-radius: 0;
+  outline: 0;
+  outline-color: transparent;
 }
 
-/*# sourceMappingURL=newsletter-status.css.map */
+/*# sourceMappingURL=newsletter.css.map */

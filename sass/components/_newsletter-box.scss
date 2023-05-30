@@ -1,0 +1,55 @@
+body {
+  background-color: $primary-dark;
+}
+
+.newsletter-box {
+  .container {
+    height: 100vh;
+  }
+
+  &-wrapper {
+    display: inline-block;
+    background-color: $white;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+      rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    padding: 60px 80px;
+  }
+
+  h1 {
+    font-family: $main-font;
+    color: $primary-dark;
+    word-wrap: break-word;
+  }
+
+  p {
+    font-family: $sub-font;
+    color: $dark-gray;
+    margin: 10px 0 40px 0;
+  }
+
+  &-btn {
+    font-family: $sub-font;
+    padding: 10px 20px;
+    border-color: transparent;
+    font-weight: 500;
+    background-color: $primary-dark;
+    color: $white;
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .newsletter-box {
+    .container {
+      height: 90vh;
+    }
+
+    h1 {
+      font-size: 35px;
+    }
+
+    &-wrapper {
+      width: 95%;
+      padding: 40px;
+    }
+  }
+}
