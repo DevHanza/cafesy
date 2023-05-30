@@ -88,15 +88,12 @@ app.post("/subscribe", (req, res) => {
 
 app.get("/newsletter", (req, res) => {
   res.render("newsletter", {
-    title: "Wanna Know About Latest Offers & Events?",
-    heading: "You will be missed!",
-    btntext: "Unsubscribe me!",
-    text: "By submitting this form you will be removed from our email list and <br> You will no longer able to hear about our events & offers.",
+    title: "Stay Tuned!",
+    heading: "Subscribe to Newsletter!",
+    btntext: "Let's Go!",
+    text: "Wanna Know About Latest Offers & Events? <br>Then Subscribe to our email list and stay updated!",
   });
 });
-
-
-
 
 
 
