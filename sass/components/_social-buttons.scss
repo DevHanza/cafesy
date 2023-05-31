@@ -8,11 +8,18 @@
     margin: 40px 0;
   
     .social-icon {
-      line-height: normal;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       height: 50px;
       width: 50px;
       font-size: 25px;
       background-color: $primary-light;
+
+      i {
+        line-height: normal;
+      }
+      
     }
   }
 

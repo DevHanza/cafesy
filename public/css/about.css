@@ -11243,11 +11243,16 @@ header .nav-toggle-btn {
   color: #1A120B;
 }
 .social-icons-wrapper .social-icon {
-  line-height: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 50px;
   width: 50px;
   font-size: 25px;
   background-color: #D5CEA3;
+}
+.social-icons-wrapper .social-icon i {
+  line-height: normal;
 }
 
 @media (max-width: 991.98px) {
