@@ -27,6 +27,16 @@ body {
     margin: 10px 0 40px 0;
   }
 
+  .back-button {
+    font-family: $sub-font;
+    font-weight: 500;
+    color: $dark-gray;
+    border-color: transparent;
+    background: none;
+    margin-top: 10px;
+    text-decoration: underline;
+  }
+
   &-btn {
     font-family: $sub-font;
     padding: 10px 20px;
