@@ -24,13 +24,17 @@ app.get("/about", (req, res) => {
   res.render("about");
 });
 
+
 app.get("/contact", (req, res) => {
   res.render("contact");
 });
 
+
 app.get("/faq", (req, res) => {
   res.render("faq");
 });
+
+
 
 // Mailchimp Newsletter Submission
 
@@ -82,12 +86,6 @@ function processSubscription(status, successTitle, successHeading ,successMessag
   request.end();
 }
 
-
-
-
-
-
-
 app.get("/newsletter", (req, res) => {
   res.render("newsletter", {
     title: "Stay Tuned!",
@@ -107,12 +105,6 @@ app.get("/unsubscribe", (req, res) => {
     form_action: "/unsubscribe-confirmation"
   });
 
-  // res.render("newsletter-status", {
-  //   title: "Bye!👋 You have successfully Unsubscribed.",
-  //   heading: "Unsubscribed!",
-  //   message: "You have successfully Unsubscribed from our email list.",
-  //   status_icon: "success-tick",
-  // });
 });
 
 // Mailchimp Newsletter Submission - Redirect pages
@@ -128,54 +120,6 @@ app.post("/subscribe-confirmation", (req, res) => {
     "Subscription Failed!",
     res, req
   );
-  
-
-  // console.log("Status Code : " + res.statusCode);
-
-  // const email = req.body.email;
-
-  // var Userdata = {
-  //   members: [
-  //     {
-  //       email_address: email,
-  //       status: "subscribed",
-  //     },
-  //   ],
-  // };
-
-  // const jsonData = JSON.stringify(Userdata);
-
-  // const url = `https://us11.api.mailchimp.com/3.0/lists/${process.env.MAILCHIMP_LIST_ID}`;
-
-  // const options = {
-  //   method: "POST",
-  //   auth: `hansana:${process.env.MAILCHIMP_API_KEY}`,
-  // };
-
-  // const request = https.request(url, options, (response) => {
-  //   response.on("data", function (data) {
-  //     console.log(JSON.parse(data));
-
-  //     if (response.statusCode === 200) {
-  //       res.render("newsletter-status", {
-  //         title: "Hooray!🎉 You have successfully subscribed.",
-  //         heading: "Subscribed!",
-  //         message: "You have successfully subscribed to our email list.",
-  //         status_icon: "success-tick",
-  //       });
-  //     } else {
-  //       res.render("newsletter-status", {
-  //         title: "Oops! Something Went wrong.",
-  //         heading: "Subscription Failed!",
-  //         message: `ERROR ${res.statusCode} : An error occurred while submitting.`,
-  //         status_icon: "failure-cross",
-  //       });
-  //     }
-  //   });
-  // });
-
-  // request.write(jsonData);
-  // request.end();
 });
 
 app.post("/unsubscribe-confirmation", (req, res) => {
