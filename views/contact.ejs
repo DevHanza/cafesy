@@ -36,52 +36,52 @@
                     team is here to help.
                   </p>
 
-                  <%- include('components/social-buttons', { myclass :
-                  ' ' }); %>
+                  <%- include('components/social-buttons', { myclass : ' ' });%>
                 </div>
               </div>
 
               <div class="col col-lg-7">
                 <div class="contact-form-inputs">
-                  <label for="" class="form-label">Name</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id=""
-                    placeholder="John Doe"
-                    required
-                  />
+                  <form action="/" method="post">
+                    <label for="" class="form-label">Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id=""
+                      placeholder="John Doe"
+                      required
+                    />
 
-                  <label for="" class="form-label">Phone</label>
-                  <input
-                    class="form-control"
-                    type="text"
-                    placeholder="+94 123 456 789"
-                    maxlength="14"
-                    oninput="formatPhoneNumber(this)"
-                    required
-                  />
+                    <label for="" class="form-label">Phone</label>
+                    <input
+                      class="form-control"
+                      type="text"
+                      placeholder="+94 123 456 789"
+                      maxlength="14"
+                      oninput="formatPhoneNumber(this)"
+                      required
+                    />
 
-                  <label for="" class="form-label">Email address</label>
-                  <input
-                    type="email"
-                    class="form-control"
-                    id=""
-                    placeholder="johndoe@example.com"
-                    required
-                  />
+                    <label for="" class="form-label">Email address</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id=""
+                      placeholder="johndoe@example.com"
+                      required
+                    />
 
-                  <label for="" class="form-label">Message</label>
-                  <textarea
-                    class="form-control"
-                    id=""
-                    rows="3"
-                    placeholder="Hi, I have a question about..."
-                    required
-                  ></textarea>
+                    <label for="" class="form-label">Message</label>
+                    <textarea
+                      class="form-control"
+                      id=""
+                      rows="3"
+                      placeholder="Hi, I have a question about..."
+                      required
+                    ></textarea>
 
-                  <input class="form-button" type="submit" value="Submit">
-
+                    <input class="form-button" type="submit" value="Submit" />
+                  </form>
                 </div>
               </div>
             </div>
@@ -90,7 +90,7 @@
       </section>
     </main>
 
-    <%- include('../views/partials/newsletter-bar'); %>
-    <%- include('../views/partials/footer'); %>
+    <%- include('../views/partials/newsletter-bar'); %> <%-
+    include('../views/partials/footer'); %>
   </body>
 </html>

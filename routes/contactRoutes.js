@@ -6,5 +6,9 @@ router.get("/", (req, res) => {
   res.render("contact");
 });
 
+router.post("/", (req, res) => {
+  
+});
+
 
 module.exports = router;

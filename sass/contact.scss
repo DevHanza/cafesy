@@ -72,10 +72,10 @@
       margin-top: 15px;
       transition: all $main-tp;
 
-      &:focus {
+      &:active {
         transition: all $main-tp;
-        color: $primary-dark;
-        background-color: $primary-light-2;
+        color: $white;
+        background-color: $secondary-dark;
       }
     }
   }

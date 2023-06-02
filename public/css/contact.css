@@ -11452,10 +11452,10 @@ header .nav-toggle-btn {
   margin-top: 15px;
   transition: all 0.4s;
 }
-.contact-form-inputs .form-button:focus {
+.contact-form-inputs .form-button:active {
   transition: all 0.4s;
-  color: #1A120B;
-  background-color: #E5E5CB;
+  color: #fff;
+  background-color: #3C2A21;
 }
 
 /*# sourceMappingURL=contact.css.map */

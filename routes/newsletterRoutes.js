@@ -1,6 +1,8 @@
 const express = require("express");
 const router = express.Router();
 
+const https = require("https");
+
 // Mailchimp Newsletter Submission
 
 function processSubscription(

@@ -1,11 +1,5 @@
 const express = require("express");
 const ejs = require("ejs");
-const bodyParser = require("body-parser");
-const request = require("request");
-const https = require("https");
-
-const contactRoutes = require("./routes/contactRoutes");
-const newsletterRoutes = require("./routes/newsletterRoutes");
 
 require("dotenv").config();
 const app = express();
@@ -13,6 +7,10 @@ const app = express();
 app.set("view engine", "ejs");
 app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
+
+const contactRoutes = require("./routes/contactRoutes");
+const newsletterRoutes = require("./routes/newsletterRoutes");
+
 
 
 app.get("/", (req, res) => {
