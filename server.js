@@ -33,6 +33,10 @@ app.get("/faq", (req, res) => {
 
 app.use(newsletterRoutes);
 
+app.get('/loading', (req, res) => {
+  res.render("partials/preloader", {title: "loading"});
+})
+
 app.listen(3000 || process.env.PORT, (req, res) => {
   console.log("Cafesy is up & Running smoothly on locahost.");
 });

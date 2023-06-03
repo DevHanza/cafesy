@@ -1,0 +1,26 @@
+#preloader {
+  height: 100vh;
+  width: 100%;
+  background: #1A120B;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.4s;
+  opacity: 1;
+}
+
+.preloader-hidden {
+  opacity: 0 !important;
+}
+
+#lottiePreloader {
+  height: 20%;
+  display: inline-block;
+}
+
+/*# sourceMappingURL=preloader.css.map */

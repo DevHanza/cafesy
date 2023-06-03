@@ -5,10 +5,11 @@
 
     <%- include('../views/partials/head'); %>
     <link rel="stylesheet" href="css/contact.css" />
-    <script defer src="js/contact-form.js"></script>
   </head>
 
   <body>
+
+    <%- include('../views/partials/preloader'); %>
     <%- include('../views/partials/header'); %>
 
     <main>
@@ -42,12 +43,12 @@
 
               <div class="col col-lg-7">
                 <div class="contact-form-inputs">
-                  <form action="/" method="post">
+                  <form action="/contact" method="post">
                     <label for="" class="form-label">Name</label>
                     <input
+                      name="userName"
                       type="text"
                       class="form-control"
-                      id=""
                       placeholder="John Doe"
                       required
                     />
@@ -56,25 +57,25 @@
                     <input
                       class="form-control"
                       type="text"
+                      name="userPhone"
                       placeholder="+94 123 456 789"
-                      maxlength="14"
-                      oninput="formatPhoneNumber(this)"
+                      maxlength="12"
                       required
                     />
 
                     <label for="" class="form-label">Email address</label>
                     <input
+                      name="userEmail"
                       type="email"
                       class="form-control"
-                      id=""
                       placeholder="johndoe@example.com"
                       required
                     />
 
                     <label for="" class="form-label">Message</label>
                     <textarea
+                      name="userMessage"
                       class="form-control"
-                      id=""
                       rows="3"
                       placeholder="Hi, I have a question about..."
                       required
@@ -90,7 +91,7 @@
       </section>
     </main>
 
-    <%- include('../views/partials/newsletter-bar'); %> <%-
-    include('../views/partials/footer'); %>
+    <%- include('../views/partials/newsletter-bar'); %> 
+    <%- include('../views/partials/footer'); %>
   </body>
 </html>
