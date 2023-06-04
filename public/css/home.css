@@ -11390,7 +11390,7 @@ header .nav-toggle-btn {
 
 @media (max-width: 991.98px) {
   .product-card {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
   }
 }
