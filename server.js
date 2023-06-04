@@ -12,7 +12,6 @@ const contactRoutes = require("./routes/contactRoutes");
 const newsletterRoutes = require("./routes/newsletterRoutes");
 
 
-
 app.get("/", (req, res) => {
   res.render("home");
 });

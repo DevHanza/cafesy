@@ -1,11 +1,11 @@
 #preloader {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background: #1A120B;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  z-index: 10000;
+  z-index: 5000;
   margin: 0;
   display: flex;
   justify-content: center;

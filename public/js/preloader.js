@@ -10,13 +10,12 @@ var preloaderItem = bodymovin.loadAnimation({
 
 const preloader = document.getElementById("preloader");
 
-window.addEventListener("load", function() {
+window.addEventListener("load", function () {
   preloader.classList.add("preloader-hidden");
+  
 
-  setTimeout(function(){
+  setTimeout(function () {
     preloader.style.display = "none";
-  }, 500); 
-
+    document.body.style.overflow = "auto";
+  }, 500);
 });
-
-
