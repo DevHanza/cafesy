@@ -11331,6 +11331,7 @@ header .nav-toggle-btn {
   z-index: 1;
   width: 100%;
   transition: all 0.4s;
+  height: auto;
 }
 .product-card-img:hover {
   transform: scale(1.05);

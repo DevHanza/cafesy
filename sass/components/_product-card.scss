@@ -9,6 +9,7 @@
       z-index: 1;
       width: 100%;
       transition: all $main-tp;
+      height: auto;
   
       @include img-hover;
     }
