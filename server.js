@@ -11,7 +11,6 @@ app.use(express.urlencoded({ extended: true }));
 const contactRoutes = require("./routes/contactRoutes");
 const newsletterRoutes = require("./routes/newsletterRoutes");
 
-
 app.get("/", (req, res) => {
   res.render("home");
 });
@@ -32,10 +31,18 @@ app.get("/faq", (req, res) => {
 
 app.use(newsletterRoutes);
 
-app.get('/loading', (req, res) => {
-  res.render("partials/preloader", {title: "loading"});
-})
+app.get("/loading", (req, res) => {
+  res.render("partials/preloader", { title: "loading" });
+});
 
 app.listen(3000 || process.env.PORT, (req, res) => {
-  console.log("Cafesy is up & Running smoothly on locahost.");
+  const currentDate = new Date();
+  const currentTime = currentDate.toLocaleTimeString([], {
+    hour: "numeric",
+    minute: "2-digit",
+  });
+
+  console.log(
+    `${currentTime} | Cafesy is up & Running smoothly on ${process.env.HOST || process.env.HOSTNAME}.`
+  );
 });
