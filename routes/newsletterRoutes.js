@@ -4,6 +4,7 @@ const router = express.Router();
 const https = require("https");
 
 const emailService = require("./emailService");
+const adminEmail = "hansana123dasanayake@gmail.com";
 
 // Mailchimp Newsletter Submission
 
@@ -17,7 +18,6 @@ function processSubscription(
   res,
   req
 ) {
-
   const Userdata = {
     members: [
       {
@@ -47,7 +47,6 @@ function processSubscription(
           message: successMessage,
           status_icon: "success-tick",
         });
-
       } else {
         res.render("newsletter-status", {
           title: failureTitle,
@@ -98,17 +97,21 @@ router.post("/subscribe-confirmation", async (req, res) => {
   );
 
   const subscribedUserHTML = `<html><head> <style>a{color: #3C2A21;}.email-title{display: flex; justify-content: center; align-items: center; flex-direction: column; height: 200px; background-color: #1A120B; font-family: Arial, sans-serif; color: #fff;}.email-title .email-logo{height: 40px; margin-bottom: 10px;}.email-title p{font-size: 16px;}.email-content-wrapper{margin: 0 auto; width: 80%; padding: 50px; background-color: #fff; font-size: 18px;}p{font-family: Arial, sans-serif; line-height: 1.5; ;}footer{text-align: center; margin: 15px 0 30px 0; font-family: Arial, sans-serif; color: gray;}@media (max-width: 575.98px){.email-content-wrapper{margin: 0; width: unset;}}</style></head><body> <main> <div class="email-title"> <a href="https://cafesy.onrender.com/"><img class="email-logo" src="https://i.ibb.co/4mwrry0/Cafesy-Logo-Text-with-Icon-White.webp"></a> <p>Connected. Organic. Alive.</p></div><div class="email-content-wrapper"> <p>Hey <b>${req.body.email}</b>! 👋,</p><p>We're thrilled to have you as a new subscriber to our newsletter! 🎉 <br>Get ready for a world of exciting updates, offers, and insights from Cafésy.</p><p>Your privacy is important to us, so rest assured that we'll never share your info with anyone. If you ever change your mind, you can easily <a href="http://cafesy.onrender.com/unsubscribe">unsubscribe</a> at the bottom of our emails.</p><p>Meanwhile, feel free to check out our website <a href="http://cafesy.onrender.com/">Cafesy</a> for additional resources. If you have any questions or need a hand, our friendly <a href="https://cafesy.onrender.com/contact">support</a> team is here for you.</p><p>Thank you for joining our awesome newsletter community! 💌 <br>We're excited to stay connected! </p><br><p>Warm regards,,</p><p>Hansana Dasanayaka<br>Owner & Founder<br>Cafésy<br></p></div></main> <footer>© 2023 <a href="https://cafesy.onrender.com/">Cafésy</a>. All rights reserved.</footer></body></html>`;
+  const subscribedAdminHTML = `<html><head> <style>a{color: #3C2A21;}.email-content-wrapper{margin: 0 auto; width: 80%; padding: 50px; background-color: #fff; font-size: 18px;}p, h2{font-family: Arial, sans-serif; color: black;}footer{text-align: center; margin: 15px 0 30px 0; font-family: Arial, sans-serif; color: gray;}@media (max-width: 575.98px){.email-content-wrapper{margin: 0; width: unset;}}</style></head><body> <main> <div class="email-content-wrapper"> <h2><u>New user subscribed to your newsletter! </u></h2> <br><p><b>- Email:</b> ${req.body.email}</p><br><p>Please Check your <a href="https://mailchimp.com/">Mailchimp</a> Account Contacts for further information.</p></div></main> <footer>© 2023 <a href="#">Cafésy</a>. All rights reserved.</footer></body></html>`;
 
   try {
     await emailService.sendEmail(
       req.body.email,
       "Welcome to Cafésy's Newsletter! 💌",
       subscribedUserHTML
-    );} 
-    
-   catch (error) {
-    }
+    );
 
+    await emailService.sendEmail(
+      adminEmail,
+      "Congratulations! 🎉 You Got a New Subscriber!",
+      subscribedAdminHTML
+    );
+  } catch (error) {}
 });
 
 router.post("/unsubscribe-confirmation", async (req, res) => {
@@ -124,16 +127,21 @@ router.post("/unsubscribe-confirmation", async (req, res) => {
   );
 
   const unsubscribedUserHTML = `<html><head> <style>a{color: #3C2A21;}.email-title{display: flex; justify-content: center; align-items: center; flex-direction: column; height: 200px; background-color: #1A120B; font-family: Arial, sans-serif; color: #fff;}.email-title .email-logo{height: 40px; margin-bottom: 10px;}.email-title p{font-size: 16px;}.email-content-wrapper{margin: 0 auto; width: 80%; padding: 50px; background-color: #fff; font-size: 18px;}p{font-family: Arial, sans-serif; line-height: 1.5; ;}footer{text-align: center; margin: 15px 0 30px 0; font-family: Arial, sans-serif; color: gray;}@media (max-width: 575.98px){.email-content-wrapper{margin: 0; width: unset;}}</style></head><body> <main> <div class="email-title"> <a href="https://cafesy.onrender.com/"><img class="email-logo" src="https://i.ibb.co/4mwrry0/Cafesy-Logo-Text-with-Icon-White.webp"></a> <p>Connected. Organic. Alive.</p></div><div class="email-content-wrapper"> <p>Hey <b>${req.body.email}</b>! 👋,</p><p>We're sad to inform you that we've received your request to unsubscribe from our newsletter.</p><p> If there's anything we could have done differently or if you have any feedback for us, we'd genuinely appreciate hearing from you. We're always striving to improve our content and services.</p><p>Although you won't receive our newsletters anymore, remember that you're always welcome to reconnect with us in the future. Our website <a href="http://cafesy.onrender.com/">Cafesy</a> will still be available, offering valuable resources and information about our products & services.</p><p>Thank you for being a part of our newsletter community. We appreciate the time you've spent with us, and we wish you all the best in your endeavors.</p><br><p>Take care,</p><p>Hansana Dasanayaka<br>Owner & Founder<br>Cafésy<br></p></div></main> <footer>© 2023 <a href="https://cafesy.onrender.com/">Cafésy</a>. All rights reserved.</footer></body></html>`;
+  const unsubscribedAdminHTML = `<html><head> <style>a{color: #3C2A21;}.email-content-wrapper{margin: 0 auto; width: 80%; padding: 50px; background-color: #fff; font-size: 18px;}p, h2{font-family: Arial, sans-serif; color: black;}footer{text-align: center; margin: 15px 0 30px 0; font-family: Arial, sans-serif; color: gray;}@media (max-width: 575.98px){.email-content-wrapper{margin: 0; width: unset;}}</style></head><body> <main> <div class="email-content-wrapper"> <h2><u>Someone got unsubscribed from your newsletter! </u></h2> <br><p><b>- Email:</b> ${req.body.email}</p><br><p>Please Check your <a href="https://mailchimp.com/">Mailchimp</a> Account Contacts for further information.</p></div></main> <footer>© 2023 <a href="#">Cafésy</a>. All rights reserved.</footer></body></html>`;
 
   try {
     await emailService.sendEmail(
       req.body.email,
       "Sorry to See You Go! 😪",
       unsubscribedUserHTML
-    );} 
-    
-   catch (error) {
-    }
+    );
+
+    await emailService.sendEmail(
+      adminEmail,
+      "Sad News! 😐 Someone Unsubscribed from your Newsletter",
+      unsubscribedAdminHTML
+    );
+  } catch (error) {}
 });
 
 module.exports = router;
