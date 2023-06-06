@@ -1,48 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title><%= title %> | Cafésy</title>
 
-<head>
-  <title>
-    <%= title %> | Cafésy
-  </title>
-
-  <%- include('../views/partials/head'); %>
+    <%- include('../views/partials/head'); %>
 
     <link rel="stylesheet" href="css/newsletter-status.css" />
+  </head>
 
-</head>
+  <body>
+    <section class="newsletter-box">
+      <div
+        class="container text-center d-flex justify-content-center align-items-center"
+      >
+        <div class="newsletter-box-wrapper">
+          <div id="lottieAnimation"></div>
+          <h1><%= heading %></h1>
+          <p><%= message %></p>
 
-<body>
-  <section class="newsletter-box">
-    <div class="container text-center d-flex justify-content-center align-items-center">
-      <div class="newsletter-box-wrapper">
-        <div id="lottieAnimation"></div>
-        <h1>
-          <%= heading %>
-        </h1>
-        <p>
-          <%= message %>
-        </p>
-
-        
-        <button class="newsletter-box-btn newsletter-box-btn" onclick="window.history.back();">
-          Back to Cafésy
-        </button>
-      
-
+          <button
+            class="newsletter-box-btn newsletter-box-btn"
+            onclick="window.history.back();"
+          >
+            Back to Cafésy
+          </button>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <script>
-    var lottieAnimation = document.getElementById("lottieAnimation");
-    var animItem = bodymovin.loadAnimation({
-      wrapper: lottieAnimation,
-      animType: "svg",
-      loop: false,
-      path: "lottie/<%= status_icon %>.json"
-    });
-  </script>
-</body>
-
+    <script>
+      var lottieAnimation = document.getElementById("lottieAnimation");
+      var animItem = bodymovin.loadAnimation({
+        wrapper: lottieAnimation,
+        animType: "svg",
+        loop: false,
+        path: "lottie/<%= status_icon %>.json",
+      });
+    </script>
+  </body>
 </html>
