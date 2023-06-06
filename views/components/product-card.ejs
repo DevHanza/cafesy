@@ -1,4 +1,4 @@
-<div class="product-card mt-4 text-center <%= custom_class %>">
+<div class="product-card mt-4 <%= custom_class %>">
   <a href="<%= link %>">
     <img
       class="product-card-img"
@@ -7,14 +7,16 @@
     />
   </a>
   <div class="product-card-details">
+    
     <a href="<%= link %>">
-    <h4 class="product-card-title"><%= title %></h4>
+    <h4 class="product-card-title text-start"><%= title %></h4>
     </a>
     <p class="product-card-p"><%= description %></p>
-    <p class="product-card-price m-0"><%= price %>$ /<span>cup</span></p>
+    <p class="product-card-price"><%= price %>$ /<span>cup</span></p>
+    
     <a href="<%= link %>">
       <div class="product-card-cta text-center">
-        <p>Purchase<i class="fa-solid fa-arrow-right"></i></p>
+        <p>Order Now<i class="fa-solid fa-arrow-right"></i></p>
       </div>
     </a>
   </div>
