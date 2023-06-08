@@ -2,6 +2,11 @@
 
 Live Website: [https://cafesy.onrender.com/](https://cafesy.onrender.com/)
 
+
+**Important Notice:**
+
+Please refrain from uploading this code to any publicly available platforms for testing purposes. Doing so may result in the suspension of the API keys associated with this project by those platform owners. If such a suspension occurs, you will need to manually set up the API keys again.
+
 ### Essential Requirements
 
 To begin, download and install the following software:
