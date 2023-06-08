@@ -30,6 +30,7 @@ Please avoid uploading this code to publicly available platforms for testing pur
 
 To get started, you need to download and install the following software:
 
+- Chrome Browser : [https://www.google.com/chrome/](https://www.google.com/chrome/)
 - NodeJS: [https://nodejs.org/en/download](https://nodejs.org/en/download)
 - Git: [https://git-scm.com/downloads](https://git-scm.com/downloads)
 - Hyper Terminal (Recommended): [https://hyper.is/#installation](https://hyper.is/#installation)
