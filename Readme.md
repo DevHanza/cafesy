@@ -1,3 +1,5 @@
+# Cafesy - A Website for a Coffee Cafe ☕
+
 ## Getting Started
 
 Live Website: [https://cafesy.onrender.com/](https://cafesy.onrender.com/)
@@ -32,7 +34,6 @@ To get started, you need to download and install the following software:
 
 - Chrome Browser : [https://www.google.com/chrome/](https://www.google.com/chrome/)
 - NodeJS: [https://nodejs.org/en/download](https://nodejs.org/en/download)
-- Git: [https://git-scm.com/downloads](https://git-scm.com/downloads)
 - Hyper Terminal (Recommended): [https://hyper.is/#installation](https://hyper.is/#installation)
 
 (Hyper Terminal is recommended due to its enhanced capabilities and features compared to cmd and PowerShell)
