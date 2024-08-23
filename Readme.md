@@ -1,4 +1,4 @@
-# Cafesy - A Website for a Coffee Cafe ☕
+# Cafesy ☕
 
 ### Features:
 - Live Chat
