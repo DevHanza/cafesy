@@ -16,5 +16,5 @@
 - API Integration
 - And more...
 
- Please replace the** _API Keys_** with your own if you're hoping to test this.
+ Please replace the _API Keys_ with your own if you're hoping to test this.
  
