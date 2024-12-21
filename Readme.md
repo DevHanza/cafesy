@@ -2,7 +2,7 @@
 
 ## E commerce website for a local coffee shop business.
 
-## Paste this code to your terminal to have a look:
+### Paste this code to your terminal to have a look:
 
 ```
 git clone https://github.com/DevHanza/cafesy &&
