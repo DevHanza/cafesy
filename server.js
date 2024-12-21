@@ -26,7 +26,7 @@ app.get("/about", (req, res) => {
 app.use("/contact", contactRoutes);
 
 app.get("/faqs", (req, res) => {
-  res.render("faq");
+  res.render("faqs");
 });
 
 app.use(newsletterRoutes);
