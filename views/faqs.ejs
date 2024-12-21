@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>FAQ | Cafésy - Connected. Organic. Alive.</title>
+
+    <%- include('../views/partials/head'); %>
+    <link rel="stylesheet" href="css/faq.css" />
+  </head>
+
+  <body>
+    <%- include('../views/partials/preloader'); %>
+    <%- include('../views/partials/header'); %>
+
+    <main>
+      <section
+        id="heading-section"
+        class="d-flex align-items-center text-center"
+      >
+        <div class="container">
+          <h1>FAQs</h1>
+          <p>Frequently Asked Questions (FAQ)</p>
+        </div>
+      </section>
+
+      <section id="content-section">
+        <div class="container">
+          <div class="accordion" id="FAQaccordion">
+
+            <%-include('components/accordion', {title : "What is Cafesy?", text: "Cafesy is a cozy coffee shop located in Kandy. We offer a wide range of coffee drinks and providing a warm and inviting atmosphere for our customers.", accordion_no: "One", accordion_parent: "FAQaccordion" }); %>
+            <%-include('components/accordion', {title : "What are your operating hours?", text: "We are open from 7.00AM to 10.00PM every day of the week. Please note that these hours may vary on public holidays and poya days.", accordion_no: "Two", accordion_parent: "FAQaccordion" }); %>
+            <%-include('components/accordion', {title : "What types of coffee do you serve?", text: "At Cafesy, we serve a variety of coffee options, including espresso-based drinks like cappuccinos, lattes, and macchiatos. We also offer drip coffee, cold brew, and specialty brews. Our knowledgeable baristas will be happy to recommend a drink that suits your taste preferences.", accordion_no: "Three", accordion_parent: "FAQaccordion" }); %>
+            <%-include('components/accordion', {title : "Do you offer non-dairy milk alternatives?", text: "Yes, we understand that many people have dietary preferences or restrictions. We offer a range of non-dairy milk alternatives, such as almond milk, soy milk, and oat milk, so you can still enjoy your favorite coffee beverages.", accordion_no: "Four", accordion_parent: "FAQaccordion" }); %>
+            <%-include('components/accordion', {title : "Can I bring my own cup?", text: "Absolutely! We encourage our customers to bring their own reusable cups. Not only does it help reduce waste, but we also offer a discount to customers who bring their own cups.", accordion_no: "Five", accordion_parent: "FAQaccordion" }); %>
+            <%-include('components/accordion', {title : "Do you have Wi-Fi available?", text: "Yes, we provide complimentary Wi-Fi for our customers. Feel free to bring your laptop or device and enjoy working or browsing the internet while sipping on your coffee.", accordion_no: "Six", accordion_parent: "FAQaccordion" }); %>
+            <%-include('components/accordion', {title : "Can I host private events or meetings at Cafesy?", text: "Certainly! We have a dedicated space that can be reserved for private events or meetings. Please contact us in advance.", accordion_no: "Seven", accordion_parent: "FAQaccordion" }); %>
+            <%-include('components/accordion', {title : "Do you offer catering services?", text: "Yes, we provide catering services for small to medium-sized events. Whether it's a corporate meeting or a social gathering, we can customize a menu to suit your needs. Please reach out to us for more information.", accordion_no: "Eight", accordion_parent: "FAQaccordion" }); %>
+            <%-include('components/accordion', {title : "Do you have gift cards available?", text: "Yes, we offer gift cards that make the perfect present for coffee lovers. They can be purchased at our coffee shop or through our website.", accordion_no: "Nine", accordion_parent: "FAQaccordion" }); %>
+            <%-include('components/accordion', {title : "Do you offer any loyalty or rewards program for regular customers?", text: "Yes, we value our loyal customers and offer a rewards program at Cafesy. With every purchase you make, you'll earn points that can be redeemed for discounts or free items. Make sure to ask our staff about signing up for our loyalty program during your visit.", accordion_no: "Ten", accordion_parent: "FAQaccordion" }); %>
+            
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <%-include('../views/partials/newsletter-bar'); %>
+    <%-include('../views/partials/footer'); %>
+  </body>
+</html>

@@ -1,6 +1,7 @@
 # Dependency directories
 /node_modules
 
+
 # Log files
 *.log
 
@@ -19,3 +20,4 @@ yarn.lock
 # Operating System files
 .DS_Store
 Thumbs.db
+

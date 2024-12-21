@@ -25,7 +25,7 @@ app.get("/about", (req, res) => {
 
 app.use("/contact", contactRoutes);
 
-app.get("/faq", (req, res) => {
+app.get("/faqs", (req, res) => {
   res.render("faq");
 });
 
@@ -43,6 +43,6 @@ app.listen(3000 || process.env.PORT, (req, res) => {
   });
 
   console.log(
-    `${currentTime} | Cafesy is up & Running smoothly on ${process.env.HOST || process.env.HOSTNAME}.`
+    `${currentTime} | Cafesy is up & Running on http://127.0.0.1:3000/.`
   );
 });

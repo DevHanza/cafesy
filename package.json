@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "sass": "sass --watch sass/:public/css",
-    "nodemon": "nodemon server.js"
+    "nodemon": "nodemon server.js",
+    "build": "node build.js"
   },
   "keywords": [],
   "author": "Hansana Dasanayaka",
@@ -18,5 +19,8 @@
     "request": "^2.88.2",
     "sass": "^1.62.1",
     "sib-api-v3-sdk": "^8.5.0"
+  },
+  "devDependencies": {
+    "static-site-generator": "^0.0.1"
   }
 }
