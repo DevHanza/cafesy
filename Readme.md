@@ -1,6 +1,14 @@
-# Cafesy ☕
+<h1 align=center>Cafesy — Website Template</h1>
+<p align="center">
+  <a href="https://hansana.is-a.dev">
+    <img src="https://skillicons.dev/icons?i=html,css,sass,js,express,nodejs" alt="Technologies used by Cafesy" />
+  </a>
+</p>
 
-## E commerce website for a local coffee shop business.
+<h3 align="center">E-Commerce Website Template for a Coffee Shop</h3>
+<br/>
+
+![Cafesy Screenshot](https://github.com/user-attachments/assets/0c100754-b1b0-4e87-84a4-1bb75b46034a)
 
 ### Paste this code to your terminal to have a look:
 
