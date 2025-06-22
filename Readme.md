@@ -1,7 +1,7 @@
 <h1 align=center>Cafesy — Website Template</h1>
 <p align="center">
   <a href="https://hansana.is-a.dev">
-    <img src="https://skillicons.dev/icons?i=html,css,sass,js,express,nodejs" alt="Technologies used by Cafesy" />
+    <img src="https://go-skill-icons.vercel.app/api/icons?i=html,sass,js,express,ejs,nodejs" alt="Technologies used by Cafesy" />
   </a>
 </p>
 
